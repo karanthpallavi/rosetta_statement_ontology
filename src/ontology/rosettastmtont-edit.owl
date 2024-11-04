@@ -1,4 +1,3 @@
-
 Prefix(:=<http://purl.obolibrary.org/obo/rosettastmtont.owl#>)
 Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
@@ -10,33 +9,52 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rosettastmtont.owl>
-
-
-Import(<http://purl.obolibrary.org/obo/rosettastmtont/imports/ro_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/rosettastmtont/imports/pato_import.owl>)
-
 Import(<http://purl.obolibrary.org/obo/rosettastmtont/imports/omo_import.owl>)
-
-
-
+Import(<http://purl.obolibrary.org/obo/rosettastmtont/imports/pato_import.owl>)
+Import(<http://purl.obolibrary.org/obo/rosettastmtont/imports/ro_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Rosetta Statement Ontology")
 
-
 Declaration(Class(<http://purl.obolibrary.org/obo/ROSETTASTMTONT_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/formalized_statement>))
+Declaration(Class(<http://purl.obolibrary.org/obo/graph_data_schema>))
+Declaration(Class(<http://purl.obolibrary.org/obo/natural_language_statement>))
+Declaration(Class(<http://purl.obolibrary.org/obo/syntax_tree>))
+Declaration(Class(<http://purl.obolibrary.org/obo/tabular_data_schema>))
+Declaration(Class(<http://purl.obolibrary.org/obo/token_model>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/transitive_token_model_of>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
-
 ############################
 #   Annotation Properties
 ############################
 
+# Annotation Property: dcterms:description (description)
+
 AnnotationAssertion(rdfs:label dcterms:description "description")
+
+# Annotation Property: dcterms:license (license)
+
 AnnotationAssertion(rdfs:label dcterms:license "license")
+
+# Annotation Property: dcterms:title (title)
+
 AnnotationAssertion(rdfs:label dcterms:title "title")
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/transitive_token_model_of> (<http://purl.obolibrary.org/obo/transitive_token_model_of>)
+
+AnnotationAssertion(dce:description <http://purl.obolibrary.org/obo/transitive_token_model_of> "Different token models of the same system-of-interest, representing the same set of properties, are connected through a transitive token-model-of relationship. This relationship can be organized into sequences of designators, each sequentially representing its corresponding element across all token models, ultimately pointing back to the original element in the system-of-interest."@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/transitive_token_model_of> <http://purl.obolibrary.org/obo/token_model>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/transitive_token_model_of> <http://purl.obolibrary.org/obo/token_model>)
+
+
 
 ############################
 #   Classes
@@ -46,6 +64,35 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ROSETTASTMTONT_0000000> "root node"@en)
 
+# Class: <http://purl.obolibrary.org/obo/formalized_statement> (<http://purl.obolibrary.org/obo/formalized_statement>)
+
+AnnotationAssertion(dce:description <http://purl.obolibrary.org/obo/formalized_statement> "Formalized statement has a natural language statement in the form of subject predicate and object."@en)
+SubClassOf(<http://purl.obolibrary.org/obo/formalized_statement> <http://purl.obolibrary.org/obo/token_model>)
+
+# Class: <http://purl.obolibrary.org/obo/graph_data_schema> (<http://purl.obolibrary.org/obo/graph_data_schema>)
+
+AnnotationAssertion(dce:description <http://purl.obolibrary.org/obo/graph_data_schema> "A graph data schema must represent these syntactic positions in the form of slots, and each slot must specify its associated semantic role in the form of a constraint specification."@en)
+SubClassOf(<http://purl.obolibrary.org/obo/graph_data_schema> <http://purl.obolibrary.org/obo/token_model>)
+
+# Class: <http://purl.obolibrary.org/obo/natural_language_statement> (<http://purl.obolibrary.org/obo/natural_language_statement>)
+
+AnnotationAssertion(dce:description <http://purl.obolibrary.org/obo/natural_language_statement> "Natural language statement is structured by syntactical and grammatical conventions into syntactic positions of phrases of a syntax tree."@en)
+SubClassOf(<http://purl.obolibrary.org/obo/natural_language_statement> <http://purl.obolibrary.org/obo/token_model>)
+
+# Class: <http://purl.obolibrary.org/obo/syntax_tree> (<http://purl.obolibrary.org/obo/syntax_tree>)
+
+AnnotationAssertion(dce:description <http://purl.obolibrary.org/obo/syntax_tree> "A syntax tree has syntactic positions and associated semantic roles for any natural language statement."@en)
+SubClassOf(<http://purl.obolibrary.org/obo/syntax_tree> <http://purl.obolibrary.org/obo/token_model>)
+
+# Class: <http://purl.obolibrary.org/obo/tabular_data_schema> (<http://purl.obolibrary.org/obo/tabular_data_schema>)
+
+AnnotationAssertion(dce:description <http://purl.obolibrary.org/obo/tabular_data_schema> "Tabular data schema represents the syntactic positions as rows in a table with associated semantic roles specified as columns in a table."@en)
+SubClassOf(<http://purl.obolibrary.org/obo/tabular_data_schema> <http://purl.obolibrary.org/obo/token_model>)
+
+# Class: <http://purl.obolibrary.org/obo/token_model> (<http://purl.obolibrary.org/obo/token_model>)
+
+AnnotationAssertion(dce:description <http://purl.obolibrary.org/obo/token_model> "A token model (also known as snapshot model, representation model, or instance model) captures specific properties of elements from the system it represents, maintaining a one-to-one correspondence with the system."@en)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/token_model> "Lars Vogt"@en)
+
 
 )
-
