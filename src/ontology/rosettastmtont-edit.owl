@@ -17,15 +17,37 @@ Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Rosetta Statement Ontology")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/ROSETTASTMTONT_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/assertion>))
+Declaration(Class(<http://purl.obolibrary.org/obo/certainty>))
+Declaration(Class(<http://purl.obolibrary.org/obo/context>))
 Declaration(Class(<http://purl.obolibrary.org/obo/formalized_statement>))
 Declaration(Class(<http://purl.obolibrary.org/obo/graph_data_schema>))
+Declaration(Class(<http://purl.obolibrary.org/obo/nano_publication>))
 Declaration(Class(<http://purl.obolibrary.org/obo/natural_language_statement>))
+Declaration(Class(<http://purl.obolibrary.org/obo/negated>))
+Declaration(Class(<http://purl.obolibrary.org/obo/provenance>))
+Declaration(Class(<http://purl.obolibrary.org/obo/publication_info>))
+Declaration(Class(<http://purl.obolibrary.org/obo/rdf_graph>))
 Declaration(Class(<http://purl.obolibrary.org/obo/rosetta_statement_class>))
 Declaration(Class(<http://purl.obolibrary.org/obo/syntax_tree>))
 Declaration(Class(<http://purl.obolibrary.org/obo/tabular_data_schema>))
 Declaration(Class(<http://purl.obolibrary.org/obo/token_model>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/has_assertion>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/has_certainty>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/has_context>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/has_negation>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/has_provenance>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/has_publicationInfo>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/has_token_model>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/transitive_token_model_of>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/deleted_at>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/deleted_by>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/has_extractionMethod>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/has_latestVersion>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/has_templateID>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/has_visibility>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/modifiable>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/unlisted_by>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -50,6 +72,47 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Object Properties
 ############################
 
+# Object Property: <http://purl.obolibrary.org/obo/has_assertion> (has assertion)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/has_assertion> "has assertion")
+FunctionalObjectProperty(<http://purl.obolibrary.org/obo/has_assertion>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/has_assertion> <http://purl.obolibrary.org/obo/nano_publication>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/has_assertion> <http://purl.obolibrary.org/obo/assertion>)
+
+# Object Property: <http://purl.obolibrary.org/obo/has_certainty> (has certainty)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/has_certainty> "has certainty")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/has_certainty> <http://purl.obolibrary.org/obo/has_assertion>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/has_certainty> <http://purl.obolibrary.org/obo/nano_publication>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/has_certainty> <http://purl.obolibrary.org/obo/certainty>)
+
+# Object Property: <http://purl.obolibrary.org/obo/has_context> (has context)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/has_context> "has context")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/has_context> <http://purl.obolibrary.org/obo/has_assertion>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/has_context> <http://purl.obolibrary.org/obo/nano_publication>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/has_context> <http://purl.obolibrary.org/obo/context>)
+
+# Object Property: <http://purl.obolibrary.org/obo/has_negation> (has negation)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/has_negation> "has negation")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/has_negation> <http://purl.obolibrary.org/obo/has_assertion>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/has_negation> <http://purl.obolibrary.org/obo/nano_publication>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/has_negation> <http://purl.obolibrary.org/obo/negated>)
+
+# Object Property: <http://purl.obolibrary.org/obo/has_provenance> (has provenance)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/has_provenance> "has provenance")
+FunctionalObjectProperty(<http://purl.obolibrary.org/obo/has_provenance>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/has_provenance> <http://purl.obolibrary.org/obo/nano_publication>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/has_provenance> <http://purl.obolibrary.org/obo/provenance>)
+
+# Object Property: <http://purl.obolibrary.org/obo/has_publicationInfo> (has publicationInfo)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/has_publicationInfo> "has publicationInfo")
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/has_publicationInfo> <http://purl.obolibrary.org/obo/nano_publication>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/has_publicationInfo> <http://purl.obolibrary.org/obo/publication_info>)
+
 # Object Property: <http://purl.obolibrary.org/obo/has_token_model> (has token model)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/has_token_model> "has token model"@en)
@@ -64,6 +127,58 @@ ObjectPropertyDomain(<http://purl.obolibrary.org/obo/transitive_token_model_of> 
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/transitive_token_model_of> <http://purl.obolibrary.org/obo/token_model>)
 
 
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://purl.obolibrary.org/obo/deleted_at> (<http://purl.obolibrary.org/obo/deleted_at>)
+
+DataPropertyDomain(<http://purl.obolibrary.org/obo/deleted_at> <http://purl.obolibrary.org/obo/nano_publication>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/deleted_at> xsd:dateTimeStamp)
+
+# Data Property: <http://purl.obolibrary.org/obo/deleted_by> (deleted by)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/deleted_by> "deleted by")
+DataPropertyDomain(<http://purl.obolibrary.org/obo/deleted_by> <http://purl.obolibrary.org/obo/nano_publication>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/deleted_by> xsd:string)
+
+# Data Property: <http://purl.obolibrary.org/obo/has_extractionMethod> (has extractionMethod)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/has_extractionMethod> "has extractionMethod")
+DataPropertyDomain(<http://purl.obolibrary.org/obo/has_extractionMethod> <http://purl.obolibrary.org/obo/nano_publication>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/has_extractionMethod> xsd:string)
+
+# Data Property: <http://purl.obolibrary.org/obo/has_latestVersion> (has latestVersion)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/has_latestVersion> "has latestVersion")
+DataPropertyDomain(<http://purl.obolibrary.org/obo/has_latestVersion> <http://purl.obolibrary.org/obo/nano_publication>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/has_latestVersion> xsd:string)
+
+# Data Property: <http://purl.obolibrary.org/obo/has_templateID> (has templateID)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/has_templateID> "has templateID")
+DataPropertyDomain(<http://purl.obolibrary.org/obo/has_templateID> <http://purl.obolibrary.org/obo/nano_publication>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/has_templateID> xsd:string)
+
+# Data Property: <http://purl.obolibrary.org/obo/has_visibility> (has visibility)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/has_visibility> "has visibility")
+DataPropertyDomain(<http://purl.obolibrary.org/obo/has_visibility> <http://purl.obolibrary.org/obo/nano_publication>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/has_visibility> xsd:string)
+
+# Data Property: <http://purl.obolibrary.org/obo/modifiable> (modifiable)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/modifiable> "modifiable")
+DataPropertyDomain(<http://purl.obolibrary.org/obo/modifiable> <http://purl.obolibrary.org/obo/nano_publication>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/modifiable> xsd:boolean)
+
+# Data Property: <http://purl.obolibrary.org/obo/unlisted_by> (unlisted by)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/unlisted_by> "unlisted by")
+DataPropertyDomain(<http://purl.obolibrary.org/obo/unlisted_by> <http://purl.obolibrary.org/obo/nano_publication>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/unlisted_by> xsd:string)
+
+
 
 ############################
 #   Classes
@@ -72,6 +187,20 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/transitive_token_model_of> <
 # Class: <http://purl.obolibrary.org/obo/ROSETTASTMTONT_0000000> (root node)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ROSETTASTMTONT_0000000> "root node"@en)
+
+# Class: <http://purl.obolibrary.org/obo/assertion> (assertion)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/assertion> "assertion")
+SubClassOf(<http://purl.obolibrary.org/obo/assertion> <http://purl.obolibrary.org/obo/rdf_graph>)
+
+# Class: <http://purl.obolibrary.org/obo/certainty> (certainty)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/certainty> "certainty")
+SubClassOf(<http://purl.obolibrary.org/obo/certainty> <http://purl.obolibrary.org/obo/assertion>)
+
+# Class: <http://purl.obolibrary.org/obo/context> (<http://purl.obolibrary.org/obo/context>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/context> <http://purl.obolibrary.org/obo/assertion>)
 
 # Class: <http://purl.obolibrary.org/obo/formalized_statement> (formalized statement)
 
@@ -86,12 +215,36 @@ AnnotationAssertion(dce:description <http://purl.obolibrary.org/obo/graph_data_s
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/graph_data_schema> "graph data schema"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/graph_data_schema> <http://purl.obolibrary.org/obo/token_model>)
 
+# Class: <http://purl.obolibrary.org/obo/nano_publication> (nano publication)
+
+AnnotationAssertion(dce:description <http://purl.obolibrary.org/obo/nano_publication> "A nanopublication is a small knowledge graph snippet with metadata that is treated as an independent (scientific) publication. This information in a nanopublication can be about anything, for example a relation between a gene and a disease or an opinion. Nanopublications are expressed in a knowledge graph format that is formal and machine-interpretable. With nanopublications, it is possible to disseminate individual data as independent publications with or without an accompanying research article. Furthermore, because nanopublications can be attributed and cited, they provide incentives for researchers to make their data available in standard formats that drive data accessibility and interoperability."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/nano_publication> "nano publication"@en)
+
 # Class: <http://purl.obolibrary.org/obo/natural_language_statement> (natural language statement)
 
 AnnotationAssertion(dce:description <http://purl.obolibrary.org/obo/natural_language_statement> "Natural language statement is structured by syntactical and grammatical conventions into syntactic positions of phrases of a syntax tree."@en)
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/natural_language_statement> "Lars M Vogt"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/natural_language_statement> "natural language statement"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/natural_language_statement> <http://purl.obolibrary.org/obo/token_model>)
+
+# Class: <http://purl.obolibrary.org/obo/negated> (negated)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/negated> "negated")
+SubClassOf(<http://purl.obolibrary.org/obo/negated> <http://purl.obolibrary.org/obo/assertion>)
+
+# Class: <http://purl.obolibrary.org/obo/provenance> (provenance)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/provenance> "provenance")
+SubClassOf(<http://purl.obolibrary.org/obo/provenance> <http://purl.obolibrary.org/obo/rdf_graph>)
+
+# Class: <http://purl.obolibrary.org/obo/publication_info> (publication info)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/publication_info> "publication info")
+SubClassOf(<http://purl.obolibrary.org/obo/publication_info> <http://purl.obolibrary.org/obo/rdf_graph>)
+
+# Class: <http://purl.obolibrary.org/obo/rdf_graph> (rdf graph)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/rdf_graph> "rdf graph")
 
 # Class: <http://purl.obolibrary.org/obo/rosetta_statement_class> (rosetta statement class)
 
