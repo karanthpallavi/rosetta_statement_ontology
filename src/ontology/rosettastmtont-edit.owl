@@ -131,8 +131,9 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/transitive_token_model_of> <
 #   Data Properties
 ############################
 
-# Data Property: <http://purl.obolibrary.org/obo/deleted_at> (<http://purl.obolibrary.org/obo/deleted_at>)
+# Data Property: <http://purl.obolibrary.org/obo/deleted_at> (deleted at)
 
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/deleted_at> "deleted at")
 DataPropertyDomain(<http://purl.obolibrary.org/obo/deleted_at> <http://purl.obolibrary.org/obo/nano_publication>)
 DataPropertyRange(<http://purl.obolibrary.org/obo/deleted_at> xsd:dateTimeStamp)
 
@@ -198,8 +199,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/assertion> <http://purl.obolibrary.or
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/certainty> "certainty")
 SubClassOf(<http://purl.obolibrary.org/obo/certainty> <http://purl.obolibrary.org/obo/assertion>)
 
-# Class: <http://purl.obolibrary.org/obo/context> (<http://purl.obolibrary.org/obo/context>)
+# Class: <http://purl.obolibrary.org/obo/context> (context)
 
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/context> "context")
 SubClassOf(<http://purl.obolibrary.org/obo/context> <http://purl.obolibrary.org/obo/assertion>)
 
 # Class: <http://purl.obolibrary.org/obo/formalized_statement> (formalized statement)
