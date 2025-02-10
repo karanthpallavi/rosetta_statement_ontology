@@ -317,11 +317,11 @@ ObjectPropertyRange(:has_data_schema_pattern :Rosetta_Statement_model)
 
 # Object Property: :has_object_position (has object position)
 
-AnnotationAssertion(dcterms:creator :has_object_position <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> :has_object_position "2024-12-05")
-AnnotationAssertion(rdfs:label :has_object_position "A relation between a Rosetta Statement version resource that is also an instance of a Rosetta Statement class and an object position resource of a Rosetta Statement, using the Rosetta Statement semantic model full version. Object positions link to resources or literals that represent objects of the natural language statement that the Rosetta Statement models.
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :has_object_position "A relation between a Rosetta Statement version resource that is also an instance of a Rosetta Statement class and an object position resource of a Rosetta Statement, using the Rosetta Statement semantic model full version. Object positions link to resources or literals that represent objects of the natural language statement that the Rosetta Statement models.
 
 This property can be used instead of one of its subproperties if one does not want to distinguish between optional and required objects. Otherwise, the subproperties should be used.")
+AnnotationAssertion(dcterms:creator :has_object_position <https://orcid.org/0000-0002-8280-0487>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> :has_object_position "2024-12-05")
 AnnotationAssertion(rdfs:label :has_object_position "has object position")
 SubObjectPropertyOf(:has_object_position :Rosetta_Statement_property)
 ObjectPropertyDomain(:has_object_position :Rosetta_Statement_version)
