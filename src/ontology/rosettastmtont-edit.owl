@@ -125,7 +125,6 @@ Declaration(ObjectProperty(:unlisted_by))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/has_latestVersion>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/has_templateID>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/modifiable>))
-Declaration(DataProperty(<http://purl.obolibrary.org/obo/unlisted_by>))
 Declaration(DataProperty(:Rosetta_Statement_light_version_data_property))
 Declaration(DataProperty(:Rosetta_Statement_literal_property))
 Declaration(DataProperty(:Rosetta_Statement_nanopublication_data_property))
@@ -174,6 +173,7 @@ Declaration(AnnotationProperty(dcterms:creator))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/created/ROSETTASTMTONT_de650dae_6d44_42c5_91eb_dcd78e23710a>))
 ############################
 #   Annotation Properties
 ############################
@@ -189,6 +189,10 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 # Annotation Property: dcterms:title (title)
 
 AnnotationAssertion(rdfs:label dcterms:title "title")
+
+# Annotation Property: <http://purl.org/dc/terms/created/ROSETTASTMTONT_de650dae_6d44_42c5_91eb_dcd78e23710a> (created)
+
+AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/created/ROSETTASTMTONT_de650dae_6d44_42c5_91eb_dcd78e23710a> "created")
 
 
 ############################
@@ -580,7 +584,7 @@ ObjectPropertyDomain(:token_model_of <http://purl.obolibrary.org/obo/token_model
 
 # Object Property: :unlisted_by (unlisted by)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :unlisted_by "A data property indicating the person who set the visibility of a specific Rosetta Statement to \"unlisted\". Unlisted Rosetta Statements cannot be found via the search interface of the application.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :unlisted_by "\"An object property indicating the person who set the visibility of a specific Rosetta Statement to \"unlisted\". Unlisted Rosetta Statements cannot be found via the search interface of the application.\"")
 AnnotationAssertion(dcterms:creator :unlisted_by <https://orcid.org/0000-0002-8280-0487>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> :unlisted_by "2024-12-05")
 AnnotationAssertion(rdfs:label :unlisted_by "unlisted by")
@@ -623,16 +627,6 @@ SubDataPropertyOf(<http://purl.obolibrary.org/obo/modifiable> :Rosetta_Statement
 SubDataPropertyOf(<http://purl.obolibrary.org/obo/modifiable> :Rosetta_Statement_nanopublication_data_property)
 DataPropertyDomain(<http://purl.obolibrary.org/obo/modifiable> <http://purl.obolibrary.org/obo/rosetta_statement_class>)
 DataPropertyRange(<http://purl.obolibrary.org/obo/modifiable> xsd:boolean)
-
-# Data Property: <http://purl.obolibrary.org/obo/unlisted_by> (unlisted by)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/unlisted_by> "uncurated")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/unlisted_by> "A data property indicating the person who set the visibility of a specific Rosetta Statement to \"unlisted\". Unlisted Rosetta Statements cannot be found via the search interface of the application.")
-AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/unlisted_by> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/unlisted_by> "2024-12-05")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/unlisted_by> "unlisted by")
-SubDataPropertyOf(<http://purl.obolibrary.org/obo/unlisted_by> :Rosetta_Statement_nanopublication_data_property)
-DataPropertyDomain(<http://purl.obolibrary.org/obo/unlisted_by> <http://purl.obolibrary.org/obo/nano_publication>)
 
 # Data Property: :Rosetta_Statement_light_version_data_property (Rosetta Statement light version data property)
 
@@ -922,7 +916,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ROSETTASTMTONT_00
 # Class: <http://purl.obolibrary.org/obo/assertion> (assertion)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/assertion> "uncurated")
-AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/assertion> "Lars M Vogt")
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/assertion> <https://orcid.org/0000-0002-8280-0487>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/assertion> "20-11-2024")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/assertion> "assertion")
 SubClassOf(<http://purl.obolibrary.org/obo/assertion> <http://purl.obolibrary.org/obo/rdf_graph>)
@@ -940,7 +934,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/formalized_statement> :metamodel)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/nano_publication> "uncurated"@en)
 AnnotationAssertion(dce:description <http://purl.obolibrary.org/obo/nano_publication> "A nanopublication is a small knowledge graph snippet with metadata that is treated as an independent (scientific) publication. This information in a nanopublication can be about anything, for example a relation between a gene and a disease or an opinion. Nanopublications are expressed in a knowledge graph format that is formal and machine-interpretable. With nanopublications, it is possible to disseminate individual data as independent publications with or without an accompanying research article. Furthermore, because nanopublications can be attributed and cited, they provide incentives for researchers to make their data available in standard formats that drive data accessibility and interoperability."@en)
-AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/nano_publication> "Lars M Vogt"@en)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/nano_publication> <https://orcid.org/0000-0002-8280-0487>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/nano_publication> "2024-11-20")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/nano_publication> "nano publication"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/nano_publication> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
@@ -957,7 +951,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/natural_language_statement> <http://p
 # Class: <http://purl.obolibrary.org/obo/provenance> (provenance)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/provenance> "uncurated")
-AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/provenance> "Lars M Vogt")
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/provenance> <https://orcid.org/0000-0002-8280-0487>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/provenance> "20-11-2024")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/provenance> "provenance")
 SubClassOf(<http://purl.obolibrary.org/obo/provenance> <http://purl.obolibrary.org/obo/rdf_graph>)
@@ -965,7 +959,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/provenance> <http://purl.obolibrary.o
 # Class: <http://purl.obolibrary.org/obo/publication_info> (publication info)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/publication_info> "uncurated")
-AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/publication_info> "Lars M Vogt")
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/publication_info> <https://orcid.org/0000-0002-8280-0487>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/publication_info> "20-11-2024")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/publication_info> "publication info")
 SubClassOf(<http://purl.obolibrary.org/obo/publication_info> <http://purl.obolibrary.org/obo/rdf_graph>)
@@ -973,7 +967,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/publication_info> <http://purl.obolib
 # Class: <http://purl.obolibrary.org/obo/rdf_graph> (rdf graph)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/rdf_graph> "uncurated"@en)
-AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/rdf_graph> "Lars M Vogt"@en)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/rdf_graph> <https://orcid.org/0000-0002-8280-0487>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/rdf_graph> "20-11-2024")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/rdf_graph> "rdf graph")
 SubClassOf(<http://purl.obolibrary.org/obo/rdf_graph> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
