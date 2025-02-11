@@ -168,6 +168,7 @@ Declaration(NamedIndividual(:low_epistemic_certainty))
 Declaration(NamedIndividual(:medium_epistemic_certainty))
 Declaration(NamedIndividual(:unlisted))
 Declaration(NamedIndividual(<https://orcid.org/0000-0002-8280-0487>))
+Declaration(AnnotationProperty(dcterms:created))
 Declaration(AnnotationProperty(dcterms:creator))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
@@ -176,6 +177,10 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/created/ROSETTASTMTONT_
 ############################
 #   Annotation Properties
 ############################
+
+# Annotation Property: dcterms:created (dcterms:created)
+
+SubAnnotationPropertyOf(dcterms:created rdfs:comment)
 
 # Annotation Property: dcterms:description (description)
 
@@ -919,7 +924,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/formalized_statement> :metamodel)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/nano_publication> "uncurated"@en)
 AnnotationAssertion(dce:description <http://purl.obolibrary.org/obo/nano_publication> "A nanopublication is a small knowledge graph snippet with metadata that is treated as an independent (scientific) publication. This information in a nanopublication can be about anything, for example a relation between a gene and a disease or an opinion. Nanopublications are expressed in a knowledge graph format that is formal and machine-interpretable. With nanopublications, it is possible to disseminate individual data as independent publications with or without an accompanying research article. Furthermore, because nanopublications can be attributed and cited, they provide incentives for researchers to make their data available in standard formats that drive data accessibility and interoperability."@en)
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/nano_publication> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/nano_publication> "2024-11-20")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/nano_publication> "nano publication"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/nano_publication> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
