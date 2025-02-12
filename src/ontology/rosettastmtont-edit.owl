@@ -197,7 +197,7 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 # Object Property: <http://purl.obolibrary.org/obo/has_certainty> (has certainty)
 
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/has_certainty> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/has_certainty> "2024-12-05")
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/has_certainty> "2024-12-05")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/has_certainty> "has certainty")
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/has_certainty> :Rosetta_Statement_nanopublication_object_property)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/has_certainty> ObjectUnionOf(:Rosetta_Statement_version :anchor_Rosetta_Statement))
