@@ -285,8 +285,16 @@ SubObjectPropertyOf(:context :Rosetta_Statement_property)
 InverseObjectProperties(:context :has_statement)
 ObjectPropertyDomain(:context <http://purl.obolibrary.org/obo/rosetta_statement_class>)
 
-# Object Property: :deleted_by (:deleted_by)
+# Object Property: :deleted_by (deleted by)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> :deleted_by "uncurated")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :deleted_by "A property indicating the person who \"deleted\" a specific Rosetta Statement. 
+
+In the Rosetta Statement semantic model full version, a soft-delete is used and the achor Rosetta Statement resource is only labeled as \"deleted\" using this property and the data propery 'deleted at', indicating the date and time when the statement was \"deleted\". The backend of the knowledge graph application must process this information and may still provide the provenance metadata associated with the “deleted” statement, but not the statement itself.
+
+If Rosetta Statement versions should be deleted, the same property can be used for the version resources.")
+AnnotationAssertion(dcterms:creator :deleted_by <https://orcid.org/0000-0002-8280-0487>)
+AnnotationAssertion(rdfs:label :deleted_by "deleted by")
 SubObjectPropertyOf(:deleted_by :Rosetta_Statement_nanopublication_object_property)
 SubObjectPropertyOf(:deleted_by :Rosetta_Statement_property)
 ObjectPropertyDomain(:deleted_by ObjectUnionOf(:Rosetta_Statement_version :anchor_Rosetta_Statement))
