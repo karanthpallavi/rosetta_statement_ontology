@@ -173,7 +173,6 @@ Declaration(AnnotationProperty(dcterms:creator))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/created/ROSETTASTMTONT_de650dae_6d44_42c5_91eb_dcd78e23710a>))
 ############################
 #   Annotation Properties
 ############################
@@ -193,10 +192,6 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 # Annotation Property: dcterms:title (title)
 
 AnnotationAssertion(rdfs:label dcterms:title "title")
-
-# Annotation Property: <http://purl.org/dc/terms/created/ROSETTASTMTONT_de650dae_6d44_42c5_91eb_dcd78e23710a> (created)
-
-AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/created/ROSETTASTMTONT_de650dae_6d44_42c5_91eb_dcd78e23710a> "created")
 
 
 ############################
