@@ -168,7 +168,6 @@ Declaration(NamedIndividual(:low_epistemic_certainty))
 Declaration(NamedIndividual(:medium_epistemic_certainty))
 Declaration(NamedIndividual(:unlisted))
 Declaration(NamedIndividual(<https://orcid.org/0000-0002-8280-0487>))
-Declaration(AnnotationProperty(dcterms:created))
 Declaration(AnnotationProperty(dcterms:creator))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
@@ -177,9 +176,6 @@ Declaration(AnnotationProperty(dcterms:title))
 #   Annotation Properties
 ############################
 
-# Annotation Property: dcterms:created (dcterms:created)
-
-SubAnnotationPropertyOf(dcterms:created rdfs:comment)
 
 # Annotation Property: dcterms:description (description)
 
