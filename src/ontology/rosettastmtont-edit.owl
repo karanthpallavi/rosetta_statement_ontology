@@ -205,7 +205,7 @@ ObjectPropertyRange(<https://w3id.org/rosettastmtont/has_certainty> :epistemic_u
 
 # Object Property: <https://w3id.org/rosettastmtont/has_provenance> (has provenance)
 
-AnnotationAssertion(<https://w3id.org/rosettastmtont/IAO_0000114> <https://w3id.org/rosettastmtont/has_provenance> "uncurated")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/rosettastmtont/has_provenance> "uncurated")
 AnnotationAssertion(dcterms:creator <https://w3id.org/rosettastmtont/has_provenance> <https://orcid.org/0000-0002-8280-0487>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/has_provenance> "20-11-2024")
 AnnotationAssertion(rdfs:label <https://w3id.org/rosettastmtont/has_provenance> "has provenance")
