@@ -2,9 +2,9 @@
 ![Build Status](https://github.com/karanthpallavi/noname/actions/workflows/qc.yml/badge.svg)
 # Rosetta Statement Ontology
 
-Description: None
+Description: 
 
-More information can be found at http://obofoundry.org/ontology/rosettastmtont
+More information can be found at [http://obofoundry.org/ontology/rosettastmtont](https://github.com/karanthpallavi/rosetta_statement_ontology/releases/tag/v2025-02-24_1)
 
 ## Versions
 
@@ -12,8 +12,8 @@ More information can be found at http://obofoundry.org/ontology/rosettastmtont
 
 The latest version of the ontology can always be found at:
 
-http://purl.obolibrary.org/obo/rosettastmtont.owl
-
+[http://purl.obolibrary.org/obo/rosettastmtont.owl
+](https://github.com/karanthpallavi/rosetta_statement_ontology/releases/tag/v2025-02-24_1)
 (note this will not show up until the request has been approved by obofoundry.org)
 
 ### Editors' version
