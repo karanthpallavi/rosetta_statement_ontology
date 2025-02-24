@@ -1,14 +1,370 @@
 format-version: 1.2
-data-version: rosettastmtont/releases/2024-11-04/rosettastmtont-simple.owl
+data-version: rosettastmtont/releases/2025-02-24/rosettastmtont-simple.owl
+idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
+idspace: protege http://protege.stanford.edu/plugins/owl/protege# 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: rosettastmtont/rosettastmtont-simple
-property_value: owl:versionInfo "2024-11-04" xsd:string
+property_value: dc:creator https://orcid.org/0000-0002-8280-0487
+property_value: dc:title "Rosetta Statements Ontology" xsd:string
+property_value: owl:versionInfo "2024-12-05" xsd:string
+property_value: owl:versionInfo "2025-02-24" xsd:string
+property_value: protege:defaultLanguage "en" xsd:string
+property_value: terms:description "An ontology for representing Rosetta Statements in a knowledge graph. Rosetta Statements are RDF graphs that model simple English natural language statements using terms from controlled vocabularies (including ontologies)." xsd:string
 property_value: terms:description "None" xsd:string
-property_value: terms:license https://creativecommons.org/licenses/unspecified
-property_value: terms:title "Rosetta Statement Ontology" xsd:string
+property_value: terms:license http://creativecommons.org/publicdomain/zero/1.0/
 
-[Term]
-id: ROSETTASTMTONT:0000000
-name: root node
+[Typedef]
+id: Rosetta_Statement_light_version_resource_property
+name: Rosetta Statement light version object property
+comment: This is just a placeholder to organize all object properties used for documenting a Rosetta Statement in a knowledge grah using the Rosetta Statement semantic model light version approach. The property is not ment to be used.
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: Rosetta_Statement_property ! Rosetta Statement object property
+
+[Typedef]
+id: Rosetta_Statement_nanopublication_object_property
+name: Rosetta Statement nanopublication object property
+comment: This is just a placeholder to organize all object properties used for documenting a Rosetta Statement nanopublication in a knowledge grah. The property is not ment to be used.
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: Rosetta_Statement_property ! Rosetta Statement object property
+
+[Typedef]
+id: Rosetta_Statement_property
+name: Rosetta Statement object property
+comment: This is just a placeholder to organize all object properties used for documenting a Rosetta Statement in a knowledge grah. The property is not ment to be used.
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+
+[Typedef]
+id: context
+name: has context
+def: "A relation between a Rosetta Statement and some other resource in a knowledge graph that provides relevant contextual information for the statement. It is inverse to the property 'has statement'." []
+comment: An example for the use of 'has context' is when a Rosetta Statement has been taken from a scholarly publication that is represented in the knowledge graph with its own resource, the Rosetta Statement can be linked to the scholarly publication resource via 'has context' and the publication to the Rosetta Statement via 'has statement'.
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: Rosetta_Statement_nanopublication_object_property ! Rosetta Statement nanopublication object property
+is_a: Rosetta_Statement_property ! Rosetta Statement object property
+inverse_of: has_statement ! has statement
+
+[Typedef]
+id: deleted_by
+name: deleted by
+def: "A property indicating the person who \"deleted\" a specific Rosetta Statement. \n\nIn the Rosetta Statement semantic model full version, a soft-delete is used and the achor Rosetta Statement resource is only labeled as \"deleted\" using this property and the data propery 'deleted at', indicating the date and time when the statement was \"deleted\". The backend of the knowledge graph application must process this information and may still provide the provenance metadata associated with the “deleted” statement, but not the statement itself.\n\nIf Rosetta Statement versions should be deleted, the same property can be used for the version resources." []
+property_value: IAO:0000114 "uncurated" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: Rosetta_Statement_nanopublication_object_property ! Rosetta Statement nanopublication object property
+is_a: Rosetta_Statement_property ! Rosetta Statement object property
+
+[Typedef]
+id: extraction_method
+name: extraction method
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: Rosetta_Statement_nanopublication_object_property ! Rosetta Statement nanopublication object property
+
+[Typedef]
+id: has:certainty
+name: has certainty
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: Rosetta_Statement_nanopublication_object_property ! Rosetta Statement nanopublication object property
+
+[Typedef]
+id: has:provenance
+name: has provenance
+property_value: IAO:0000114 "uncurated" xsd:string
+property_value: terms:created "20-11-2024" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_functional: true
+
+[Typedef]
+id: has:publicationInfo
+name: has publicationInfo
+property_value: IAO:0000114 "uncurated" xsd:string
+property_value: terms:created "20-11-2024" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+
+[Typedef]
+id: has_data_schema_pattern
+name: has data schema pattern
+def: "A relation between a Rosetta Statement and its corresponding Rosetta Statement semantic model (i.e., the model that it instantiates)." []
+property_value: IAO:0000118 "template id" xsd:string
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: Rosetta_Statement_nanopublication_object_property ! Rosetta Statement nanopublication object property
+is_a: Rosetta_Statement_property ! Rosetta Statement object property
+
+[Typedef]
+id: has_object_position
+name: has object position
+def: "A relation between a Rosetta Statement version resource that is also an instance of a Rosetta Statement class and an object position resource of a Rosetta Statement, using the Rosetta Statement semantic model full version. Object positions link to resources or literals that represent objects of the natural language statement that the Rosetta Statement models.\n\nThis property can be used instead of one of its subproperties if one does not want to distinguish between optional and required objects. Otherwise, the subproperties should be used." []
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: Rosetta_Statement_property ! Rosetta Statement object property
+
+[Typedef]
+id: has_statement
+name: has statement
+def: "A relation between some resource in a knowledge graph and a Rosetta Statement resource, with the former providing relevant contextual information for the latter. It is inverse to the property 'has context'." []
+comment: An example for the use of 'has statement' is when a Rosetta Statement has been taken from a scholarly publication that is represented in the knowledge graph with its own resource, the publication resource can be linked to the Rosetta Statement resource via 'has statement' and the Rosetta Statement to the publication resource via 'has context'.
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: Rosetta_Statement_property ! Rosetta Statement object property
+
+[Typedef]
+id: has_subject
+name: has subject
+def: "A relation between a Rosetta Statement version resource that is also an instance of a Rosetta Statement class and a subject position resource of a Rosetta Statement, using the Rosetta Statement semantic model full version." []
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: Rosetta_Statement_property ! Rosetta Statement object property
+
+[Typedef]
+id: has_version
+name: has version
+def: "A relation between two Rosetta Statement resources in the form of 'Statement_A hasVersion Statement_B', with Statement_A being the anchor statement resource to which different statement versions (= Statement_B) are linked. The anchor statement resource represents the statement independent of its version. A knowledge graph application should always resolve anchor statements to the newest statement version available." []
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: Rosetta_Statement_property ! Rosetta Statement object property
+
+[Typedef]
+id: has_visibility
+name: has visibility
+def: "A data property indicating the date and time the visibility of a specific Rosetta Statement has been set to \"unlisted\". Unlisted Rosetta Statements cannot be found via the search interface of the application." []
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: Rosetta_Statement_nanopublication_object_property ! Rosetta Statement nanopublication object property
+is_a: Rosetta_Statement_property ! Rosetta Statement object property
+
+[Typedef]
+id: https://w3id.org/rosettastmtont/has_token_model
+name: has token model
+property_value: IAO:0000114 "uncurated" xsd:string
+property_value: terms:created "20-11-2024" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+
+[Typedef]
+id: https://w3id.org/rosettastmtont/transitive_token_model_of
+name: transitive token model of
+property_value: dc:description "Different token models of the same system-of-interest, representing the same set of properties, are connected through a transitive token-model-of relationship. This relationship can be organized into sequences of designators, each sequentially representing its corresponding element across all token models, ultimately pointing back to the original element in the system-of-interest." xsd:string
+property_value: IAO:0000114 "uncurated" xsd:string
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+
+[Typedef]
+id: optional_object_position
+name: optional object position
+def: "A relation between a Rosetta Statement version resource that is also an instance of a Rosetta Statement class and an optional object position resource of a Rosetta Statement, using the Rosetta Statement semantic model full version. Optional object positions link to resources or literals that represent optional objects (i.e. adjuncts according to the predicate-argument-structure) of the natural language statement that the Rosetta Statement models." []
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: has_object_position ! has object position
+
+[Typedef]
+id: optional_object_position_1
+name: optional object position 1
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: optional_resource_object_position ! optional resource object position
+
+[Typedef]
+id: optional_object_position_10
+name: optional object position 10
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: optional_resource_object_position ! optional resource object position
+
+[Typedef]
+id: optional_object_position_2
+name: optional object position 2
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: optional_resource_object_position ! optional resource object position
+
+[Typedef]
+id: optional_object_position_3
+name: optional object position 3
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: optional_resource_object_position ! optional resource object position
+
+[Typedef]
+id: optional_object_position_4
+name: optional object position 4
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: optional_resource_object_position ! optional resource object position
+
+[Typedef]
+id: optional_object_position_5
+name: optional object position 5
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: optional_resource_object_position ! optional resource object position
+
+[Typedef]
+id: optional_object_position_6
+name: optional object position 6
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: optional_resource_object_position ! optional resource object position
+
+[Typedef]
+id: optional_object_position_7
+name: optional object position 7
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: optional_resource_object_position ! optional resource object position
+
+[Typedef]
+id: optional_object_position_8
+name: optional object position 8
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: optional_resource_object_position ! optional resource object position
+
+[Typedef]
+id: optional_object_position_9
+name: optional object position 9
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: optional_resource_object_position ! optional resource object position
+
+[Typedef]
+id: optional_resource_object_position
+name: optional resource object position
+def: "The relation between a Rosetta Statement resource (i.e., an instance of a Rosetta Statement class) and a resource that takes an object position that is optional in a Rosetta Statement. It thus connects the statement resource with another resource that represents an object adjunct of the statement." []
+comment: The different numbered subproperties are used to be able to distinguish the different optional resource object position within a given Rosetta Statement semantic model. Each optional object position in a given Rosetta Statement can be distinguished by its specific numbered subproperty and its associated semantic role. In a Rosetta Statement semantic model, the numbered subproperty defines a corresponding optional slot that has a specific constraint.
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: resource_object_position ! resource object position light version
+
+[Typedef]
+id: required_object_position
+name: required object position
+def: "A relation between a Rosetta Statement version resource that is also an instance of a Rosetta Statement class and a required object position resource of a Rosetta Statement, using the Rosetta Statement semantic model full version. Required object positions link to resources or literals that represent required objects (i.e. arguments according to the predicate-argument-structure) of the natural language statement that the Rosetta Statement models." []
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: has_object_position ! has object position
+
+[Typedef]
+id: required_object_position_1
+name: required object position 1
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: required_resource_object_position ! required resource object position
+
+[Typedef]
+id: required_object_position_10
+name: required object position 10
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: required_resource_object_position ! required resource object position
+
+[Typedef]
+id: required_object_position_2
+name: required object position 2
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: required_resource_object_position ! required resource object position
+
+[Typedef]
+id: required_object_position_3
+name: required object position 3
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: required_resource_object_position ! required resource object position
+
+[Typedef]
+id: required_object_position_4
+name: required object position 4
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: required_resource_object_position ! required resource object position
+
+[Typedef]
+id: required_object_position_5
+name: required object position 5
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: required_resource_object_position ! required resource object position
+
+[Typedef]
+id: required_object_position_6
+name: required object position 6
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: required_resource_object_position ! required resource object position
+
+[Typedef]
+id: required_object_position_7
+name: required object position 7
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: required_resource_object_position ! required resource object position
+
+[Typedef]
+id: required_object_position_8
+name: required object position 8
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: required_resource_object_position ! required resource object position
+
+[Typedef]
+id: required_object_position_9
+name: required object position 9
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: required_resource_object_position ! required resource object position
+
+[Typedef]
+id: required_resource_object_position
+name: required resource object position
+def: "The relation between a Rosetta Statement resource (i.e., an instance of a Rosetta Statement class) and a resource that takes an object position that is required to form a semantically meaningful Rosetta Statement. It thus connects the statement resource with another resource that represents an object argument of the statement." []
+comment: The different numbered subproperties are used to be able to distinguish the different required resource object position within a given Rosetta Statement semantic model. Each required object position in a given Rosetta Statement can be distinguished by its specific numbered subproperty and its associated semantic role. In a Rosetta Statement semantic model, the numbered subproperty defines a corresponding required slot that has a specific constraint.
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: resource_object_position ! resource object position light version
+
+[Typedef]
+id: resource
+name: has resource
+def: "A relation between a subject position or object position resource and some resource that represents a subject or object of the natural language statement that the Rosetta Statement models to which the subject/object position belongs." []
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: Rosetta_Statement_property ! Rosetta Statement object property
+
+[Typedef]
+id: resource_object_position
+name: resource object position light version
+def: "A relation between a Rosetta Statement resource (i.e., an instance of a Rosetta Statement class) and a resource that takes an object position in a Rosetta Statement, using the Rosetta Statement semantic model light version." []
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: Rosetta_Statement_light_version_resource_property ! Rosetta Statement light version object property
+
+[Typedef]
+id: subject
+name: subject
+def: "A relation between a Rosetta Statement resource (i.e., an instance of a Rosetta Statement class) and a resource that takes the subject position in a Rosetta Statement, using the Rosetta Statement semantic model light version." []
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: Rosetta_Statement_light_version_resource_property ! Rosetta Statement light version object property
+
+[Typedef]
+id: token_model_of
+name: token model of
+def: "A transitive relation between a token model and its system-of-interest, i.e., the system it is modelling, or between a token model and another token model that represents the same set of properties of the system-of-interest." []
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_transitive: true
+
+[Typedef]
+id: unlisted_by
+name: unlisted by
+def: "\"An object property indicating the person who set the visibility of a specific Rosetta Statement to \"unlisted\". Unlisted Rosetta Statements cannot be found via the search interface of the application.\"" []
+property_value: terms:created "2024-12-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-8280-0487
+is_a: Rosetta_Statement_nanopublication_object_property ! Rosetta Statement nanopublication object property
+is_a: Rosetta_Statement_property ! Rosetta Statement object property
 

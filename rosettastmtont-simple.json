@@ -3,24 +3,925 @@
     "id" : "http://purl.obolibrary.org/obo/rosettastmtont/rosettastmtont-simple.json",
     "meta" : {
       "basicPropertyValues" : [ {
+        "pred" : "http://protege.stanford.edu/plugins/owl/protege#defaultLanguage",
+        "val" : "en"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/creator",
+        "val" : "https://orcid.org/0000-0002-8280-0487"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/title",
+        "val" : "Rosetta Statements Ontology"
+      }, {
+        "pred" : "http://purl.org/dc/terms/description",
+        "val" : "An ontology for representing Rosetta Statements in a knowledge graph. Rosetta Statements are RDF graphs that model simple English natural language statements using terms from controlled vocabularies (including ontologies)."
+      }, {
         "pred" : "http://purl.org/dc/terms/description",
         "val" : "None"
       }, {
         "pred" : "http://purl.org/dc/terms/license",
-        "val" : "https://creativecommons.org/licenses/unspecified"
-      }, {
-        "pred" : "http://purl.org/dc/terms/title",
-        "val" : "Rosetta Statement Ontology"
+        "val" : "http://creativecommons.org/publicdomain/zero/1.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-11-04"
+        "val" : "2024-12-05"
+      }, {
+        "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
+        "val" : "2025-02-24"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rosettastmtont/releases/2024-11-04/rosettastmtont-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/rosettastmtont/releases/2025-02-24/rosettastmtont-simple.json"
     },
     "nodes" : [ {
-      "id" : "http://purl.obolibrary.org/obo/ROSETTASTMTONT_0000000",
-      "lbl" : "root node",
-      "type" : "CLASS"
+      "id" : "https://w3id.org/rosettastmtont/has_certainty",
+      "lbl" : "has certainty",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/has_provenance",
+      "lbl" : "has provenance",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "uncurated"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "20-11-2024"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/has_publicationInfo",
+      "lbl" : "has publicationInfo",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "uncurated"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "20-11-2024"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/has_token_model",
+      "lbl" : "has token model",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "uncurated"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "20-11-2024"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/transitive_token_model_of",
+      "lbl" : "transitive token model of",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "uncurated"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/description",
+          "val" : "Different token models of the same system-of-interest, representing the same set of properties, are connected through a transitive token-model-of relationship. This relationship can be organized into sequences of designators, each sequentially representing its corresponding element across all token models, ultimately pointing back to the original element in the system-of-interest."
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_light_version_resource_property",
+      "lbl" : "Rosetta Statement light version object property",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "This is just a placeholder to organize all object properties used for documenting a Rosetta Statement in a knowledge grah using the Rosetta Statement semantic model light version approach. The property is not ment to be used." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_nanopublication_object_property",
+      "lbl" : "Rosetta Statement nanopublication object property",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "This is just a placeholder to organize all object properties used for documenting a Rosetta Statement nanopublication in a knowledge grah. The property is not ment to be used." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_property",
+      "lbl" : "Rosetta Statement object property",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "This is just a placeholder to organize all object properties used for documenting a Rosetta Statement in a knowledge grah. The property is not ment to be used." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#context",
+      "lbl" : "has context",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation between a Rosetta Statement and some other resource in a knowledge graph that provides relevant contextual information for the statement. It is inverse to the property 'has statement'."
+        },
+        "comments" : [ "An example for the use of 'has context' is when a Rosetta Statement has been taken from a scholarly publication that is represented in the knowledge graph with its own resource, the Rosetta Statement can be linked to the scholarly publication resource via 'has context' and the publication to the Rosetta Statement via 'has statement'." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#deleted_by",
+      "lbl" : "deleted by",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A property indicating the person who \"deleted\" a specific Rosetta Statement. \n\nIn the Rosetta Statement semantic model full version, a soft-delete is used and the achor Rosetta Statement resource is only labeled as \"deleted\" using this property and the data propery 'deleted at', indicating the date and time when the statement was \"deleted\". The backend of the knowledge graph application must process this information and may still provide the provenance metadata associated with the “deleted” statement, but not the statement itself.\n\nIf Rosetta Statement versions should be deleted, the same property can be used for the version resources."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "uncurated"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#extraction_method",
+      "lbl" : "extraction method",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#has_data_schema_pattern",
+      "lbl" : "has data schema pattern",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation between a Rosetta Statement and its corresponding Rosetta Statement semantic model (i.e., the model that it instantiates)."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "template id"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#has_object_position",
+      "lbl" : "has object position",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation between a Rosetta Statement version resource that is also an instance of a Rosetta Statement class and an object position resource of a Rosetta Statement, using the Rosetta Statement semantic model full version. Object positions link to resources or literals that represent objects of the natural language statement that the Rosetta Statement models.\n\nThis property can be used instead of one of its subproperties if one does not want to distinguish between optional and required objects. Otherwise, the subproperties should be used."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#has_statement",
+      "lbl" : "has statement",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation between some resource in a knowledge graph and a Rosetta Statement resource, with the former providing relevant contextual information for the latter. It is inverse to the property 'has context'."
+        },
+        "comments" : [ "An example for the use of 'has statement' is when a Rosetta Statement has been taken from a scholarly publication that is represented in the knowledge graph with its own resource, the publication resource can be linked to the Rosetta Statement resource via 'has statement' and the Rosetta Statement to the publication resource via 'has context'." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#has_subject",
+      "lbl" : "has subject",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation between a Rosetta Statement version resource that is also an instance of a Rosetta Statement class and a subject position resource of a Rosetta Statement, using the Rosetta Statement semantic model full version."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#has_version",
+      "lbl" : "has version",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation between two Rosetta Statement resources in the form of 'Statement_A hasVersion Statement_B', with Statement_A being the anchor statement resource to which different statement versions (= Statement_B) are linked. The anchor statement resource represents the statement independent of its version. A knowledge graph application should always resolve anchor statements to the newest statement version available."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#has_visibility",
+      "lbl" : "has visibility",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A data property indicating the date and time the visibility of a specific Rosetta Statement has been set to \"unlisted\". Unlisted Rosetta Statements cannot be found via the search interface of the application."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position",
+      "lbl" : "optional object position",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation between a Rosetta Statement version resource that is also an instance of a Rosetta Statement class and an optional object position resource of a Rosetta Statement, using the Rosetta Statement semantic model full version. Optional object positions link to resources or literals that represent optional objects (i.e. adjuncts according to the predicate-argument-structure) of the natural language statement that the Rosetta Statement models."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position_1",
+      "lbl" : "optional object position 1",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position_10",
+      "lbl" : "optional object position 10",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position_2",
+      "lbl" : "optional object position 2",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position_3",
+      "lbl" : "optional object position 3",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position_4",
+      "lbl" : "optional object position 4",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position_5",
+      "lbl" : "optional object position 5",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position_6",
+      "lbl" : "optional object position 6",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position_7",
+      "lbl" : "optional object position 7",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position_8",
+      "lbl" : "optional object position 8",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position_9",
+      "lbl" : "optional object position 9",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_resource_object_position",
+      "lbl" : "optional resource object position",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "The relation between a Rosetta Statement resource (i.e., an instance of a Rosetta Statement class) and a resource that takes an object position that is optional in a Rosetta Statement. It thus connects the statement resource with another resource that represents an object adjunct of the statement."
+        },
+        "comments" : [ "The different numbered subproperties are used to be able to distinguish the different optional resource object position within a given Rosetta Statement semantic model. Each optional object position in a given Rosetta Statement can be distinguished by its specific numbered subproperty and its associated semantic role. In a Rosetta Statement semantic model, the numbered subproperty defines a corresponding optional slot that has a specific constraint." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position",
+      "lbl" : "required object position",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation between a Rosetta Statement version resource that is also an instance of a Rosetta Statement class and a required object position resource of a Rosetta Statement, using the Rosetta Statement semantic model full version. Required object positions link to resources or literals that represent required objects (i.e. arguments according to the predicate-argument-structure) of the natural language statement that the Rosetta Statement models."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position_1",
+      "lbl" : "required object position 1",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position_10",
+      "lbl" : "required object position 10",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position_2",
+      "lbl" : "required object position 2",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position_3",
+      "lbl" : "required object position 3",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position_4",
+      "lbl" : "required object position 4",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position_5",
+      "lbl" : "required object position 5",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position_6",
+      "lbl" : "required object position 6",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position_7",
+      "lbl" : "required object position 7",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position_8",
+      "lbl" : "required object position 8",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position_9",
+      "lbl" : "required object position 9",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_resource_object_position",
+      "lbl" : "required resource object position",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "The relation between a Rosetta Statement resource (i.e., an instance of a Rosetta Statement class) and a resource that takes an object position that is required to form a semantically meaningful Rosetta Statement. It thus connects the statement resource with another resource that represents an object argument of the statement."
+        },
+        "comments" : [ "The different numbered subproperties are used to be able to distinguish the different required resource object position within a given Rosetta Statement semantic model. Each required object position in a given Rosetta Statement can be distinguished by its specific numbered subproperty and its associated semantic role. In a Rosetta Statement semantic model, the numbered subproperty defines a corresponding required slot that has a specific constraint." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#resource",
+      "lbl" : "has resource",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation between a subject position or object position resource and some resource that represents a subject or object of the natural language statement that the Rosetta Statement models to which the subject/object position belongs."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#resource_object_position",
+      "lbl" : "resource object position light version",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation between a Rosetta Statement resource (i.e., an instance of a Rosetta Statement class) and a resource that takes an object position in a Rosetta Statement, using the Rosetta Statement semantic model light version."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#subject",
+      "lbl" : "subject",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation between a Rosetta Statement resource (i.e., an instance of a Rosetta Statement class) and a resource that takes the subject position in a Rosetta Statement, using the Rosetta Statement semantic model light version."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#token_model_of",
+      "lbl" : "token model of",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A transitive relation between a token model and its system-of-interest, i.e., the system it is modelling, or between a token model and another token model that represents the same set of properties of the system-of-interest."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#unlisted_by",
+      "lbl" : "unlisted by",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "\"An object property indicating the person who set the visibility of a specific Rosetta Statement to \"unlisted\". Unlisted Rosetta Statements cannot be found via the search interface of the application.\""
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2024-12-05"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-8280-0487"
+        } ]
+      }
+    }, {
+      "id" : "http://protege.stanford.edu/plugins/owl/protege#defaultLanguage",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000111",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000112",
+      "lbl" : "example of usage",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "example of usage"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000114",
+      "lbl" : "has curation status",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "has curation status"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Bill Bug"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Melanie Courtot"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
+      "lbl" : "definition",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "definition"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "2012-04-05: \nBarry Smith\n\nThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.\n\nCan you fix to something like:\n\nA statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.\n\nAlan Ruttenberg\n\nYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. \n\nOn the specifics of the proposed definition:\n\nWe don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. \n\nPersonally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. \n\nWe also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "2012-04-05: \nBarry Smith\n\nThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.\n\nCan you fix to something like:\n\nA statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.\n\nAlan Ruttenberg\n\nYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. \n\nOn the specifics of the proposed definition:\n\nWe don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. \n\nPersonally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. \n\nWe also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  "
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000116",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000117",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000118",
+      "lbl" : "alternative term",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "A label for a class or property that can be used to refer to the class or property instead of the preferred rdfs:label. Alternative labels should be used to indicate community- or context-specific labels, abbreviations, shorthand forms and the like."
+        },
+        "comments" : [ "Consider re-defing to: An alternative name for a class or property which can mean the same thing as the preferred name (semantically equivalent, narrow, broad or related)." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "alternative label"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "OBO Operations committee"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000119",
+      "lbl" : "definition source",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "definition source"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/creator",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/description",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/title",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/created",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/creator",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.org/dc/terms/description",
       "lbl" : "description",
@@ -40,6 +941,191 @@
       "id" : "http://www.geneontology.org/formats/oboInOwl#SubsetProperty",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
+    } ],
+    "edges" : [ {
+      "sub" : "https://w3id.org/rosettastmtont/has_certainty",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_nanopublication_object_property"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_light_version_resource_property",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_property"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_nanopublication_object_property",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_property"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#context",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_nanopublication_object_property"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#context",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_property"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#deleted_by",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_nanopublication_object_property"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#deleted_by",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_property"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#extraction_method",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_nanopublication_object_property"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#has_data_schema_pattern",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_nanopublication_object_property"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#has_data_schema_pattern",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_property"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#has_object_position",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_property"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#has_statement",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_property"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#has_subject",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_property"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#has_version",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_property"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#has_visibility",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_nanopublication_object_property"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#has_visibility",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_property"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#has_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position_1",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position_10",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position_2",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position_3",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position_4",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position_5",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position_6",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position_7",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position_8",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_object_position_9",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_resource_object_position",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#has_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position_1",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position_10",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position_2",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position_3",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position_4",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position_5",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position_6",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position_7",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position_8",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_object_position_9",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#required_resource_object_position",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#resource_object_position"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#resource",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_property"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#resource_object_position",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_light_version_resource_property"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#subject",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_light_version_resource_property"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#unlisted_by",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_nanopublication_object_property"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#unlisted_by",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_property"
+    }, {
+      "sub" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#context",
+      "pred" : "inverseOf",
+      "obj" : "https://w3id.org/rosettastmtont/rosettastmtont.owl#has_statement"
     } ]
   } ]
 }

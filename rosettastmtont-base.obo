@@ -1,15 +1,16 @@
 format-version: 1.2
-data-version: rosettastmtont/releases/2024-11-04/rosettastmtont-base.owl
+data-version: rosettastmtont/releases/2025-02-24/rosettastmtont-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
+idspace: protege http://protege.stanford.edu/plugins/owl/protege# 
 ontology: rosettastmtont/rosettastmtont-base
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dce:title "Rosetta Statements Ontology" xsd:string
 property_value: dce:type IAO:8000001
+property_value: dcterms:description "An ontology for representing Rosetta Statements in a knowledge graph. Rosetta Statements are RDF graphs that model simple English natural language statements using terms from controlled vocabularies (including ontologies)." xsd:string
 property_value: dcterms:description "None" xsd:string
-property_value: dcterms:license https://creativecommons.org/licenses/unspecified
-property_value: dcterms:title "Rosetta Statement Ontology" xsd:string
-property_value: owl:versionInfo "2024-11-04" xsd:string
-
-[Term]
-id: ROSETTASTMTONT:0000000
-name: root node
+property_value: dcterms:license http://creativecommons.org/publicdomain/zero/1.0/
+property_value: owl:versionInfo "2024-12-05" xsd:string
+property_value: owl:versionInfo "2025-02-24" xsd:string
+property_value: protege:defaultLanguage "en" xsd:string
 

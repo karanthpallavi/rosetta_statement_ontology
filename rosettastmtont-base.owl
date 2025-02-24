@@ -7,14 +7,19 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:dcterms="http://purl.org/dc/terms/">
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rosettastmtont/rosettastmtont-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rosettastmtont/releases/2024-11-04/rosettastmtont-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rosettastmtont/releases/2025-02-24/rosettastmtont-base.owl"/>
+        <protege:defaultLanguage>en</protege:defaultLanguage>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-8280-0487"/>
+        <dce:title>Rosetta Statements Ontology</dce:title>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
+        <dcterms:description>An ontology for representing Rosetta Statements in a knowledge graph. Rosetta Statements are RDF graphs that model simple English natural language statements using terms from controlled vocabularies (including ontologies).</dcterms:description>
         <dcterms:description>None</dcterms:description>
-        <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
-        <dcterms:title>Rosetta Statement Ontology</dcterms:title>
-        <owl:versionInfo>2024-11-04</owl:versionInfo>
+        <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+        <owl:versionInfo>2024-12-05</owl:versionInfo>
+        <owl:versionInfo>2025-02-24</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -27,6 +32,24 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://protege.stanford.edu/plugins/owl/protege#defaultLanguage -->
+
+    <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
@@ -45,31 +68,6 @@
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ROSETTASTMTONT_0000000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ROSETTASTMTONT_0000000">
-        <rdfs:label xml:lang="en">root node</rdfs:label>
-    </owl:Class>
 </rdf:RDF>
 
 

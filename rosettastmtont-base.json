@@ -3,27 +3,47 @@
     "id" : "http://purl.obolibrary.org/obo/rosettastmtont/rosettastmtont-base.json",
     "meta" : {
       "basicPropertyValues" : [ {
+        "pred" : "http://protege.stanford.edu/plugins/owl/protege#defaultLanguage",
+        "val" : "en"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/creator",
+        "val" : "https://orcid.org/0000-0002-8280-0487"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/title",
+        "val" : "Rosetta Statements Ontology"
+      }, {
         "pred" : "http://purl.org/dc/elements/1.1/type",
         "val" : "http://purl.obolibrary.org/obo/IAO_8000001"
+      }, {
+        "pred" : "http://purl.org/dc/terms/description",
+        "val" : "An ontology for representing Rosetta Statements in a knowledge graph. Rosetta Statements are RDF graphs that model simple English natural language statements using terms from controlled vocabularies (including ontologies)."
       }, {
         "pred" : "http://purl.org/dc/terms/description",
         "val" : "None"
       }, {
         "pred" : "http://purl.org/dc/terms/license",
-        "val" : "https://creativecommons.org/licenses/unspecified"
-      }, {
-        "pred" : "http://purl.org/dc/terms/title",
-        "val" : "Rosetta Statement Ontology"
+        "val" : "http://creativecommons.org/publicdomain/zero/1.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-11-04"
+        "val" : "2024-12-05"
+      }, {
+        "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
+        "val" : "2025-02-24"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rosettastmtont/releases/2024-11-04/rosettastmtont-base.json"
+      "version" : "http://purl.obolibrary.org/obo/rosettastmtont/releases/2025-02-24/rosettastmtont-base.json"
     },
     "nodes" : [ {
-      "id" : "http://purl.obolibrary.org/obo/ROSETTASTMTONT_0000000",
-      "lbl" : "root node",
-      "type" : "CLASS"
+      "id" : "http://protege.stanford.edu/plugins/owl/protege#defaultLanguage",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/creator",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/title",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.org/dc/elements/1.1/type",
       "type" : "PROPERTY",
@@ -34,10 +54,6 @@
       "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.org/dc/terms/license",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
-      "id" : "http://purl.org/dc/terms/title",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     } ]
