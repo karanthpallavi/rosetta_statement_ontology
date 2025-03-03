@@ -1,19 +1,14 @@
 Level	Rule Name	Subject	Property	Value
 WARN	missing_definition	dc:description	IAO:0000115	
 WARN	missing_definition	dc:license	IAO:0000115	
-WARN	missing_definition	dc:title	IAO:0000115	
-WARN	missing_definition	https://w3id.org/rosettastmtont/ROSETTASTMTONT_0000000	IAO:0000115	
-WARN	missing_definition	https://w3id.org/rosettastmtont/assertion	IAO:0000115	
+WARN	missing_definition	https://orcid.org/0000-0002-1595-3213	IAO:0000115	
+WARN	missing_definition	https://orcid.org/0009-0007-5934-1087	IAO:0000115	
 WARN	missing_definition	https://w3id.org/rosettastmtont/has_certainty	IAO:0000115	
 WARN	missing_definition	https://w3id.org/rosettastmtont/has_latestVersion	IAO:0000115	
 WARN	missing_definition	https://w3id.org/rosettastmtont/has_provenance	IAO:0000115	
 WARN	missing_definition	https://w3id.org/rosettastmtont/has_publicationInfo	IAO:0000115	
 WARN	missing_definition	https://w3id.org/rosettastmtont/has_templateID	IAO:0000115	
 WARN	missing_definition	https://w3id.org/rosettastmtont/has_token_model	IAO:0000115	
-WARN	missing_definition	https://w3id.org/rosettastmtont/nano_publication	IAO:0000115	
-WARN	missing_definition	https://w3id.org/rosettastmtont/provenance	IAO:0000115	
-WARN	missing_definition	https://w3id.org/rosettastmtont/publication_info	IAO:0000115	
-WARN	missing_definition	https://w3id.org/rosettastmtont/rdf_graph	IAO:0000115	
 WARN	missing_definition	https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_light_version_data_property	IAO:0000115	
 WARN	missing_definition	https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_light_version_resource_property	IAO:0000115	
 WARN	missing_definition	https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_literal_property	IAO:0000115	
@@ -65,4 +60,3 @@ WARN	missing_definition	https://w3id.org/rosettastmtont/transitive_token_model_o
 INFO	lowercase_definition	https://w3id.org/rosettastmtont/rosettastmtont.owl#symmetric	IAO:0000115	'True' indicates that the relation in the Rosetta Statement between the subject and the object that belongs to this object position is symmetric.
 INFO	lowercase_definition	https://w3id.org/rosettastmtont/rosettastmtont.owl#transitive	IAO:0000115	'True' indicates that the relation in the Rosetta Statement between the subject and the object that belongs to this object position is transitive.
 INFO	lowercase_definition	https://w3id.org/rosettastmtont/rosettastmtont.owl#unlisted_by	IAO:0000115	"\""An object property indicating the person who set the visibility of a specific Rosetta Statement to \""unlisted\"". Unlisted Rosetta Statements cannot be found via the search interface of the application.\"""
-INFO	missing_superclass	https://w3id.org/rosettastmtont/ROSETTASTMTONT_0000000	rdfs:subClassOf	

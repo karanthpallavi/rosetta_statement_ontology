@@ -15,21 +15,17 @@ Import(<http://purl.obolibrary.org/obo/rosettastmtont/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rosettastmtont/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rosettastmtont/imports/ro_import.owl>)
 Annotation(<http://protege.stanford.edu/plugins/owl/protege#defaultLanguage> "en")
-Annotation(dce:creator <https://orcid.org/0000-0002-8280-0487>)
-Annotation(dce:title "Rosetta Statements Ontology")
+Annotation(dcterms:contributor <https://orcid.org/0000-0002-1595-3213>)
+Annotation(dcterms:contributor <https://orcid.org/0009-0007-5934-1087>)
+Annotation(dcterms:creator <https://orcid.org/0000-0002-8280-0487>)
 Annotation(dcterms:description "An ontology for representing Rosetta Statements in a knowledge graph. Rosetta Statements are RDF graphs that model simple English natural language statements using terms from controlled vocabularies (including ontologies).")
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/>)
+Annotation(dcterms:title "Rosetta Statements Ontology")
 Annotation(owl:versionInfo "2024-12-05")
 
-Declaration(Class(<https://w3id.org/rosettastmtont/ROSETTASTMTONT_0000000>))
-Declaration(Class(<https://w3id.org/rosettastmtont/assertion>))
 Declaration(Class(<https://w3id.org/rosettastmtont/formalized_statement>))
-Declaration(Class(<https://w3id.org/rosettastmtont/nano_publication>))
 Declaration(Class(<https://w3id.org/rosettastmtont/natural_language_statement>))
-Declaration(Class(<https://w3id.org/rosettastmtont/provenance>))
-Declaration(Class(<https://w3id.org/rosettastmtont/publication_info>))
-Declaration(Class(<https://w3id.org/rosettastmtont/rdf_graph>))
 Declaration(Class(<https://w3id.org/rosettastmtont/rosetta_statement_class>))
 Declaration(Class(<https://w3id.org/rosettastmtont/syntax_tree>))
 Declaration(Class(<https://w3id.org/rosettastmtont/tabular_data_schema>))
@@ -158,6 +154,9 @@ Declaration(DataProperty(:required_literal_object_position_8))
 Declaration(DataProperty(:required_literal_object_position_9))
 Declaration(DataProperty(:symmetric))
 Declaration(DataProperty(:transitive))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ROSETTASTMTONT_008e8746_e960_418b_b025_69970e3738ec>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ROSETTASTMTONT_6f79aafc_333b_462c_adc3_6f2a281035f6>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0002-8280-0487>))
 Declaration(NamedIndividual(:Rosetta_Statement_metamodel_full_version))
 Declaration(NamedIndividual(:Rosetta_Statement_metamodel_light_version))
 Declaration(NamedIndividual(:default))
@@ -167,7 +166,7 @@ Declaration(NamedIndividual(:high_epistemic_certainty))
 Declaration(NamedIndividual(:low_epistemic_certainty))
 Declaration(NamedIndividual(:medium_epistemic_certainty))
 Declaration(NamedIndividual(:unlisted))
-Declaration(NamedIndividual(<https://orcid.org/0000-0002-8280-0487>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/ROSETTASTMTONT_eae42d3c_1b9a_46a8_83ce_179462b28540>))
 Declaration(AnnotationProperty(dcterms:creator))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
@@ -176,6 +175,11 @@ Declaration(AnnotationProperty(dcterms:title))
 #   Annotation Properties
 ############################
 
+# Annotation Property: <http://purl.obolibrary.org/obo/ROSETTASTMTONT_eae42d3c_1b9a_46a8_83ce_179462b28540> (creator)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ROSETTASTMTONT_eae42d3c_1b9a_46a8_83ce_179462b28540> "An entity responsible for making the resource.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/ROSETTASTMTONT_eae42d3c_1b9a_46a8_83ce_179462b28540> "Recommended practice is to identify the creator with a URI. If this is not possible or feasible, a literal value that identifies the creator may be provided.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ROSETTASTMTONT_eae42d3c_1b9a_46a8_83ce_179462b28540> "creator")
 
 # Annotation Property: dcterms:description (description)
 
@@ -187,6 +191,7 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 
 # Annotation Property: dcterms:title (title)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> dcterms:title "A name given to the resource.")
 AnnotationAssertion(rdfs:label dcterms:title "title")
 
 
@@ -196,8 +201,8 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 # Object Property: <https://w3id.org/rosettastmtont/has_certainty> (has certainty)
 
+AnnotationAssertion(dcterms:created <https://w3id.org/rosettastmtont/has_certainty> "2024-12-05")
 AnnotationAssertion(dcterms:creator <https://w3id.org/rosettastmtont/has_certainty> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/has_certainty> "2024-12-05")
 AnnotationAssertion(rdfs:label <https://w3id.org/rosettastmtont/has_certainty> "has certainty")
 SubObjectPropertyOf(<https://w3id.org/rosettastmtont/has_certainty> :Rosetta_Statement_nanopublication_object_property)
 ObjectPropertyDomain(<https://w3id.org/rosettastmtont/has_certainty> ObjectUnionOf(:Rosetta_Statement_version :anchor_Rosetta_Statement))
@@ -206,27 +211,23 @@ ObjectPropertyRange(<https://w3id.org/rosettastmtont/has_certainty> :epistemic_u
 # Object Property: <https://w3id.org/rosettastmtont/has_provenance> (has provenance)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/rosettastmtont/has_provenance> "uncurated")
+AnnotationAssertion(dcterms:created <https://w3id.org/rosettastmtont/has_provenance> "20-11-2024")
 AnnotationAssertion(dcterms:creator <https://w3id.org/rosettastmtont/has_provenance> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/has_provenance> "20-11-2024")
 AnnotationAssertion(rdfs:label <https://w3id.org/rosettastmtont/has_provenance> "has provenance")
 FunctionalObjectProperty(<https://w3id.org/rosettastmtont/has_provenance>)
-ObjectPropertyDomain(<https://w3id.org/rosettastmtont/has_provenance> <https://w3id.org/rosettastmtont/nano_publication>)
-ObjectPropertyRange(<https://w3id.org/rosettastmtont/has_provenance> <https://w3id.org/rosettastmtont/provenance>)
 
 # Object Property: <https://w3id.org/rosettastmtont/has_publicationInfo> (has publicationInfo)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/rosettastmtont/has_publicationInfo> "uncurated")
+AnnotationAssertion(dcterms:created <https://w3id.org/rosettastmtont/has_publicationInfo> "20-11-2024")
 AnnotationAssertion(dcterms:creator <https://w3id.org/rosettastmtont/has_publicationInfo> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/has_publicationInfo> "20-11-2024")
 AnnotationAssertion(rdfs:label <https://w3id.org/rosettastmtont/has_publicationInfo> "has publicationInfo")
-ObjectPropertyDomain(<https://w3id.org/rosettastmtont/has_publicationInfo> <https://w3id.org/rosettastmtont/nano_publication>)
-ObjectPropertyRange(<https://w3id.org/rosettastmtont/has_publicationInfo> <https://w3id.org/rosettastmtont/publication_info>)
 
 # Object Property: <https://w3id.org/rosettastmtont/has_token_model> (has token model)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/rosettastmtont/has_token_model> "uncurated")
+AnnotationAssertion(dcterms:created <https://w3id.org/rosettastmtont/has_token_model> "20-11-2024")
 AnnotationAssertion(dcterms:creator <https://w3id.org/rosettastmtont/has_token_model> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/has_token_model> "20-11-2024")
 AnnotationAssertion(rdfs:label <https://w3id.org/rosettastmtont/has_token_model> "has token model"@en)
 ObjectPropertyDomain(<https://w3id.org/rosettastmtont/has_token_model> <https://w3id.org/rosettastmtont/rosetta_statement_class>)
 ObjectPropertyRange(<https://w3id.org/rosettastmtont/has_token_model> <https://w3id.org/rosettastmtont/token_model>)
@@ -235,40 +236,40 @@ ObjectPropertyRange(<https://w3id.org/rosettastmtont/has_token_model> <https://w
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/rosettastmtont/transitive_token_model_of> "uncurated")
 AnnotationAssertion(dce:description <https://w3id.org/rosettastmtont/transitive_token_model_of> "Different token models of the same system-of-interest, representing the same set of properties, are connected through a transitive token-model-of relationship. This relationship can be organized into sequences of designators, each sequentially representing its corresponding element across all token models, ultimately pointing back to the original element in the system-of-interest."@en)
+AnnotationAssertion(dcterms:created <https://w3id.org/rosettastmtont/transitive_token_model_of> "2024-12-05")
 AnnotationAssertion(dcterms:creator <https://w3id.org/rosettastmtont/transitive_token_model_of> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/transitive_token_model_of> "2024-12-05")
 AnnotationAssertion(rdfs:label <https://w3id.org/rosettastmtont/transitive_token_model_of> "transitive token model of"@en)
 ObjectPropertyDomain(<https://w3id.org/rosettastmtont/transitive_token_model_of> <https://w3id.org/rosettastmtont/token_model>)
 ObjectPropertyRange(<https://w3id.org/rosettastmtont/transitive_token_model_of> <https://w3id.org/rosettastmtont/token_model>)
 
 # Object Property: :Rosetta_Statement_light_version_resource_property (Rosetta Statement light version object property)
 
+AnnotationAssertion(dcterms:created :Rosetta_Statement_light_version_resource_property "2024-12-05")
 AnnotationAssertion(dcterms:creator :Rosetta_Statement_light_version_resource_property <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :Rosetta_Statement_light_version_resource_property "2024-12-05")
 AnnotationAssertion(rdfs:comment :Rosetta_Statement_light_version_resource_property "This is just a placeholder to organize all object properties used for documenting a Rosetta Statement in a knowledge grah using the Rosetta Statement semantic model light version approach. The property is not ment to be used.")
 AnnotationAssertion(rdfs:label :Rosetta_Statement_light_version_resource_property "Rosetta Statement light version object property")
 SubObjectPropertyOf(:Rosetta_Statement_light_version_resource_property :Rosetta_Statement_property)
 
 # Object Property: :Rosetta_Statement_nanopublication_object_property (Rosetta Statement nanopublication object property)
 
+AnnotationAssertion(dcterms:created :Rosetta_Statement_nanopublication_object_property "2024-12-05")
 AnnotationAssertion(dcterms:creator :Rosetta_Statement_nanopublication_object_property <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :Rosetta_Statement_nanopublication_object_property "2024-12-05")
 AnnotationAssertion(rdfs:comment :Rosetta_Statement_nanopublication_object_property "This is just a placeholder to organize all object properties used for documenting a Rosetta Statement nanopublication in a knowledge grah. The property is not ment to be used.")
 AnnotationAssertion(rdfs:label :Rosetta_Statement_nanopublication_object_property "Rosetta Statement nanopublication object property")
 SubObjectPropertyOf(:Rosetta_Statement_nanopublication_object_property :Rosetta_Statement_property)
 
 # Object Property: :Rosetta_Statement_property (Rosetta Statement object property)
 
+AnnotationAssertion(dcterms:created :Rosetta_Statement_property "2024-12-05")
 AnnotationAssertion(dcterms:creator :Rosetta_Statement_property <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :Rosetta_Statement_property "2024-12-05")
 AnnotationAssertion(rdfs:comment :Rosetta_Statement_property "This is just a placeholder to organize all object properties used for documenting a Rosetta Statement in a knowledge grah. The property is not ment to be used.")
 AnnotationAssertion(rdfs:label :Rosetta_Statement_property "Rosetta Statement object property")
 
 # Object Property: :context (has context)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :context "A relation between a Rosetta Statement and some other resource in a knowledge graph that provides relevant contextual information for the statement. It is inverse to the property 'has statement'.")
+AnnotationAssertion(dcterms:created :context "2024-12-05")
 AnnotationAssertion(dcterms:creator :context <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :context "2024-12-05")
 AnnotationAssertion(rdfs:comment :context "An example for the use of 'has context' is when a Rosetta Statement has been taken from a scholarly publication that is represented in the knowledge graph with its own resource, the Rosetta Statement can be linked to the scholarly publication resource via 'has context' and the publication to the Rosetta Statement via 'has statement'.")
 AnnotationAssertion(rdfs:label :context "has context")
 SubObjectPropertyOf(:context :Rosetta_Statement_nanopublication_object_property)
@@ -292,8 +293,8 @@ ObjectPropertyDomain(:deleted_by ObjectUnionOf(:Rosetta_Statement_version :ancho
 
 # Object Property: :extraction_method (extraction method)
 
+AnnotationAssertion(dcterms:created :extraction_method "2024-12-05")
 AnnotationAssertion(dcterms:creator :extraction_method <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :extraction_method "2024-12-05")
 AnnotationAssertion(rdfs:label :extraction_method "extraction method")
 SubObjectPropertyOf(:extraction_method :Rosetta_Statement_nanopublication_object_property)
 
@@ -301,8 +302,8 @@ SubObjectPropertyOf(:extraction_method :Rosetta_Statement_nanopublication_object
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :has_data_schema_pattern "A relation between a Rosetta Statement and its corresponding Rosetta Statement semantic model (i.e., the model that it instantiates).")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> :has_data_schema_pattern "template id")
+AnnotationAssertion(dcterms:created :has_data_schema_pattern "2024-12-05")
 AnnotationAssertion(dcterms:creator :has_data_schema_pattern <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :has_data_schema_pattern "2024-12-05")
 AnnotationAssertion(rdfs:label :has_data_schema_pattern "has data schema pattern")
 SubObjectPropertyOf(:has_data_schema_pattern :Rosetta_Statement_nanopublication_object_property)
 SubObjectPropertyOf(:has_data_schema_pattern :Rosetta_Statement_property)
@@ -314,8 +315,8 @@ ObjectPropertyRange(:has_data_schema_pattern :Rosetta_Statement_model)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :has_object_position "A relation between a Rosetta Statement version resource that is also an instance of a Rosetta Statement class and an object position resource of a Rosetta Statement, using the Rosetta Statement semantic model full version. Object positions link to resources or literals that represent objects of the natural language statement that the Rosetta Statement models.
 
 This property can be used instead of one of its subproperties if one does not want to distinguish between optional and required objects. Otherwise, the subproperties should be used.")
+AnnotationAssertion(dcterms:created :has_object_position "2024-12-05")
 AnnotationAssertion(dcterms:creator :has_object_position <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :has_object_position "2024-12-05")
 AnnotationAssertion(rdfs:label :has_object_position "has object position")
 SubObjectPropertyOf(:has_object_position :Rosetta_Statement_property)
 ObjectPropertyDomain(:has_object_position :Rosetta_Statement_version)
@@ -324,8 +325,8 @@ ObjectPropertyRange(:has_object_position :object_position)
 # Object Property: :has_statement (has statement)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :has_statement "A relation between some resource in a knowledge graph and a Rosetta Statement resource, with the former providing relevant contextual information for the latter. It is inverse to the property 'has context'.")
+AnnotationAssertion(dcterms:created :has_statement "2024-12-05")
 AnnotationAssertion(dcterms:creator :has_statement <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :has_statement "2024-12-05")
 AnnotationAssertion(rdfs:comment :has_statement "An example for the use of 'has statement' is when a Rosetta Statement has been taken from a scholarly publication that is represented in the knowledge graph with its own resource, the publication resource can be linked to the Rosetta Statement resource via 'has statement' and the Rosetta Statement to the publication resource via 'has context'.")
 AnnotationAssertion(rdfs:label :has_statement "has statement")
 SubObjectPropertyOf(:has_statement :Rosetta_Statement_property)
@@ -334,8 +335,8 @@ ObjectPropertyRange(:has_statement :Rosetta_Statement_model)
 # Object Property: :has_subject (has subject)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :has_subject "A relation between a Rosetta Statement version resource that is also an instance of a Rosetta Statement class and a subject position resource of a Rosetta Statement, using the Rosetta Statement semantic model full version.")
+AnnotationAssertion(dcterms:created :has_subject "2024-12-05")
 AnnotationAssertion(dcterms:creator :has_subject <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :has_subject "2024-12-05")
 AnnotationAssertion(rdfs:label :has_subject "has subject")
 SubObjectPropertyOf(:has_subject :Rosetta_Statement_property)
 ObjectPropertyDomain(:has_subject :Rosetta_Statement_version)
@@ -344,8 +345,8 @@ ObjectPropertyRange(:has_subject :subject_position)
 # Object Property: :has_version (has version)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :has_version "A relation between two Rosetta Statement resources in the form of 'Statement_A hasVersion Statement_B', with Statement_A being the anchor statement resource to which different statement versions (= Statement_B) are linked. The anchor statement resource represents the statement independent of its version. A knowledge graph application should always resolve anchor statements to the newest statement version available.")
+AnnotationAssertion(dcterms:created :has_version "2024-12-05")
 AnnotationAssertion(dcterms:creator :has_version <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :has_version "2024-12-05")
 AnnotationAssertion(rdfs:label :has_version "has version")
 SubObjectPropertyOf(:has_version :Rosetta_Statement_property)
 ObjectPropertyDomain(:has_version <https://w3id.org/rosettastmtont/rosetta_statement_class>)
@@ -354,8 +355,8 @@ ObjectPropertyRange(:has_version <https://w3id.org/rosettastmtont/rosetta_statem
 # Object Property: :has_visibility (has visibility)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :has_visibility "A data property indicating the date and time the visibility of a specific Rosetta Statement has been set to \"unlisted\". Unlisted Rosetta Statements cannot be found via the search interface of the application.")
+AnnotationAssertion(dcterms:created :has_visibility "2024-12-05")
 AnnotationAssertion(dcterms:creator :has_visibility <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :has_visibility "2024-12-05")
 AnnotationAssertion(rdfs:label :has_visibility "has visibility")
 SubObjectPropertyOf(:has_visibility :Rosetta_Statement_nanopublication_object_property)
 SubObjectPropertyOf(:has_visibility :Rosetta_Statement_property)
@@ -365,8 +366,8 @@ ObjectPropertyRange(:has_visibility :visibility_specification)
 # Object Property: :optional_object_position (optional object position)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :optional_object_position "A relation between a Rosetta Statement version resource that is also an instance of a Rosetta Statement class and an optional object position resource of a Rosetta Statement, using the Rosetta Statement semantic model full version. Optional object positions link to resources or literals that represent optional objects (i.e. adjuncts according to the predicate-argument-structure) of the natural language statement that the Rosetta Statement models.")
+AnnotationAssertion(dcterms:created :optional_object_position "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_object_position <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_object_position "2024-12-05")
 AnnotationAssertion(rdfs:label :optional_object_position "optional object position")
 SubObjectPropertyOf(:optional_object_position :has_object_position)
 ObjectPropertyDomain(:optional_object_position :Rosetta_Statement_version)
@@ -374,79 +375,79 @@ ObjectPropertyRange(:optional_object_position :object_position)
 
 # Object Property: :optional_object_position_1 (optional object position 1)
 
+AnnotationAssertion(dcterms:created :optional_object_position_1 "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_object_position_1 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_object_position_1 "2024-12-05")
 AnnotationAssertion(rdfs:label :optional_object_position_1 "optional object position 1")
 SubObjectPropertyOf(:optional_object_position_1 :optional_resource_object_position)
 
 # Object Property: :optional_object_position_10 (optional object position 10)
 
+AnnotationAssertion(dcterms:created :optional_object_position_10 "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_object_position_10 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_object_position_10 "2024-12-05")
 AnnotationAssertion(rdfs:label :optional_object_position_10 "optional object position 10")
 SubObjectPropertyOf(:optional_object_position_10 :optional_resource_object_position)
 
 # Object Property: :optional_object_position_2 (optional object position 2)
 
+AnnotationAssertion(dcterms:created :optional_object_position_2 "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_object_position_2 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_object_position_2 "2024-12-05")
 AnnotationAssertion(rdfs:label :optional_object_position_2 "optional object position 2")
 SubObjectPropertyOf(:optional_object_position_2 :optional_resource_object_position)
 
 # Object Property: :optional_object_position_3 (optional object position 3)
 
+AnnotationAssertion(dcterms:created :optional_object_position_3 "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_object_position_3 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_object_position_3 "2024-12-05")
 AnnotationAssertion(rdfs:label :optional_object_position_3 "optional object position 3")
 SubObjectPropertyOf(:optional_object_position_3 :optional_resource_object_position)
 
 # Object Property: :optional_object_position_4 (optional object position 4)
 
+AnnotationAssertion(dcterms:created :optional_object_position_4 "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_object_position_4 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_object_position_4 "2024-12-05")
 AnnotationAssertion(rdfs:label :optional_object_position_4 "optional object position 4")
 SubObjectPropertyOf(:optional_object_position_4 :optional_resource_object_position)
 
 # Object Property: :optional_object_position_5 (optional object position 5)
 
+AnnotationAssertion(dcterms:created :optional_object_position_5 "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_object_position_5 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_object_position_5 "2024-12-05")
 AnnotationAssertion(rdfs:label :optional_object_position_5 "optional object position 5")
 SubObjectPropertyOf(:optional_object_position_5 :optional_resource_object_position)
 
 # Object Property: :optional_object_position_6 (optional object position 6)
 
+AnnotationAssertion(dcterms:created :optional_object_position_6 "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_object_position_6 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_object_position_6 "2024-12-05")
 AnnotationAssertion(rdfs:label :optional_object_position_6 "optional object position 6")
 SubObjectPropertyOf(:optional_object_position_6 :optional_resource_object_position)
 
 # Object Property: :optional_object_position_7 (optional object position 7)
 
+AnnotationAssertion(dcterms:created :optional_object_position_7 "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_object_position_7 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_object_position_7 "2024-12-05")
 AnnotationAssertion(rdfs:label :optional_object_position_7 "optional object position 7")
 SubObjectPropertyOf(:optional_object_position_7 :optional_resource_object_position)
 
 # Object Property: :optional_object_position_8 (optional object position 8)
 
+AnnotationAssertion(dcterms:created :optional_object_position_8 "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_object_position_8 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_object_position_8 "2024-12-05")
 AnnotationAssertion(rdfs:label :optional_object_position_8 "optional object position 8")
 SubObjectPropertyOf(:optional_object_position_8 :optional_resource_object_position)
 
 # Object Property: :optional_object_position_9 (optional object position 9)
 
+AnnotationAssertion(dcterms:created :optional_object_position_9 "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_object_position_9 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_object_position_9 "2024-12-05")
 AnnotationAssertion(rdfs:label :optional_object_position_9 "optional object position 9")
 SubObjectPropertyOf(:optional_object_position_9 :optional_resource_object_position)
 
 # Object Property: :optional_resource_object_position (optional resource object position)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :optional_resource_object_position "The relation between a Rosetta Statement resource (i.e., an instance of a Rosetta Statement class) and a resource that takes an object position that is optional in a Rosetta Statement. It thus connects the statement resource with another resource that represents an object adjunct of the statement.")
+AnnotationAssertion(dcterms:created :optional_resource_object_position "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_resource_object_position <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_resource_object_position "2024-12-05")
 AnnotationAssertion(rdfs:comment :optional_resource_object_position "The different numbered subproperties are used to be able to distinguish the different optional resource object position within a given Rosetta Statement semantic model. Each optional object position in a given Rosetta Statement can be distinguished by its specific numbered subproperty and its associated semantic role. In a Rosetta Statement semantic model, the numbered subproperty defines a corresponding optional slot that has a specific constraint.")
 AnnotationAssertion(rdfs:label :optional_resource_object_position "optional resource object position")
 SubObjectPropertyOf(:optional_resource_object_position :resource_object_position)
@@ -454,8 +455,8 @@ SubObjectPropertyOf(:optional_resource_object_position :resource_object_position
 # Object Property: :required_object_position (required object position)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :required_object_position "A relation between a Rosetta Statement version resource that is also an instance of a Rosetta Statement class and a required object position resource of a Rosetta Statement, using the Rosetta Statement semantic model full version. Required object positions link to resources or literals that represent required objects (i.e. arguments according to the predicate-argument-structure) of the natural language statement that the Rosetta Statement models.")
+AnnotationAssertion(dcterms:created :required_object_position "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_object_position <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_object_position "2024-12-05")
 AnnotationAssertion(rdfs:label :required_object_position "required object position")
 SubObjectPropertyOf(:required_object_position :has_object_position)
 ObjectPropertyDomain(:required_object_position :Rosetta_Statement_version)
@@ -463,79 +464,79 @@ ObjectPropertyRange(:required_object_position :object_position)
 
 # Object Property: :required_object_position_1 (required object position 1)
 
+AnnotationAssertion(dcterms:created :required_object_position_1 "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_object_position_1 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_object_position_1 "2024-12-05")
 AnnotationAssertion(rdfs:label :required_object_position_1 "required object position 1")
 SubObjectPropertyOf(:required_object_position_1 :required_resource_object_position)
 
 # Object Property: :required_object_position_10 (required object position 10)
 
+AnnotationAssertion(dcterms:created :required_object_position_10 "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_object_position_10 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_object_position_10 "2024-12-05")
 AnnotationAssertion(rdfs:label :required_object_position_10 "required object position 10")
 SubObjectPropertyOf(:required_object_position_10 :required_resource_object_position)
 
 # Object Property: :required_object_position_2 (required object position 2)
 
+AnnotationAssertion(dcterms:created :required_object_position_2 "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_object_position_2 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_object_position_2 "2024-12-05")
 AnnotationAssertion(rdfs:label :required_object_position_2 "required object position 2")
 SubObjectPropertyOf(:required_object_position_2 :required_resource_object_position)
 
 # Object Property: :required_object_position_3 (required object position 3)
 
+AnnotationAssertion(dcterms:created :required_object_position_3 "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_object_position_3 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_object_position_3 "2024-12-05")
 AnnotationAssertion(rdfs:label :required_object_position_3 "required object position 3")
 SubObjectPropertyOf(:required_object_position_3 :required_resource_object_position)
 
 # Object Property: :required_object_position_4 (required object position 4)
 
+AnnotationAssertion(dcterms:created :required_object_position_4 "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_object_position_4 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_object_position_4 "2024-12-05")
 AnnotationAssertion(rdfs:label :required_object_position_4 "required object position 4")
 SubObjectPropertyOf(:required_object_position_4 :required_resource_object_position)
 
 # Object Property: :required_object_position_5 (required object position 5)
 
+AnnotationAssertion(dcterms:created :required_object_position_5 "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_object_position_5 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_object_position_5 "2024-12-05")
 AnnotationAssertion(rdfs:label :required_object_position_5 "required object position 5")
 SubObjectPropertyOf(:required_object_position_5 :required_resource_object_position)
 
 # Object Property: :required_object_position_6 (required object position 6)
 
+AnnotationAssertion(dcterms:created :required_object_position_6 "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_object_position_6 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_object_position_6 "2024-12-05")
 AnnotationAssertion(rdfs:label :required_object_position_6 "required object position 6")
 SubObjectPropertyOf(:required_object_position_6 :required_resource_object_position)
 
 # Object Property: :required_object_position_7 (required object position 7)
 
+AnnotationAssertion(dcterms:created :required_object_position_7 "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_object_position_7 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_object_position_7 "2024-12-05")
 AnnotationAssertion(rdfs:label :required_object_position_7 "required object position 7")
 SubObjectPropertyOf(:required_object_position_7 :required_resource_object_position)
 
 # Object Property: :required_object_position_8 (required object position 8)
 
+AnnotationAssertion(dcterms:created :required_object_position_8 "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_object_position_8 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_object_position_8 "2024-12-05")
 AnnotationAssertion(rdfs:label :required_object_position_8 "required object position 8")
 SubObjectPropertyOf(:required_object_position_8 :required_resource_object_position)
 
 # Object Property: :required_object_position_9 (required object position 9)
 
+AnnotationAssertion(dcterms:created :required_object_position_9 "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_object_position_9 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_object_position_9 "2024-12-05")
 AnnotationAssertion(rdfs:label :required_object_position_9 "required object position 9")
 SubObjectPropertyOf(:required_object_position_9 :required_resource_object_position)
 
 # Object Property: :required_resource_object_position (required resource object position)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :required_resource_object_position "The relation between a Rosetta Statement resource (i.e., an instance of a Rosetta Statement class) and a resource that takes an object position that is required to form a semantically meaningful Rosetta Statement. It thus connects the statement resource with another resource that represents an object argument of the statement.")
+AnnotationAssertion(dcterms:created :required_resource_object_position "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_resource_object_position <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_resource_object_position "2024-12-05")
 AnnotationAssertion(rdfs:comment :required_resource_object_position "The different numbered subproperties are used to be able to distinguish the different required resource object position within a given Rosetta Statement semantic model. Each required object position in a given Rosetta Statement can be distinguished by its specific numbered subproperty and its associated semantic role. In a Rosetta Statement semantic model, the numbered subproperty defines a corresponding required slot that has a specific constraint.")
 AnnotationAssertion(rdfs:label :required_resource_object_position "required resource object position")
 SubObjectPropertyOf(:required_resource_object_position :resource_object_position)
@@ -543,8 +544,8 @@ SubObjectPropertyOf(:required_resource_object_position :resource_object_position
 # Object Property: :resource (has resource)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :resource "A relation between a subject position or object position resource and some resource that represents a subject or object of the natural language statement that the Rosetta Statement models to which the subject/object position belongs.")
+AnnotationAssertion(dcterms:created :resource "2024-12-05")
 AnnotationAssertion(dcterms:creator :resource <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :resource "2024-12-05")
 AnnotationAssertion(rdfs:label :resource "has resource")
 SubObjectPropertyOf(:resource :Rosetta_Statement_property)
 ObjectPropertyDomain(:resource ObjectUnionOf(:object_position :subject_position))
@@ -552,8 +553,8 @@ ObjectPropertyDomain(:resource ObjectUnionOf(:object_position :subject_position)
 # Object Property: :resource_object_position (resource object position light version)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :resource_object_position "A relation between a Rosetta Statement resource (i.e., an instance of a Rosetta Statement class) and a resource that takes an object position in a Rosetta Statement, using the Rosetta Statement semantic model light version.")
+AnnotationAssertion(dcterms:created :resource_object_position "2024-12-05")
 AnnotationAssertion(dcterms:creator :resource_object_position <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :resource_object_position "2024-12-05")
 AnnotationAssertion(rdfs:label :resource_object_position "resource object position light version")
 SubObjectPropertyOf(:resource_object_position :Rosetta_Statement_light_version_resource_property)
 ObjectPropertyDomain(:resource_object_position <https://w3id.org/rosettastmtont/rosetta_statement_class>)
@@ -561,8 +562,8 @@ ObjectPropertyDomain(:resource_object_position <https://w3id.org/rosettastmtont/
 # Object Property: :subject (subject)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :subject "A relation between a Rosetta Statement resource (i.e., an instance of a Rosetta Statement class) and a resource that takes the subject position in a Rosetta Statement, using the Rosetta Statement semantic model light version.")
+AnnotationAssertion(dcterms:created :subject "2024-12-05")
 AnnotationAssertion(dcterms:creator :subject <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :subject "2024-12-05")
 AnnotationAssertion(rdfs:label :subject "subject")
 SubObjectPropertyOf(:subject :Rosetta_Statement_light_version_resource_property)
 ObjectPropertyDomain(:subject <https://w3id.org/rosettastmtont/rosetta_statement_class>)
@@ -570,8 +571,8 @@ ObjectPropertyDomain(:subject <https://w3id.org/rosettastmtont/rosetta_statement
 # Object Property: :token_model_of (token model of)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :token_model_of "A transitive relation between a token model and its system-of-interest, i.e., the system it is modelling, or between a token model and another token model that represents the same set of properties of the system-of-interest.")
+AnnotationAssertion(dcterms:created :token_model_of "2024-12-05")
 AnnotationAssertion(dcterms:creator :token_model_of <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :token_model_of "2024-12-05")
 AnnotationAssertion(rdfs:label :token_model_of "token model of")
 TransitiveObjectProperty(:token_model_of)
 ObjectPropertyDomain(:token_model_of <https://w3id.org/rosettastmtont/token_model>)
@@ -579,8 +580,8 @@ ObjectPropertyDomain(:token_model_of <https://w3id.org/rosettastmtont/token_mode
 # Object Property: :unlisted_by (unlisted by)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :unlisted_by "\"An object property indicating the person who set the visibility of a specific Rosetta Statement to \"unlisted\". Unlisted Rosetta Statements cannot be found via the search interface of the application.\"")
+AnnotationAssertion(dcterms:created :unlisted_by "2024-12-05")
 AnnotationAssertion(dcterms:creator :unlisted_by <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :unlisted_by "2024-12-05")
 AnnotationAssertion(rdfs:label :unlisted_by "unlisted by")
 SubObjectPropertyOf(:unlisted_by :Rosetta_Statement_nanopublication_object_property)
 SubObjectPropertyOf(:unlisted_by :Rosetta_Statement_property)
@@ -593,29 +594,27 @@ SubObjectPropertyOf(:unlisted_by :Rosetta_Statement_property)
 # Data Property: <https://w3id.org/rosettastmtont/has_latestVersion> (has latestVersion)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/rosettastmtont/has_latestVersion> "uncurated")
+AnnotationAssertion(dcterms:created <https://w3id.org/rosettastmtont/has_latestVersion> "2024-12-05")
 AnnotationAssertion(dcterms:creator <https://w3id.org/rosettastmtont/has_latestVersion> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/has_latestVersion> "2024-12-05")
 AnnotationAssertion(rdfs:label <https://w3id.org/rosettastmtont/has_latestVersion> "has latestVersion")
 SubDataPropertyOf(<https://w3id.org/rosettastmtont/has_latestVersion> :Rosetta_Statement_nanopublication_data_property)
-DataPropertyDomain(<https://w3id.org/rosettastmtont/has_latestVersion> <https://w3id.org/rosettastmtont/nano_publication>)
 DataPropertyRange(<https://w3id.org/rosettastmtont/has_latestVersion> xsd:string)
 
 # Data Property: <https://w3id.org/rosettastmtont/has_templateID> (has templateID)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/rosettastmtont/has_templateID> "uncurated")
+AnnotationAssertion(dcterms:created <https://w3id.org/rosettastmtont/has_templateID> "2024-12-05")
 AnnotationAssertion(dcterms:creator <https://w3id.org/rosettastmtont/has_templateID> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/has_templateID> "2024-12-05")
 AnnotationAssertion(rdfs:label <https://w3id.org/rosettastmtont/has_templateID> "has templateID")
 SubDataPropertyOf(<https://w3id.org/rosettastmtont/has_templateID> :Rosetta_Statement_nanopublication_data_property)
-DataPropertyDomain(<https://w3id.org/rosettastmtont/has_templateID> <https://w3id.org/rosettastmtont/nano_publication>)
 DataPropertyRange(<https://w3id.org/rosettastmtont/has_templateID> xsd:string)
 
 # Data Property: <https://w3id.org/rosettastmtont/modifiable> (modifiable)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/rosettastmtont/modifiable> "uncurated")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/rosettastmtont/modifiable> "A boolean property of a Rosetta Statement, indicating for a knowledge graph application whether the statement is modifiable for users.")
+AnnotationAssertion(dcterms:created <https://w3id.org/rosettastmtont/modifiable> "2024-12-05")
 AnnotationAssertion(dcterms:creator <https://w3id.org/rosettastmtont/modifiable> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/modifiable> "2024-12-05")
 AnnotationAssertion(rdfs:label <https://w3id.org/rosettastmtont/modifiable> "modifiable")
 SubDataPropertyOf(<https://w3id.org/rosettastmtont/modifiable> :Rosetta_Statement_literal_property)
 SubDataPropertyOf(<https://w3id.org/rosettastmtont/modifiable> :Rosetta_Statement_nanopublication_data_property)
@@ -624,24 +623,24 @@ DataPropertyRange(<https://w3id.org/rosettastmtont/modifiable> xsd:boolean)
 
 # Data Property: :Rosetta_Statement_light_version_data_property (Rosetta Statement light version data property)
 
+AnnotationAssertion(dcterms:created :Rosetta_Statement_light_version_data_property "2024-12-05")
 AnnotationAssertion(dcterms:creator :Rosetta_Statement_light_version_data_property <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :Rosetta_Statement_light_version_data_property "2024-12-05")
 AnnotationAssertion(rdfs:comment :Rosetta_Statement_light_version_data_property "This is just a placeholder to organize all data properties used for documenting a Rosetta Statement in a knowledge grah using the Rosetta Statement semantic model light version approach. The property is not ment to be used.")
 AnnotationAssertion(rdfs:label :Rosetta_Statement_light_version_data_property "Rosetta Statement light version data property")
 SubDataPropertyOf(:Rosetta_Statement_light_version_data_property :Rosetta_Statement_literal_property)
 
 # Data Property: :Rosetta_Statement_literal_property (Rosetta Statement data property)
 
+AnnotationAssertion(dcterms:created :Rosetta_Statement_literal_property "2024-12-05")
 AnnotationAssertion(dcterms:creator :Rosetta_Statement_literal_property <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :Rosetta_Statement_literal_property "2024-12-05")
 AnnotationAssertion(rdfs:comment :Rosetta_Statement_literal_property "This is just a placeholder to organize all data properties used for documenting a Rosetta Statement in a knowledge grah. The property is not ment to be used.")
 AnnotationAssertion(rdfs:label :Rosetta_Statement_literal_property "Rosetta Statement data property")
 DataPropertyDomain(:Rosetta_Statement_literal_property <https://w3id.org/rosettastmtont/rosetta_statement_class>)
 
 # Data Property: :Rosetta_Statement_nanopublication_data_property (Rosetta Statement nanopublication data property)
 
+AnnotationAssertion(dcterms:created :Rosetta_Statement_nanopublication_data_property "2024-12-05")
 AnnotationAssertion(dcterms:creator :Rosetta_Statement_nanopublication_data_property <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :Rosetta_Statement_nanopublication_data_property "2024-12-05")
 AnnotationAssertion(rdfs:comment :Rosetta_Statement_nanopublication_data_property "This is just a placeholder to organize all data properties used for documenting a Rosetta Statement nanopublication in a knowledge grah. The property is not ment to be used.")
 AnnotationAssertion(rdfs:label :Rosetta_Statement_nanopublication_data_property "Rosetta Statement nanopublication data property")
 SubDataPropertyOf(:Rosetta_Statement_nanopublication_data_property :Rosetta_Statement_literal_property)
@@ -654,8 +653,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :deleted_at "A 
 In the Rosetta Statement semantic model full version, a soft-delete is used and the achor Rosetta Statement resource is only labeled as \"deleted\" using this data property and the propery 'deleted by', indicating the person who \"deleted\" the statement. The backend of the knowledge graph application must process this information and may still provide the provenance metadata associated with the “deleted” statement, but not the statement itself.
 
 If Rosetta Statement versions should be deleted, the same property can be used for the version resources.")
+AnnotationAssertion(dcterms:created :deleted_at "2024-12-05")
 AnnotationAssertion(dcterms:creator :deleted_at <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :deleted_at "2024-12-05")
 AnnotationAssertion(rdfs:label :deleted_at "deleted at")
 SubDataPropertyOf(:deleted_at :Rosetta_Statement_literal_property)
 SubDataPropertyOf(:deleted_at :Rosetta_Statement_nanopublication_data_property)
@@ -665,8 +664,8 @@ DataPropertyRange(:deleted_at xsd:dateTimeStamp)
 # Data Property: :has_version_number (has version number)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :has_version_number "Specifies the version number of a Rosetta Statement version. Version numbers are assigned in a consecutively increasing manner, using integers.")
+AnnotationAssertion(dcterms:created :has_version_number "2024-12-05")
 AnnotationAssertion(dcterms:creator :has_version_number <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :has_version_number "2024-12-05")
 AnnotationAssertion(rdfs:label :has_version_number "has version number")
 SubDataPropertyOf(:has_version_number :Rosetta_Statement_literal_property)
 DataPropertyDomain(:has_version_number :Rosetta_Statement_version)
@@ -675,8 +674,8 @@ DataPropertyRange(:has_version_number xsd:integer)
 # Data Property: :literal (has literal)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :literal "A relation between an object position resource and a literal that represents an object of the natural language statement that the Rosetta Statement models to which the object position belongs.")
+AnnotationAssertion(dcterms:created :literal "2024-12-05")
 AnnotationAssertion(dcterms:creator :literal <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :literal "2024-12-05")
 AnnotationAssertion(rdfs:label :literal "has literal")
 SubDataPropertyOf(:literal :Rosetta_Statement_literal_property)
 DataPropertyDomain(:literal :object_position)
@@ -684,16 +683,16 @@ DataPropertyDomain(:literal :object_position)
 # Data Property: :literal_object_position (literal object position)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :literal_object_position "A relation between a Rosetta Statement resource (i.e., an instance of a Rosetta Statement class) and a literal that takes an object position in a Rosetta Statement, using the Rosetta Statement semantic model light version.")
+AnnotationAssertion(dcterms:created :literal_object_position "2024-12-05")
 AnnotationAssertion(dcterms:creator :literal_object_position <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :literal_object_position "2024-12-05")
 AnnotationAssertion(rdfs:label :literal_object_position "literal object position")
 SubDataPropertyOf(:literal_object_position :Rosetta_Statement_light_version_data_property)
 
 # Data Property: :negated (negated)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :negated "A boolean data property indicating whether the content of a Rosetta Statement is negated and thus the corresponding natural language statement is negated.")
+AnnotationAssertion(dcterms:created :negated "2024-12-05")
 AnnotationAssertion(dcterms:creator :negated <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :negated "2024-12-05")
 AnnotationAssertion(rdfs:label :negated "negated")
 SubDataPropertyOf(:negated :Rosetta_Statement_nanopublication_data_property)
 DataPropertyDomain(:negated ObjectUnionOf(:Rosetta_Statement_version :anchor_Rosetta_Statement))
@@ -702,87 +701,87 @@ DataPropertyRange(:negated xsd:boolean)
 # Data Property: :optional_literal_object_position (optional literal object position)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :optional_literal_object_position "The relation between a Rosetta Statement resource (i.e., an instance of a Rosetta Statement class) and a literal that takes an object position that is optional in a Rosetta Statement. It thus connects the statement resource with a literal that represents an object adjunct of the statement.")
+AnnotationAssertion(dcterms:created :optional_literal_object_position "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_literal_object_position <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_literal_object_position "2024-12-05")
 AnnotationAssertion(rdfs:comment :optional_literal_object_position "The different numbered subproperties are used to be able to distinguish the different optional literal object position within a given Rosetta Statement semantic model. Each optional object position in a given Rosetta Statement can be distinguished by its specific numbered subproperty and its associated semantic role. In a Rosetta Statement semantic model, the numbered subproperty defines a corresponding optional slot that has a specific constraint.")
 AnnotationAssertion(rdfs:label :optional_literal_object_position "optional literal object position")
 SubDataPropertyOf(:optional_literal_object_position :literal_object_position)
 
 # Data Property: :optional_literal_object_position_1 (optional literal object position 1)
 
+AnnotationAssertion(dcterms:created :optional_literal_object_position_1 "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_literal_object_position_1 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_literal_object_position_1 "2024-12-05")
 AnnotationAssertion(rdfs:label :optional_literal_object_position_1 "optional literal object position 1")
 SubDataPropertyOf(:optional_literal_object_position_1 :optional_literal_object_position)
 
 # Data Property: :optional_literal_object_position_10 (optional literal object position 10)
 
+AnnotationAssertion(dcterms:created :optional_literal_object_position_10 "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_literal_object_position_10 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_literal_object_position_10 "2024-12-05")
 AnnotationAssertion(rdfs:label :optional_literal_object_position_10 "optional literal object position 10")
 SubDataPropertyOf(:optional_literal_object_position_10 :optional_literal_object_position)
 
 # Data Property: :optional_literal_object_position_2 (optional literal object position 2)
 
+AnnotationAssertion(dcterms:created :optional_literal_object_position_2 "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_literal_object_position_2 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_literal_object_position_2 "2024-12-05")
 AnnotationAssertion(rdfs:label :optional_literal_object_position_2 "optional literal object position 2")
 SubDataPropertyOf(:optional_literal_object_position_2 :optional_literal_object_position)
 
 # Data Property: :optional_literal_object_position_3 (optional literal object position 3)
 
+AnnotationAssertion(dcterms:created :optional_literal_object_position_3 "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_literal_object_position_3 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_literal_object_position_3 "2024-12-05")
 AnnotationAssertion(rdfs:label :optional_literal_object_position_3 "optional literal object position 3")
 SubDataPropertyOf(:optional_literal_object_position_3 :optional_literal_object_position)
 
 # Data Property: :optional_literal_object_position_4 (optional literal object position 4)
 
+AnnotationAssertion(dcterms:created :optional_literal_object_position_4 "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_literal_object_position_4 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_literal_object_position_4 "2024-12-05")
 AnnotationAssertion(rdfs:label :optional_literal_object_position_4 "optional literal object position 4")
 SubDataPropertyOf(:optional_literal_object_position_4 :optional_literal_object_position)
 
 # Data Property: :optional_literal_object_position_5 (optional literal object position 5)
 
+AnnotationAssertion(dcterms:created :optional_literal_object_position_5 "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_literal_object_position_5 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_literal_object_position_5 "2024-12-05")
 AnnotationAssertion(rdfs:label :optional_literal_object_position_5 "optional literal object position 5")
 SubDataPropertyOf(:optional_literal_object_position_5 :optional_literal_object_position)
 
 # Data Property: :optional_literal_object_position_6 (optional literal object position 6)
 
+AnnotationAssertion(dcterms:created :optional_literal_object_position_6 "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_literal_object_position_6 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_literal_object_position_6 "2024-12-05")
 AnnotationAssertion(rdfs:label :optional_literal_object_position_6 "optional literal object position 6")
 SubDataPropertyOf(:optional_literal_object_position_6 :optional_literal_object_position)
 
 # Data Property: :optional_literal_object_position_7 (optional literal object position 7)
 
+AnnotationAssertion(dcterms:created :optional_literal_object_position_7 "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_literal_object_position_7 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_literal_object_position_7 "2024-12-05")
 AnnotationAssertion(rdfs:label :optional_literal_object_position_7 "optional literal object position 7")
 SubDataPropertyOf(:optional_literal_object_position_7 :optional_literal_object_position)
 
 # Data Property: :optional_literal_object_position_8 (optional literal object position 8)
 
+AnnotationAssertion(dcterms:created :optional_literal_object_position_8 "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_literal_object_position_8 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_literal_object_position_8 "2024-12-05")
 AnnotationAssertion(rdfs:label :optional_literal_object_position_8 "optional literal object position 8")
 SubDataPropertyOf(:optional_literal_object_position_8 :optional_literal_object_position)
 
 # Data Property: :optional_literal_object_position_9 (optional literal object position 9)
 
+AnnotationAssertion(dcterms:created :optional_literal_object_position_9 "2024-12-05")
 AnnotationAssertion(dcterms:creator :optional_literal_object_position_9 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :optional_literal_object_position_9 "2024-12-05")
 AnnotationAssertion(rdfs:label :optional_literal_object_position_9 "optional literal object position 9")
 SubDataPropertyOf(:optional_literal_object_position_9 :optional_literal_object_position)
 
 # Data Property: :order (order)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :order "Specifies the order of subjects or objects belonging to the same subject or object position of a given Rosetta Statement.")
+AnnotationAssertion(dcterms:created :order "2024-12-05")
 AnnotationAssertion(dcterms:creator :order <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :order "2024-12-05")
 AnnotationAssertion(rdfs:label :order "order")
 SubDataPropertyOf(:order :Rosetta_Statement_literal_property)
 FunctionalDataProperty(:order)
@@ -792,87 +791,87 @@ DataPropertyRange(:order xsd:integer)
 # Data Property: :required_literal_object_position (required literal object position)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :required_literal_object_position "The relation between a Rosetta Statement resource (i.e., an instance of a Rosetta Statement class) and a literal that takes an object position that is required to form a semantically meaningful Rosetta Statement. It thus connects the statement resource with a literal that represents an object argument of the statement.")
+AnnotationAssertion(dcterms:created :required_literal_object_position "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_literal_object_position <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_literal_object_position "2024-12-05")
 AnnotationAssertion(rdfs:comment :required_literal_object_position "The different numbered subproperties are used to be able to distinguish the different required literal object position within a given Rosetta Statement semantic model. Each required object position in a given Rosetta Statement can be distinguished by its specific numbered subproperty and its associated semantic role. In a Rosetta Statement semantic model, the numbered subproperty defines a corresponding required slot that has a specific constraint.")
 AnnotationAssertion(rdfs:label :required_literal_object_position "required literal object position")
 SubDataPropertyOf(:required_literal_object_position :literal_object_position)
 
 # Data Property: :required_literal_object_position_1 (required literal object position 1)
 
+AnnotationAssertion(dcterms:created :required_literal_object_position_1 "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_literal_object_position_1 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_literal_object_position_1 "2024-12-05")
 AnnotationAssertion(rdfs:label :required_literal_object_position_1 "required literal object position 1")
 SubDataPropertyOf(:required_literal_object_position_1 :required_literal_object_position)
 
 # Data Property: :required_literal_object_position_10 (required literal object position 10)
 
+AnnotationAssertion(dcterms:created :required_literal_object_position_10 "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_literal_object_position_10 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_literal_object_position_10 "2024-12-05")
 AnnotationAssertion(rdfs:label :required_literal_object_position_10 "required literal object position 10")
 SubDataPropertyOf(:required_literal_object_position_10 :required_literal_object_position)
 
 # Data Property: :required_literal_object_position_2 (required literal object position 2)
 
+AnnotationAssertion(dcterms:created :required_literal_object_position_2 "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_literal_object_position_2 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_literal_object_position_2 "2024-12-05")
 AnnotationAssertion(rdfs:label :required_literal_object_position_2 "required literal object position 2")
 SubDataPropertyOf(:required_literal_object_position_2 :required_literal_object_position)
 
 # Data Property: :required_literal_object_position_3 (required literal object position 3)
 
+AnnotationAssertion(dcterms:created :required_literal_object_position_3 "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_literal_object_position_3 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_literal_object_position_3 "2024-12-05")
 AnnotationAssertion(rdfs:label :required_literal_object_position_3 "required literal object position 3")
 SubDataPropertyOf(:required_literal_object_position_3 :required_literal_object_position)
 
 # Data Property: :required_literal_object_position_4 (required literal object position 4)
 
+AnnotationAssertion(dcterms:created :required_literal_object_position_4 "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_literal_object_position_4 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_literal_object_position_4 "2024-12-05")
 AnnotationAssertion(rdfs:label :required_literal_object_position_4 "required literal object position 4")
 SubDataPropertyOf(:required_literal_object_position_4 :required_literal_object_position)
 
 # Data Property: :required_literal_object_position_5 (required literal object position 5)
 
+AnnotationAssertion(dcterms:created :required_literal_object_position_5 "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_literal_object_position_5 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_literal_object_position_5 "2024-12-05")
 AnnotationAssertion(rdfs:label :required_literal_object_position_5 "required literal object position 5")
 SubDataPropertyOf(:required_literal_object_position_5 :required_literal_object_position)
 
 # Data Property: :required_literal_object_position_6 (required literal object position 6)
 
+AnnotationAssertion(dcterms:created :required_literal_object_position_6 "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_literal_object_position_6 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_literal_object_position_6 "2024-12-05")
 AnnotationAssertion(rdfs:label :required_literal_object_position_6 "required literal object position 6")
 SubDataPropertyOf(:required_literal_object_position_6 :required_literal_object_position)
 
 # Data Property: :required_literal_object_position_7 (required literal object position 7)
 
+AnnotationAssertion(dcterms:created :required_literal_object_position_7 "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_literal_object_position_7 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_literal_object_position_7 "2024-12-05")
 AnnotationAssertion(rdfs:label :required_literal_object_position_7 "required literal object position 7")
 SubDataPropertyOf(:required_literal_object_position_7 :required_literal_object_position)
 
 # Data Property: :required_literal_object_position_8 (required literal object position 8)
 
+AnnotationAssertion(dcterms:created :required_literal_object_position_8 "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_literal_object_position_8 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_literal_object_position_8 "2024-12-05")
 AnnotationAssertion(rdfs:label :required_literal_object_position_8 "required literal object position 8")
 SubDataPropertyOf(:required_literal_object_position_8 :required_literal_object_position)
 
 # Data Property: :required_literal_object_position_9 (required literal object position 9)
 
+AnnotationAssertion(dcterms:created :required_literal_object_position_9 "2024-12-05")
 AnnotationAssertion(dcterms:creator :required_literal_object_position_9 <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :required_literal_object_position_9 "2024-12-05")
 AnnotationAssertion(rdfs:label :required_literal_object_position_9 "required literal object position 9")
 SubDataPropertyOf(:required_literal_object_position_9 :required_literal_object_position)
 
 # Data Property: :symmetric (symmetric)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :symmetric "'True' indicates that the relation in the Rosetta Statement between the subject and the object that belongs to this object position is symmetric.")
+AnnotationAssertion(dcterms:created :symmetric "2024-12-05")
 AnnotationAssertion(dcterms:creator :symmetric <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :symmetric "2024-12-05")
 AnnotationAssertion(rdfs:label :symmetric "symmetric")
 SubDataPropertyOf(:symmetric :Rosetta_Statement_literal_property)
 DataPropertyDomain(:symmetric :object_position)
@@ -881,8 +880,8 @@ DataPropertyRange(:symmetric xsd:boolean)
 # Data Property: :transitive (transitive)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :transitive "'True' indicates that the relation in the Rosetta Statement between the subject and the object that belongs to this object position is transitive.")
+AnnotationAssertion(dcterms:created :transitive "2024-12-05")
 AnnotationAssertion(dcterms:creator :transitive <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :transitive "2024-12-05")
 AnnotationAssertion(rdfs:label :transitive "transitive")
 SubDataPropertyOf(:transitive :Rosetta_Statement_literal_property)
 DataPropertyDomain(:transitive :object_position)
@@ -894,78 +893,31 @@ DataPropertyRange(:transitive xsd:boolean)
 #   Classes
 ############################
 
-# Class: <https://w3id.org/rosettastmtont/ROSETTASTMTONT_0000000> (root node)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/rosettastmtont/ROSETTASTMTONT_0000000> "uncurated"@en)
-AnnotationAssertion(dcterms:creator <https://w3id.org/rosettastmtont/ROSETTASTMTONT_0000000> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/ROSETTASTMTONT_0000000> "20-11-2024")
-AnnotationAssertion(rdfs:label <https://w3id.org/rosettastmtont/ROSETTASTMTONT_0000000> "root node"@en)
-
-# Class: <https://w3id.org/rosettastmtont/assertion> (assertion)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/rosettastmtont/assertion> "uncurated")
-AnnotationAssertion(dcterms:creator <https://w3id.org/rosettastmtont/assertion> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/assertion> "20-11-2024")
-AnnotationAssertion(rdfs:label <https://w3id.org/rosettastmtont/assertion> "assertion")
-SubClassOf(<https://w3id.org/rosettastmtont/assertion> <https://w3id.org/rosettastmtont/rdf_graph>)
-
 # Class: <https://w3id.org/rosettastmtont/formalized_statement> (formalized statement)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <https://w3id.org/rosettastmtont/formalized_statement> "'PERSON travels from DEPARTURE_LOCATION to DESTINATION_LOCATION by TRANSPORTATION' is the formalized statement that was derived from the natural language statement 'Peter travels from Berlin to Paris by train' by classifying and generalizing the subject and object positions.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/rosettastmtont/formalized_statement> "A metamodel that is derived from a simple natural language statement by classifying and generalizing the subject and object syntactic positions, turning the concrete natural language statement into a formalized statement."@en)
+AnnotationAssertion(dcterms:created <https://w3id.org/rosettastmtont/formalized_statement> "2024-12-05")
 AnnotationAssertion(dcterms:creator <https://w3id.org/rosettastmtont/formalized_statement> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/formalized_statement> "2024-12-05")
 AnnotationAssertion(rdfs:label <https://w3id.org/rosettastmtont/formalized_statement> "formalized statement"@en)
 SubClassOf(<https://w3id.org/rosettastmtont/formalized_statement> :metamodel)
-
-# Class: <https://w3id.org/rosettastmtont/nano_publication> (nano publication)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/rosettastmtont/nano_publication> "uncurated"@en)
-AnnotationAssertion(dce:description <https://w3id.org/rosettastmtont/nano_publication> "A nanopublication is a small knowledge graph snippet with metadata that is treated as an independent (scientific) publication. This information in a nanopublication can be about anything, for example a relation between a gene and a disease or an opinion. Nanopublications are expressed in a knowledge graph format that is formal and machine-interpretable. With nanopublications, it is possible to disseminate individual data as independent publications with or without an accompanying research article. Furthermore, because nanopublications can be attributed and cited, they provide incentives for researchers to make their data available in standard formats that drive data accessibility and interoperability."@en)
-AnnotationAssertion(dcterms:creator <https://w3id.org/rosettastmtont/nano_publication> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(rdfs:label <https://w3id.org/rosettastmtont/nano_publication> "nano publication"@en)
-SubClassOf(<https://w3id.org/rosettastmtont/nano_publication> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: <https://w3id.org/rosettastmtont/natural_language_statement> (natural language statement)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/rosettastmtont/natural_language_statement> "uncurated")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/rosettastmtont/natural_language_statement> "A token model that is a sequence of terms structured by syntactical and grammatical conventions into syntactic positions of phrases that can be mapped to a syntax tree."@en)
 AnnotationAssertion(dce:creator <https://w3id.org/rosettastmtont/natural_language_statement> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/natural_language_statement> "2024-12-05")
+AnnotationAssertion(dcterms:created <https://w3id.org/rosettastmtont/natural_language_statement> "2024-12-05")
 AnnotationAssertion(rdfs:label <https://w3id.org/rosettastmtont/natural_language_statement> "natural language statement"@en)
 SubClassOf(<https://w3id.org/rosettastmtont/natural_language_statement> <https://w3id.org/rosettastmtont/token_model>)
-
-# Class: <https://w3id.org/rosettastmtont/provenance> (provenance)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/rosettastmtont/provenance> "uncurated")
-AnnotationAssertion(dcterms:creator <https://w3id.org/rosettastmtont/provenance> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/provenance> "20-11-2024")
-AnnotationAssertion(rdfs:label <https://w3id.org/rosettastmtont/provenance> "provenance")
-SubClassOf(<https://w3id.org/rosettastmtont/provenance> <https://w3id.org/rosettastmtont/rdf_graph>)
-
-# Class: <https://w3id.org/rosettastmtont/publication_info> (publication info)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/rosettastmtont/publication_info> "uncurated")
-AnnotationAssertion(dcterms:creator <https://w3id.org/rosettastmtont/publication_info> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/publication_info> "20-11-2024")
-AnnotationAssertion(rdfs:label <https://w3id.org/rosettastmtont/publication_info> "publication info")
-SubClassOf(<https://w3id.org/rosettastmtont/publication_info> <https://w3id.org/rosettastmtont/rdf_graph>)
-
-# Class: <https://w3id.org/rosettastmtont/rdf_graph> (rdf graph)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/rosettastmtont/rdf_graph> "uncurated"@en)
-AnnotationAssertion(dcterms:creator <https://w3id.org/rosettastmtont/rdf_graph> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/rdf_graph> "20-11-2024")
-AnnotationAssertion(rdfs:label <https://w3id.org/rosettastmtont/rdf_graph> "rdf graph")
-SubClassOf(<https://w3id.org/rosettastmtont/rdf_graph> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: <https://w3id.org/rosettastmtont/rosetta_statement_class> (Rosetta Statement)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/rosettastmtont/rosetta_statement_class> "A statement graph token model that models an English natural language statement that consists of one or more subjects, one main predicate/verb, and a number of objects. It serves the specific purpose and usage context of supporting communication of semantic content between machines and domain experts. Rosetta Statements instantiate Rosetta Statement semantic models."@en)
 AnnotationAssertion(dce:creator <https://w3id.org/rosettastmtont/rosetta_statement_class> <https://orcid.org/0000-0002-8280-0487>)
+AnnotationAssertion(dcterms:created <https://w3id.org/rosettastmtont/rosetta_statement_class> "20-11-2024")
+AnnotationAssertion(dcterms:created <https://w3id.org/rosettastmtont/rosetta_statement_class> "2024-12-05")
 AnnotationAssertion(dcterms:creator <https://w3id.org/rosettastmtont/rosetta_statement_class> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/rosetta_statement_class> "20-11-2024")
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/rosetta_statement_class> "2024-12-05")
 AnnotationAssertion(rdfs:comment <https://w3id.org/rosettastmtont/rosetta_statement_class> "As each instance of a Rosetta Statement class represents the statement as a whole, including its verb or predicate, one can use this resource to make statements about that statement.")
 AnnotationAssertion(rdfs:comment <https://w3id.org/rosettastmtont/rosetta_statement_class> "The Rosetta Statement modelling approach needs to relate the subject-resource to the different types of object-resources and object-literals of a given type of statement. To avoid the problems that typically arise when modelling statements that have n-ary predicates, and to reflect as closely as possible the structure of simple natural language statements in English—statements that consist of only one verb or predicate—each Rosetta Statement is associated with a Rosetta Statement class that is defined based on the Statement's predicate. A Rosetta Statement then uses an instance of the respective class, to which the subject and object-resources as well as the object-literals are linked to.")
 AnnotationAssertion(rdfs:comment <https://w3id.org/rosettastmtont/rosetta_statement_class> "The main purpose of the Rosetta Statement approach to knowledge graph construction is to support the communication of semantic content in a knowledge graph with domain experts and to reduce the burden of semantic parsing and thus knowledge graph construction and with it to lower the barrier for the use of knowledge graphs by domain experts.")
@@ -983,7 +935,7 @@ SubClassOf(<https://w3id.org/rosettastmtont/rosetta_statement_class> :statement_
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/rosettastmtont/syntax_tree> "uncurated")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/rosettastmtont/syntax_tree> "A token model in the form of a tree, structured by syntactical and grammatical conventions, with the leaves of the tree representing syntactic positions with associated semantic roles. Every natural language statement can be mapped to a corresponding syntac tree."@en)
 AnnotationAssertion(dce:creator <https://w3id.org/rosettastmtont/syntax_tree> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/syntax_tree> "2024-12-05")
+AnnotationAssertion(dcterms:created <https://w3id.org/rosettastmtont/syntax_tree> "2024-12-05")
 AnnotationAssertion(rdfs:label <https://w3id.org/rosettastmtont/syntax_tree> "syntax tree"@en)
 SubClassOf(<https://w3id.org/rosettastmtont/syntax_tree> <https://w3id.org/rosettastmtont/token_model>)
 
@@ -991,8 +943,8 @@ SubClassOf(<https://w3id.org/rosettastmtont/syntax_tree> <https://w3id.org/roset
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/rosettastmtont/tabular_data_schema> "uncurated")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/rosettastmtont/tabular_data_schema> "A metamodel that is organized in a tabular format (consisting of cells organized in rows and columns). Tabular data instantiate tabular data schemata."@en)
+AnnotationAssertion(dcterms:created <https://w3id.org/rosettastmtont/tabular_data_schema> "2024-12-05")
 AnnotationAssertion(dcterms:creator <https://w3id.org/rosettastmtont/tabular_data_schema> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/tabular_data_schema> "2024-12-05")
 AnnotationAssertion(rdfs:label <https://w3id.org/rosettastmtont/tabular_data_schema> "tabular data schema"@en)
 SubClassOf(<https://w3id.org/rosettastmtont/tabular_data_schema> :metamodel)
 
@@ -1003,9 +955,9 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <https://w3id.o
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <https://w3id.org/rosettastmtont/token_model> "represntation model")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <https://w3id.org/rosettastmtont/token_model> "snapshot model")
 AnnotationAssertion(dce:creator <https://w3id.org/rosettastmtont/token_model> <https://orcid.org/0000-0002-8280-0487>)
+AnnotationAssertion(dcterms:created <https://w3id.org/rosettastmtont/token_model> <https://w3id.org/rosettastmtont/rosettastmtont.owl#2024-12-05>)
+AnnotationAssertion(dcterms:created <https://w3id.org/rosettastmtont/token_model> "20-11-2024")
 AnnotationAssertion(dcterms:creator <https://w3id.org/rosettastmtont/token_model> "Lars M Vogt"@en)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/token_model> <https://w3id.org/rosettastmtont/rosettastmtont.owl#2024-12-05>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/rosettastmtont/token_model> "20-11-2024")
 AnnotationAssertion(rdfs:comment <https://w3id.org/rosettastmtont/token_model> "Different token models of the same system-of-interest, representing the same set of properties, are connected through a transitive token-model-of relationship. This relationship can be organized into sequences of designators, each sequentially representing its corresponding element across all token models, ultimately pointing back to the original element in the system-of-interest.")
 AnnotationAssertion(rdfs:comment <https://w3id.org/rosettastmtont/token_model> "The creation of a token model involves selecting which properties to include (projection) and converting these properties into elements of the model (translation).")
 AnnotationAssertion(rdfs:comment <https://w3id.org/rosettastmtont/token_model> "Token models instantiate their corresponding type models.")
@@ -1018,7 +970,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :Rosetta_Statem
 
 Different types of Rosetta Statements can be distinguished on the basis of their underlying predicates (i.e., relations), resulting in a predicate-based classification of types of Rosetta Statements.")
 AnnotationAssertion(dce:creator :Rosetta_Statement_model <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :Rosetta_Statement_model "2024-12-05")
+AnnotationAssertion(dcterms:created :Rosetta_Statement_model "2024-12-05")
 AnnotationAssertion(rdfs:comment :Rosetta_Statement_model "Each argument in a given Rosetta Statement schema pattern can be aligned with a particular syntactic position, which is modelled in the schema as a slot, for which the corresponding semantic role is specified in the form of a constraint specification—either as XML Schema datatype specification for an object-literal, which can be supplemented with a specific pattern or range constraint, or as an ontology class specification for a subject or an object-resource, which restricts the type of resources that can be located in a particular slot to that class or any of its subclasses.")
 AnnotationAssertion(rdfs:comment :Rosetta_Statement_model "When applying the Rosetta Statement modelling approach, one always gets statements, each represented by its own dedicated resource that instantiates a corresponding data schema pattern that belongs to the corresponding Rosetta Statement class.")
 AnnotationAssertion(rdfs:label :Rosetta_Statement_model "Rosetta Statement semantic model")
@@ -1027,8 +979,8 @@ SubClassOf(:Rosetta_Statement_model :data_schema_pattern_model)
 # Class: :Rosetta_Statement_position (Rosetta Statement position)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :Rosetta_Statement_position "An information content entity that is used to specify the position of a subject resource, an object resource or an object literal within a Rosetta Statement, using the Rosetta Statement semantic model full version.")
+AnnotationAssertion(dcterms:created :Rosetta_Statement_position "2024-12-05")
 AnnotationAssertion(dcterms:creator :Rosetta_Statement_position <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :Rosetta_Statement_position "2024-12-05")
 AnnotationAssertion(rdfs:label :Rosetta_Statement_position "Rosetta Statement position")
 SubClassOf(:Rosetta_Statement_position <http://purl.obolibrary.org/obo/IAO_0000030>)
 
@@ -1036,7 +988,7 @@ SubClassOf(:Rosetta_Statement_position <http://purl.obolibrary.org/obo/IAO_00000
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :Rosetta_Statement_semantic_metamodel "A Rosetta Statement semantic model that represents an abstract and generalized model of any type of formalized natural language statement. From the Rosetta Statement semantic metamodel, any other Rosetta Statement semantic model can be derived. In other words, all Rosetta Statement semantic models instantiate the same Rosetta Statement semantic metamodel.")
 AnnotationAssertion(dce:creator :Rosetta_Statement_semantic_metamodel <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :Rosetta_Statement_semantic_metamodel "2024-12-05")
+AnnotationAssertion(dcterms:created :Rosetta_Statement_semantic_metamodel "2024-12-05")
 AnnotationAssertion(rdfs:comment :Rosetta_Statement_semantic_metamodel "At the heart of the Rosetta Statement semantic metamodel is a particular modelling paradigm for statement types. To meet the requirements of cognitive interoperability, it follows the basic idea that this modelling paradigm should be as generic and simple as possible, reflecting as much as possible the structures we are already familiar with from a natural language like English. In addition, the paradigm must support the specification of new Rosetta Statement semantic models so that it becomes a straightforward task that does not require any background in semantics—it should allow the semantic parsing step to be automated. This can only be achieved, if the metamodel has a very generic structure. This structure must be applicable to any type of statement, regardless of the statement's n-aryness. To be lean, models derived from the metamodel should store only what is necessary to recover the meaning of the type of statement it models, which should be the same as storing only the information a user has to provide to create a new statement of the corresponding type.
 The emphasis must be on being able to reconstruct the original user input or data import for a given statement by storing only the semantically constitutive entities, i.e., those objects and relations that preserve the core semantics of the statement, and thus those entities that align with all syntactic positions (see 'syntax tree') required to translate the semantic content into a natural language statement.
 Another criterion that the metamodel must meet is that it must facilitate the seamless derivation of queries from it. Each one of these criteria is important, because, in the end, the metamodel and all Rosetta Statement semantic models derived from it must support semantically interoperable (meta)data statements with which not only machines but also humans can interact.")
@@ -1056,7 +1008,7 @@ Consequently, each particular Rosetta Statement of a given statement type has, i
 
 Rosetta Statement semantic models full version instantiate 'Rosetta Statement metamodel full version'.")
 AnnotationAssertion(dce:creator :Rosetta_Statement_semantic_model_full_version <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :Rosetta_Statement_semantic_model_full_version "2024-12-05")
+AnnotationAssertion(dcterms:created :Rosetta_Statement_semantic_model_full_version "2024-12-05")
 AnnotationAssertion(rdfs:comment :Rosetta_Statement_semantic_model_full_version "The dependency of object-position classes on their corresponding statement type is documented within the respective Rosetta Statement class as a class axiom that points to the required and optional object-position classes.")
 AnnotationAssertion(rdfs:comment :Rosetta_Statement_semantic_model_full_version "The full version supports statement versioning and tracking the editing history for each individual statement and each particular object-position.")
 AnnotationAssertion(rdfs:comment :Rosetta_Statement_semantic_model_full_version "The order of the object and subject resources aligning with the same semantic role and same subject or object position is specified via an ‘order’ property, followed by a sequentially increasing integer.")
@@ -1069,7 +1021,7 @@ SubClassOf(:Rosetta_Statement_semantic_model_full_version :Rosetta_Statement_mod
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :Rosetta_Statement_semantic_model_light_version "A Rosetta Statement semantic model that directly links the statement resource to required object resources via the subproperties of 'required resource object position' and to optional object resources via the subproperties of 'optional resource object position'. Required and optional object literals are linked via subproperties of 'required literal object position' and 'optional literal object position' respectively.
 Rosetta Statement semantic models light version instantiate 'Rosetta Statement metamodel light version'.")
 AnnotationAssertion(dce:creator :Rosetta_Statement_semantic_model_light_version <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :Rosetta_Statement_semantic_model_light_version "2024-12-05")
+AnnotationAssertion(dcterms:created :Rosetta_Statement_semantic_model_light_version "2024-12-05")
 AnnotationAssertion(rdfs:label :Rosetta_Statement_semantic_model_light_version "Rosetta Statement semantic model light version")
 SubClassOf(:Rosetta_Statement_semantic_model_light_version :Rosetta_Statement_model)
 
@@ -1077,7 +1029,7 @@ SubClassOf(:Rosetta_Statement_semantic_model_light_version :Rosetta_Statement_mo
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :Rosetta_Statement_version "A Rosetta Statement that is a version of an existing Rosetta Statement entry in a knowledge graph that uses the Rosetta Statement semantic model full version approach. This approach allows versioning of Rosetta Statements and history tracking of all edits of every Rosetta Statement. In this full version, every Rosetta Statement has an anchor Rosetta Statement resource, to which all versions of the statement are linked via the 'has version' property. Every Rosetta Statement version resource also instantiates the respective Rosetta Statement class.")
 AnnotationAssertion(dce:creator :Rosetta_Statement_version <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :Rosetta_Statement_version "2024-12-05")
+AnnotationAssertion(dcterms:created :Rosetta_Statement_version "2024-12-05")
 AnnotationAssertion(rdfs:label :Rosetta_Statement_version "Rosetta Statement version")
 SubClassOf(:Rosetta_Statement_version <https://w3id.org/rosettastmtont/rosetta_statement_class>)
 
@@ -1085,7 +1037,7 @@ SubClassOf(:Rosetta_Statement_version <https://w3id.org/rosettastmtont/rosetta_s
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :all_instances "A resource token model that representsrepresents the set of all―past, present, and future―instances of a class. With all-instances resources we can make statements about the set of all instances of a class such as comparing their cardinality across classes, their distribution, etc.")
 AnnotationAssertion(dce:creator :all_instances <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :all_instances <https://w3id.org/rosettastmtont/rosettastmtont.owl#2024-12-05>)
+AnnotationAssertion(dcterms:created :all_instances <https://w3id.org/rosettastmtont/rosettastmtont.owl#2024-12-05>)
 AnnotationAssertion(rdfs:label :all_instances "all-instances")
 SubClassOf(:all_instances :resource_token_model)
 
@@ -1093,7 +1045,7 @@ SubClassOf(:all_instances :resource_token_model)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :anchor_Rosetta_Statement "A Rosetta Statement that is the anchor Rosetta Statement resource for an existing Rosetta Statement entry in a knowledge graph that uses the Rosetta Statement semantic model full version approach. This approach allows versioning of Rosetta Statements and history tracking of all edits of every Rosetta Statement. In this full version, every Rosetta Statement has an anchor Rosetta Statement resource, to which all versions of the statement are linked via the 'has version' property. Like any of its statement version resources, the anchor Rosetta Statement resources also instantiates the respective Rosetta Statement class.")
 AnnotationAssertion(dce:creator :anchor_Rosetta_Statement <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :anchor_Rosetta_Statement "2024-12-05")
+AnnotationAssertion(dcterms:created :anchor_Rosetta_Statement "2024-12-05")
 AnnotationAssertion(rdfs:label :anchor_Rosetta_Statement "anchor Rosetta Statement")
 SubClassOf(:anchor_Rosetta_Statement <https://w3id.org/rosettastmtont/rosetta_statement_class>)
 
@@ -1101,7 +1053,7 @@ SubClassOf(:anchor_Rosetta_Statement <https://w3id.org/rosettastmtont/rosetta_st
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :assertional_Rosetta_Statement "A Rosetta Statement that models an assertional statement. The referent of an assertional Rosetta Statement is a particular known individual (i.e., named-individual) that takes the subject-position of the statement.")
 AnnotationAssertion(dce:creator :assertional_Rosetta_Statement <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :assertional_Rosetta_Statement "2024-12-05")
+AnnotationAssertion(dcterms:created :assertional_Rosetta_Statement "2024-12-05")
 AnnotationAssertion(rdfs:label :assertional_Rosetta_Statement "assertional Rosetta Statement")
 SubClassOf(:assertional_Rosetta_Statement <https://w3id.org/rosettastmtont/rosetta_statement_class>)
 SubClassOf(:assertional_Rosetta_Statement :assertional_graph_token_model)
@@ -1110,7 +1062,7 @@ SubClassOf(:assertional_Rosetta_Statement :assertional_graph_token_model)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :assertional_graph_token_model "A statement graph token model that relates known instances (owl:namedIndividual) to each other. It has a named-individual resource of a specific class as its subject and thus an instance that is known to the knowledge graph. If the assertional statement graph token model possessed an object that is a resource and not a literal, that object would also refer to a named individual. An assertional statement graph token model is thus an ABox representation of a relation with at least one particular.")
 AnnotationAssertion(dce:creator :assertional_graph_token_model <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :assertional_graph_token_model "2024-12-05")
+AnnotationAssertion(dcterms:created :assertional_graph_token_model "2024-12-05")
 AnnotationAssertion(rdfs:label :assertional_graph_token_model "assertional statement graph token model")
 SubClassOf(:assertional_graph_token_model :statement_graph_token_model)
 
@@ -1121,7 +1073,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> :assertional_st
 “Swan Anton is white”")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :assertional_statement "A natural language statement that represents a proposition about a particular and thus individual entity (the statement’s subject), and this proposition is meant to be either true or false. It specifies a fact and states what is the case―it refers to the universe of actualities, the real.")
 AnnotationAssertion(dce:creator :assertional_statement <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :assertional_statement "2024-12-05")
+AnnotationAssertion(dcterms:created :assertional_statement "2024-12-05")
 AnnotationAssertion(rdfs:comment :assertional_statement "A natural language statement that describes the attributes of and relationships between individual entities. The referent of an assertional statement is a particular known individual that takes the subject-position of the statement. Assertional statements are taken to be true for that particular individual entity. Empirical data (observations, measurements), descriptions, and reports (e.g., about the instruments used, instrument settings, parameters, workflows) take the form of assertional statements.")
 AnnotationAssertion(rdfs:label :assertional_statement "assertional statement")
 SubClassOf(:assertional_statement <https://w3id.org/rosettastmtont/natural_language_statement>)
@@ -1130,7 +1082,7 @@ SubClassOf(:assertional_statement <https://w3id.org/rosettastmtont/natural_langu
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :contingent_Rosetta_Statement "A Rosetta Statement that models a contingent statement. The referent of a contingent Rosetta Statement is a some-instance resource of a particular class which takes the subject-position of the statement. Contingent Rpsetta Statements are taken to be true for at least one instance of that class—in the given example, for at least one swan")
 AnnotationAssertion(dce:creator :contingent_Rosetta_Statement <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :contingent_Rosetta_Statement "2024-12-05")
+AnnotationAssertion(dcterms:created :contingent_Rosetta_Statement "2024-12-05")
 AnnotationAssertion(rdfs:label :contingent_Rosetta_Statement "contingent Rosetta Statement")
 EquivalentClasses(:contingent_Rosetta_Statement ObjectAllValuesFrom(:subject ObjectIntersectionOf(:subject_position ObjectAllValuesFrom(:resource :some_instance))))
 SubClassOf(:contingent_Rosetta_Statement <https://w3id.org/rosettastmtont/rosetta_statement_class>)
@@ -1143,7 +1095,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> :contingent_sta
 “SARS-CoV-2 can cause acute respiratory distress syndromes (ARDS)” is an example of a contingent statement.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :contingent_statement "A natural language statement that represents a proposition that is true for some (i.e., at least one), but not necessarily for every instance of a specific class. A contingent statement specifies a possibility and states what can be the case―it refers to the universe of possibilities.")
 AnnotationAssertion(dce:creator :contingent_statement <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :contingent_statement "2024-12-05")
+AnnotationAssertion(dcterms:created :contingent_statement "2024-12-05")
 AnnotationAssertion(rdfs:comment :contingent_statement "One can derive a contingent statement from a single assertional statement―a fact is a proof for a possibility. Sometimes, it does not make sense to make assertional statements about individual entities. In these cases, it is often more reasonable to talk about possibilities. Biologists, for instance, do not talk about individual genes in the sense of instances of the same nucleotide sequence. Since they often cannot make universal statements that are necessarily true for every instance of the sequence, they often make contingent statements instead.")
 AnnotationAssertion(rdfs:label :contingent_statement "contingent statement")
 SubClassOf(:contingent_statement <https://w3id.org/rosettastmtont/natural_language_statement>)
@@ -1152,7 +1104,7 @@ SubClassOf(:contingent_statement <https://w3id.org/rosettastmtont/natural_langua
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :contingent_statement_graph_token_model "A statement graph token model that refers to some unknown instance resource of a specific class as its subject. If the contingent statement graph token model possesses an object that is a resource, each such object also refers to some unknown instance of a specific class.")
 AnnotationAssertion(dce:creator :contingent_statement_graph_token_model <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :contingent_statement_graph_token_model "2024-12-05")
+AnnotationAssertion(dcterms:created :contingent_statement_graph_token_model "2024-12-05")
 AnnotationAssertion(rdfs:comment :contingent_statement_graph_token_model "In OWL and description logics, contingent statements cannot be modelled as Abox expressions without using blank nodes. However, if no formal semantics are required, they can be formally represented by classifying an instance resource that instantiates a specific class to also instantiate the class 'some-instance'.")
 AnnotationAssertion(rdfs:label :contingent_statement_graph_token_model "contingent statement graph token model")
 SubClassOf(:contingent_statement_graph_token_model :statement_graph_token_model)
@@ -1161,7 +1113,7 @@ SubClassOf(:contingent_statement_graph_token_model :statement_graph_token_model)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :data_schema_pattern_model "A semantic graph pattern that models relations between individuals (i.e., particulars, instances). It is used to model relations that are true for a particular instance of a specific class of entity. Semantic graph token models instantiate data schema patterns.")
 AnnotationAssertion(dce:creator :data_schema_pattern_model <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :data_schema_pattern_model "2024-12-05")
+AnnotationAssertion(dcterms:created :data_schema_pattern_model "2024-12-05")
 AnnotationAssertion(rdfs:comment :data_schema_pattern_model "Data schema patterns describe the relations between entities within an ABox expression. They are instantiated in knowledge graphs to specify semantic graph token models with the intension to guarantee their schema interoperability (i.e., semantic interoperability).")
 AnnotationAssertion(rdfs:label :data_schema_pattern_model "data schema pattern")
 SubClassOf(:data_schema_pattern_model :semantic_graph_pattern_model)
@@ -1170,7 +1122,7 @@ SubClassOf(:data_schema_pattern_model :semantic_graph_pattern_model)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :epistemic_uncertainty "An informational quality that specifies the probability that the information is true.")
 AnnotationAssertion(dce:creator :epistemic_uncertainty <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :epistemic_uncertainty "2024-12-05")
+AnnotationAssertion(dcterms:created :epistemic_uncertainty "2024-12-05")
 AnnotationAssertion(rdfs:label :epistemic_uncertainty "epistemic uncertainty")
 SubClassOf(:epistemic_uncertainty :informational_quality)
 
@@ -1178,7 +1130,7 @@ SubClassOf(:epistemic_uncertainty :informational_quality)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :every-instance "A resource token model that represents all instances of a class. When used in a triple, an every-instance resource is meant as ‘for every instance i of class C holds …’.")
 AnnotationAssertion(dce:creator :every-instance <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :every-instance <https://w3id.org/rosettastmtont/rosettastmtont.owl#2024-12-05>)
+AnnotationAssertion(dcterms:created :every-instance <https://w3id.org/rosettastmtont/rosettastmtont.owl#2024-12-05>)
 AnnotationAssertion(rdfs:label :every-instance "every-instance")
 SubClassOf(:every-instance :resource_token_model)
 
@@ -1186,23 +1138,23 @@ SubClassOf(:every-instance :resource_token_model)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :graph_token_model "A token model that is organized as a graph composed of triples that follow the subject-predicate-object syntax, referencing class and property resources from ontologies, describing relations between instances. Semantic graph token models instantiate data schema patterns.")
 AnnotationAssertion(dce:creator :graph_token_model <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :graph_token_model "2024-12-05")
+AnnotationAssertion(dcterms:created :graph_token_model "2024-12-05")
 AnnotationAssertion(rdfs:label :graph_token_model "semantic graph token model")
 SubClassOf(:graph_token_model <https://w3id.org/rosettastmtont/token_model>)
 
 # Class: :informational_quality (informational quality)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :informational_quality "A quality that pertains to information.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :informational_quality "A quality that pertains to information.An information content entity that specifies a quality that pertains to an information content entity.")
 AnnotationAssertion(dce:creator :informational_quality <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :informational_quality "2024-12-05")
+AnnotationAssertion(dcterms:created :informational_quality "2024-12-05")
 AnnotationAssertion(rdfs:label :informational_quality "informational quality")
-SubClassOf(:informational_quality <http://purl.obolibrary.org/obo/BFO_0000019>)
+SubClassOf(:informational_quality <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 # Class: :lexical_statement (lexical statement)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :lexical_statement "A natural language statement that is about a linguistic item, such as a term. When we talk about terms, we use lexical statements.")
 AnnotationAssertion(dce:creator :lexical_statement <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :lexical_statement "2024-12-05")
+AnnotationAssertion(dcterms:created :lexical_statement "2024-12-05")
 AnnotationAssertion(rdfs:comment :lexical_statement "Lexical statements comprise e.g. information about synonyms, definitions of terms, and statistics about their usage.")
 AnnotationAssertion(rdfs:label :lexical_statement "lexical statement")
 SubClassOf(:lexical_statement <https://w3id.org/rosettastmtont/natural_language_statement>)
@@ -1211,7 +1163,7 @@ SubClassOf(:lexical_statement <https://w3id.org/rosettastmtont/natural_language_
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :lexical_statement_graph_token_model "A semantic graph token model that models a lexical statement about a specific resource in an ontology or a knowledge graph and its attributes as representational artifacts.")
 AnnotationAssertion(dce:creator :lexical_statement_graph_token_model <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :lexical_statement_graph_token_model "2024-12-05")
+AnnotationAssertion(dcterms:created :lexical_statement_graph_token_model "2024-12-05")
 AnnotationAssertion(rdfs:comment :lexical_statement_graph_token_model "Lexical statement graph token models comprise information such as the label of a given resource, synonyms, human-readable definitions, and provenance of resources used in ontologies and knowledge graphs. The model typically uses annotation properties to annotate instance, class, object property, data property, and annotation property resources.")
 AnnotationAssertion(rdfs:label :lexical_statement_graph_token_model "lexical statement graph token model")
 SubClassOf(:lexical_statement_graph_token_model :statement_graph_token_model)
@@ -1220,7 +1172,7 @@ SubClassOf(:lexical_statement_graph_token_model :statement_graph_token_model)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :metamodel "A metamodel is a model of a model that can be obtained by generalizing over a type model.")
 AnnotationAssertion(dce:creator :metamodel <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :metamodel "2024-12-05")
+AnnotationAssertion(dcterms:created :metamodel "2024-12-05")
 AnnotationAssertion(rdfs:label :metamodel "metamodel")
 SubClassOf(:metamodel :type_model)
 
@@ -1230,8 +1182,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :model "An info
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :model "Kühne T. Matters of (Meta-) Modeling. Softw Syst Model. November 2006;5(4):369–85.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :model "Stachowiak H. Allgemeine Modelltheorie. Wien: Springer; 1973.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :model "Steinmüller W. Informationstechnologie und Gesellschaft: Einführung in die Angewandte Informatik. Darmstadt: Wissenschaftliche Buchgesellschaft; 1993.")
+AnnotationAssertion(dcterms:created :model <https://w3id.org/rosettastmtont/rosettastmtont.owl#2024-12-05>)
 AnnotationAssertion(dcterms:creator :model <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :model <https://w3id.org/rosettastmtont/rosettastmtont.owl#2024-12-05>)
 AnnotationAssertion(rdfs:comment :model "The model's purpose is to act as a surrogate for the system-of-interest that it represents. Its responses should be consistent with those of the actual system, however, focusing only on the properties relevant to its intended use.")
 AnnotationAssertion(rdfs:comment :model "To be effective, a model must possess the following three features:
 
@@ -1247,7 +1199,7 @@ SubClassOf(:model <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :most-instances "A resource token model that represents one or more anonymous instances of a class X that is a subclass of class Y, with X being defined in reference to a set of properties A, and the cardinality of the set of all-instances of Y is larger than the cardinality of the set of all-instances of X that are not instances of Y.")
 AnnotationAssertion(dce:creator :most-instances <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :most-instances <https://w3id.org/rosettastmtont/rosettastmtont.owl#2024-12-05>)
+AnnotationAssertion(dcterms:created :most-instances <https://w3id.org/rosettastmtont/rosettastmtont.owl#2024-12-05>)
 AnnotationAssertion(rdfs:label :most-instances "most-instances")
 SubClassOf(:most-instances :resource_token_model)
 
@@ -1255,7 +1207,7 @@ SubClassOf(:most-instances :resource_token_model)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :negation "A semantic graph token model the content of which is negated.")
 AnnotationAssertion(dce:creator :negation <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :negation "2024-12-05")
+AnnotationAssertion(dcterms:created :negation "2024-12-05")
 AnnotationAssertion(rdfs:comment :negation "For instance, if a single piece of information from the statement 'Peter traveled by bus from Berlin to Paris on the 21st of November 1995.' is not true, the entire statement must must be negated. For example, if Peter did not take the bus but the train or when he traveled from Bonn to Berlin or not on the 21st of November 1995 but the 22nd.")
 AnnotationAssertion(rdfs:comment :negation "If one needs to document a negation, one can create a semantic graph token model of the information that is negated, create a resource that represents this model and classify that resource as 'negation'. UI can search for negations by identifying all instances of this 'negation' class. While this way of modelling negation has limited reasoning-capability, it is significantly easier to model than OWL expressions for negations.")
 AnnotationAssertion(rdfs:label :negation "negation")
@@ -1264,8 +1216,8 @@ SubClassOf(:negation :graph_token_model)
 # Class: :object_position (object position)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :object_position "A Rosetta Statement position that is used to specify the position of an object resource or an object literal within a Rosetta Statement, using the Rosetta Statement semantic model full version. The actual object resource or literal is linked to this resource via the property 'has resource' or 'has literal' respectively. The property 'order' specifies the order of object resources or literals when a Rosetta Statement possess more than one instance of a specific type of object position.")
+AnnotationAssertion(dcterms:created :object_position "2024-12-05")
 AnnotationAssertion(dcterms:creator :object_position <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :object_position "2024-12-05")
 AnnotationAssertion(rdfs:label :object_position "object position")
 SubClassOf(:object_position :Rosetta_Statement_position)
 
@@ -1273,7 +1225,7 @@ SubClassOf(:object_position :Rosetta_Statement_position)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :ontology_design_pattern_model "A semantic graph pattern that models relations between universals. It is used to model relations that are universally true, i.e., that are necessarily true for every instance of a specific class of entity.")
 AnnotationAssertion(dce:creator :ontology_design_pattern_model <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :ontology_design_pattern_model "2024-12-05")
+AnnotationAssertion(dcterms:created :ontology_design_pattern_model "2024-12-05")
 AnnotationAssertion(rdfs:comment :ontology_design_pattern_model "Ontology design pattern describe the relations between entities within a TBox expression. They are instantiated in OWL ontologies to specify class axioms with the intension to increase the semantic interoperability.")
 AnnotationAssertion(rdfs:label :ontology_design_pattern_model "ontology design pattern")
 SubClassOf(:ontology_design_pattern_model :semantic_graph_pattern_model)
@@ -1282,7 +1234,7 @@ SubClassOf(:ontology_design_pattern_model :semantic_graph_pattern_model)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :prototypical_Rosetta_Statement "A contingent Rosetta Statement that models a prototypical statement. The referent of a prototypical Rosetta Statement is the most-instances resource of a particular class, indicating that the statement is true for most, but not necessarily all, instances of the class.")
 AnnotationAssertion(dce:creator :prototypical_Rosetta_Statement <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :prototypical_Rosetta_Statement "2024-12-05")
+AnnotationAssertion(dcterms:created :prototypical_Rosetta_Statement "2024-12-05")
 AnnotationAssertion(rdfs:label :prototypical_Rosetta_Statement "prototypical Rosetta Statement")
 EquivalentClasses(:prototypical_Rosetta_Statement ObjectAllValuesFrom(:subject ObjectIntersectionOf(:subject_position ObjectAllValuesFrom(:resource :most-instances))))
 SubClassOf(:prototypical_Rosetta_Statement <https://w3id.org/rosettastmtont/rosetta_statement_class>)
@@ -1295,7 +1247,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> :prototypical_s
 “Most swans are white” or “Swans are typically”")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :prototypical_statement "A contingent statement that represents a proposition that describes a relationship that applies to every instance of a specific class as long as not the contrary is explicitly stated, and thus specifies what is typically but not necessarily the case. It specifies a possibility and states what is most likely the case. As such, prototypical statements are a specific type of contingent statement.")
 AnnotationAssertion(dce:creator :prototypical_statement <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :prototypical_statement "2024-12-05")
+AnnotationAssertion(dcterms:created :prototypical_statement "2024-12-05")
 AnnotationAssertion(rdfs:comment :prototypical_statement "Symptoms in medicine and recognition criteria in genetics, genomics, biomedicine, evolutionary biology, ecology, and anatomy are often subject to exceptions and therefore take the form of prototypical statements.")
 AnnotationAssertion(rdfs:label :prototypical_statement "prototypical statement")
 SubClassOf(:prototypical_statement :contingent_statement)
@@ -1307,7 +1259,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :prototypical_s
 
 A prototypical statement graph token model can be understood as defining a class Y* in reference to a set A* of prototypical properties, with Y* being a subclass of the statement’s subject resource class X, and the cardinality of the corresponding set of all-instances of Y* is larger than the cardinality of the set of all-instances of X that does not include instances that possess the set of properties A*.")
 AnnotationAssertion(dce:creator :prototypical_statement_graph_token_model <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :prototypical_statement_graph_token_model "2024-12-05")
+AnnotationAssertion(dcterms:created :prototypical_statement_graph_token_model "2024-12-05")
 AnnotationAssertion(rdfs:comment :prototypical_statement_graph_token_model "Description logic and thus also OWL does not provide the means to state what is typically true. Therefore, to provide a semantics for such statements, other logical formalisms are needed that can express prototypical knowledge.")
 AnnotationAssertion(rdfs:comment :prototypical_statement_graph_token_model "Many empirical recognition criteria are represented with prototypical statements, or in general, all things that are subject to exceptions.")
 AnnotationAssertion(rdfs:label :prototypical_statement_graph_token_model "prototypical statement graph token model")
@@ -1317,7 +1269,7 @@ SubClassOf(:prototypical_statement_graph_token_model :contingent_statement_graph
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :resource_token_model "A model that takes the form of a single resource that represents information about the system-of-interest it models.")
 AnnotationAssertion(dce:creator :resource_token_model <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :resource_token_model <https://w3id.org/rosettastmtont/rosettastmtont.owl#2024-12-05>)
+AnnotationAssertion(dcterms:created :resource_token_model <https://w3id.org/rosettastmtont/rosettastmtont.owl#2024-12-05>)
 AnnotationAssertion(rdfs:label :resource_token_model "resource token model")
 SubClassOf(:resource_token_model :model)
 
@@ -1325,7 +1277,7 @@ SubClassOf(:resource_token_model :model)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :semantic_graph_pattern_model "A metamodel that is organized as a graph composed of triples that follow the subject-predicate-object syntax, referencing class and property resources from ontologies. Semantic graph patterns can be instantiated by semantic graph token models")
 AnnotationAssertion(dce:creator :semantic_graph_pattern_model <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :semantic_graph_pattern_model "2024-12-05")
+AnnotationAssertion(dcterms:created :semantic_graph_pattern_model "2024-12-05")
 AnnotationAssertion(rdfs:comment :semantic_graph_pattern_model "Semantic graph patterns can be derived from semantic graph token models by classifying and generalizing their instance resources.")
 AnnotationAssertion(rdfs:label :semantic_graph_pattern_model "semantic graph pattern")
 SubClassOf(:semantic_graph_pattern_model :metamodel)
@@ -1334,7 +1286,7 @@ SubClassOf(:semantic_graph_pattern_model :metamodel)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :simple_natural_language_statement "A natural language statement with a simple structure, consisting of one or more subjects, a main predicate or verb, and a number of objects.")
 AnnotationAssertion(dce:creator :simple_natural_language_statement <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :simple_natural_language_statement "2024-12-05")
+AnnotationAssertion(dcterms:created :simple_natural_language_statement "2024-12-05")
 AnnotationAssertion(rdfs:label :simple_natural_language_statement "simple natural language statement")
 SubClassOf(:simple_natural_language_statement <https://w3id.org/rosettastmtont/natural_language_statement>)
 
@@ -1342,7 +1294,7 @@ SubClassOf(:simple_natural_language_statement <https://w3id.org/rosettastmtont/n
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :some_instance "A resource token model that represents one or more anonymous instances of a class. When used in a triple, a some-instance resource is meant as ‘there exists an instance i of class C for which holds …’.")
 AnnotationAssertion(dce:creator :some_instance <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :some_instance <https://w3id.org/rosettastmtont/rosettastmtont.owl#2024-12-05>)
+AnnotationAssertion(dcterms:created :some_instance <https://w3id.org/rosettastmtont/rosettastmtont.owl#2024-12-05>)
 AnnotationAssertion(rdfs:comment :some_instance "When a some-instance resource is used in a triple, it represents a set of one or more instances of the corresponding class and the triple is meant to be read as applying to each instance of that set. Based on this characterization, we can specify portions of matter using some-instance resources. For instance, a portion of water can be specified by linking an ‘object aggregate’ (BFO:0000027) with a some-instance resource of the class water (CHEBI:15377) via the property hasPart (BFO:0000051).")
 AnnotationAssertion(rdfs:label :some_instance "some-instance")
 SubClassOf(:some_instance :resource_token_model)
@@ -1351,15 +1303,15 @@ SubClassOf(:some_instance :resource_token_model)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :statement_graph_token_model "A semantic graph token model that models information that can be expressed in a single natural language statement. It represents a smallest semantic-content-carrying unit of information that is semantically meaningful to a human reader.")
 AnnotationAssertion(dce:creator :statement_graph_token_model <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :statement_graph_token_model "2024-12-05")
+AnnotationAssertion(dcterms:created :statement_graph_token_model "2024-12-05")
 AnnotationAssertion(rdfs:label :statement_graph_token_model "statement graph token model")
 SubClassOf(:statement_graph_token_model :graph_token_model)
 
 # Class: :subject_position (subject position)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :subject_position "A Rosetta Statement position that is used to specify the position of a subject resource within a Rosetta Statement, using the Rosetta Statement semantic model full version. The actual subject resource is linked to this resource via the property 'has resource'. The property 'order' specifies the order of subject resources when a Rosetta Statement possess more than one instance of subject position.")
+AnnotationAssertion(dcterms:created :subject_position "2024-12-05")
 AnnotationAssertion(dcterms:creator :subject_position <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :subject_position "2024-12-05")
 AnnotationAssertion(rdfs:label :subject_position "subject position")
 SubClassOf(:subject_position :Rosetta_Statement_position)
 
@@ -1367,7 +1319,7 @@ SubClassOf(:subject_position :Rosetta_Statement_position)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :tabular_datum "A token model that is organized as a row in a table, describing relations between instances. Tabular data instantiate tabular data schemata.")
 AnnotationAssertion(dce:creator :tabular_datum <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :tabular_datum "2024-12-05")
+AnnotationAssertion(dcterms:created :tabular_datum "2024-12-05")
 AnnotationAssertion(rdfs:label :tabular_datum "tabular datum")
 SubClassOf(:tabular_datum <https://w3id.org/rosettastmtont/token_model>)
 
@@ -1375,7 +1327,7 @@ SubClassOf(:tabular_datum <https://w3id.org/rosettastmtont/token_model>)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :type_model "A model that is derived from a token model by classification of its properties (i.e., the entities, relations, and attributes of the system-of-interest it models).")
 AnnotationAssertion(dce:creator :type_model <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :type_model "2024-12-05")
+AnnotationAssertion(dcterms:created :type_model "2024-12-05")
 AnnotationAssertion(rdfs:comment :type_model "Type models are instantiated by their corresponding token models.")
 AnnotationAssertion(rdfs:label :type_model "type model")
 SubClassOf(:type_model :model)
@@ -1384,7 +1336,7 @@ SubClassOf(:type_model :model)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :universal_Rosetta_Statement "A Rosetta Statement that models a universal statement. The referent of a universal Rosetta Statement is the every-instance resource of a particular class. A universal statement is necessarily true for every instance of that class.")
 AnnotationAssertion(dce:creator :universal_Rosetta_Statement <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :universal_Rosetta_Statement "2024-12-05")
+AnnotationAssertion(dcterms:created :universal_Rosetta_Statement "2024-12-05")
 AnnotationAssertion(rdfs:label :universal_Rosetta_Statement "universal Rosetta Statement")
 EquivalentClasses(:universal_Rosetta_Statement ObjectAllValuesFrom(:subject ObjectIntersectionOf(:subject_position ObjectAllValuesFrom(:resource :every-instance))))
 SubClassOf(:universal_Rosetta_Statement <https://w3id.org/rosettastmtont/rosetta_statement_class>)
@@ -1395,7 +1347,7 @@ SubClassOf(:universal_Rosetta_Statement :universal_statement_graph_token_model)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> :universal_statement "“All swans are white” (or “Every swan is white”) is an infamous example of a universal statement that was considered true by scholars in Europe until the 17th Century.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :universal_statement "A natural language statement that represents a relationship that applies to every instance of a specific class. A universal statement states what is necessarily or impossibly the case―it refers to the universe of intentions or finality.")
 AnnotationAssertion(dce:creator :universal_statement <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :universal_statement "2024-12-05")
+AnnotationAssertion(dcterms:created :universal_statement "2024-12-05")
 AnnotationAssertion(rdfs:comment :universal_statement "Universal statements represent commonly accepted domain knowledge and specify what is necessarily the case. Rules, scientific hypotheses, natural laws, and theories about causal mechanisms take the form of universal statements and can be used to make predictions. In ontologies, universal statements take the form of definitions of ontology classes and their class axioms")
 AnnotationAssertion(rdfs:label :universal_statement "universal statement")
 SubClassOf(:universal_statement <https://w3id.org/rosettastmtont/natural_language_statement>)
@@ -1404,7 +1356,7 @@ SubClassOf(:universal_statement <https://w3id.org/rosettastmtont/natural_languag
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :universal_statement_graph_token_model "A statement graph token model that refers either directly to a class or to an every-instance or all-instances resource of a specific class as its subject. In other words, its subject is also the subject of either a class, an all-instances, or an every-instance identification unit.")
 AnnotationAssertion(dce:creator :universal_statement_graph_token_model <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :universal_statement_graph_token_model "2024-12-05")
+AnnotationAssertion(dcterms:created :universal_statement_graph_token_model "2024-12-05")
 AnnotationAssertion(rdfs:comment :universal_statement_graph_token_model "If the subject is a class, the predicate of the universal statement graph token model is either based on the property subClassOf (RDFS:subClassOf), equivalentClass (owl:equivalentClass), disjointWith (owl:disjointWith), or sameAs (owl:sameAs) and its object is also a class. For all other types of universal statement gaph token models applies that the subject is an every-instance or an all-instances resource and if they possess an object that is a resource, the object refers to some instances of a specific class, resulting in an all-to-some relation (or many such relations in case of an n-ary proposition).")
 AnnotationAssertion(rdfs:label :universal_statement_graph_token_model "universal statement graph token model")
 SubClassOf(:universal_statement_graph_token_model :statement_graph_token_model)
@@ -1413,7 +1365,7 @@ SubClassOf(:universal_statement_graph_token_model :statement_graph_token_model)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :visibility_specification "A directive information entity that describes how a specific information content entity should be visible in an application.")
 AnnotationAssertion(dce:creator :visibility_specification <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :visibility_specification "2024-12-05")
+AnnotationAssertion(dcterms:created :visibility_specification "2024-12-05")
 AnnotationAssertion(rdfs:label :visibility_specification "visibility specification")
 SubClassOf(:visibility_specification <http://purl.obolibrary.org/obo/IAO_0000033>)
 
@@ -1422,17 +1374,32 @@ SubClassOf(:visibility_specification <http://purl.obolibrary.org/obo/IAO_0000033
 #   Named Individuals
 ############################
 
+# Individual: <https://orcid.org/0000-0002-1595-3213> (Philip Strömert)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-1595-3213> "Philip Strömert")
+
+# Individual: <https://orcid.org/0009-0007-5934-1087> (Pallavi Karanth)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0009-0007-5934-1087> "Pallavi Karanth")
+
+# Individual: <https://orcid.org/0000-0002-8280-0487> (Lars Vogt)
+
+AnnotationAssertion(dce:creator <https://orcid.org/0000-0002-8280-0487> <https://orcid.org/0000-0002-8280-0487>)
+AnnotationAssertion(dcterms:created <https://orcid.org/0000-0002-8280-0487> "2024-12-05")
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-8280-0487> "Lars Vogt")
+ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000708> <https://orcid.org/0000-0002-8280-0487>)
+
 # Individual: :Rosetta_Statement_metamodel_full_version (Rosetta Statement metamodel full version)
 
 AnnotationAssertion(dce:creator :Rosetta_Statement_metamodel_full_version <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :Rosetta_Statement_metamodel_full_version <https://w3id.org/rosettastmtont/rosettastmtont.owl#2024-12-05>)
+AnnotationAssertion(dcterms:created :Rosetta_Statement_metamodel_full_version <https://w3id.org/rosettastmtont/rosettastmtont.owl#2024-12-05>)
 AnnotationAssertion(rdfs:label :Rosetta_Statement_metamodel_full_version "Rosetta Statement metamodel full version")
 ClassAssertion(:Rosetta_Statement_semantic_metamodel :Rosetta_Statement_metamodel_full_version)
 
 # Individual: :Rosetta_Statement_metamodel_light_version (Rosetta Statement metamodel light version)
 
 AnnotationAssertion(dce:creator :Rosetta_Statement_metamodel_light_version <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :Rosetta_Statement_metamodel_light_version <https://w3id.org/rosettastmtont/rosettastmtont.owl#2024-12-05>)
+AnnotationAssertion(dcterms:created :Rosetta_Statement_metamodel_light_version <https://w3id.org/rosettastmtont/rosettastmtont.owl#2024-12-05>)
 AnnotationAssertion(rdfs:label :Rosetta_Statement_metamodel_light_version "Rosetta Statement metamodel light version")
 ClassAssertion(:Rosetta_Statement_semantic_metamodel :Rosetta_Statement_metamodel_light_version)
 
@@ -1440,7 +1407,7 @@ ClassAssertion(:Rosetta_Statement_semantic_metamodel :Rosetta_Statement_metamode
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :default "Data with a visibility specification of 'default' can be found via the search interface of the application. If the visibility of a data entry is neither set to 'featured' nor to 'deleted' or 'unlisted', it is set to 'default'.")
 AnnotationAssertion(dce:creator :default <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :default "2024-12-05")
+AnnotationAssertion(dcterms:created :default "2024-12-05")
 AnnotationAssertion(rdfs:label :default "default")
 ClassAssertion(:visibility_specification :default)
 
@@ -1448,7 +1415,7 @@ ClassAssertion(:visibility_specification :default)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :deleted "Data with a visibility specification of 'deleted' cannot be found via the search interface of the application - only their metadata is still available.")
 AnnotationAssertion(dce:creator :deleted <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :deleted "2024-12-05")
+AnnotationAssertion(dcterms:created :deleted "2024-12-05")
 AnnotationAssertion(rdfs:label :deleted "deleted")
 ClassAssertion(:visibility_specification :deleted)
 
@@ -1456,7 +1423,7 @@ ClassAssertion(:visibility_specification :deleted)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :featured "Data with a visibility specification of 'featured' can be found via the search interface of the application and are given priority in any display.")
 AnnotationAssertion(dce:creator :featured <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :featured "2024-12-05")
+AnnotationAssertion(dcterms:created :featured "2024-12-05")
 AnnotationAssertion(rdfs:label :featured "featured")
 ClassAssertion(:visibility_specification :featured)
 
@@ -1464,7 +1431,7 @@ ClassAssertion(:visibility_specification :featured)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :high_epistemic_certainty "Indicating a high probability that the information is true.")
 AnnotationAssertion(dce:creator :high_epistemic_certainty <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :high_epistemic_certainty "2024-12-05")
+AnnotationAssertion(dcterms:created :high_epistemic_certainty "2024-12-05")
 AnnotationAssertion(rdfs:label :high_epistemic_certainty "high epistemic certainty")
 ClassAssertion(:epistemic_uncertainty :high_epistemic_certainty)
 
@@ -1472,7 +1439,7 @@ ClassAssertion(:epistemic_uncertainty :high_epistemic_certainty)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :low_epistemic_certainty "Indicating a low probability that the information is true.")
 AnnotationAssertion(dce:creator :low_epistemic_certainty <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :low_epistemic_certainty "2024-12-05")
+AnnotationAssertion(dcterms:created :low_epistemic_certainty "2024-12-05")
 AnnotationAssertion(rdfs:label :low_epistemic_certainty "low epistemic certainty")
 ClassAssertion(:epistemic_uncertainty :low_epistemic_certainty)
 
@@ -1480,7 +1447,7 @@ ClassAssertion(:epistemic_uncertainty :low_epistemic_certainty)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :medium_epistemic_certainty "Indicating a medium probability that the information is true.")
 AnnotationAssertion(dce:creator :medium_epistemic_certainty <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :medium_epistemic_certainty "2024-12-05")
+AnnotationAssertion(dcterms:created :medium_epistemic_certainty "2024-12-05")
 AnnotationAssertion(rdfs:label :medium_epistemic_certainty "medium epistemic certainty")
 ClassAssertion(:epistemic_uncertainty :medium_epistemic_certainty)
 
@@ -1488,16 +1455,12 @@ ClassAssertion(:epistemic_uncertainty :medium_epistemic_certainty)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :unlisted "Data with a visibility specification of 'unlisted' cannot be found via the search interface of the application.")
 AnnotationAssertion(dce:creator :unlisted <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> :unlisted <https://w3id.org/rosettastmtont/rosettastmtont.owl#2024-12-05>)
+AnnotationAssertion(dcterms:created :unlisted <https://w3id.org/rosettastmtont/rosettastmtont.owl#2024-12-05>)
 AnnotationAssertion(rdfs:label :unlisted "unlisted")
 ClassAssertion(:visibility_specification :unlisted)
 
-# Individual: <https://orcid.org/0000-0002-8280-0487> (Lars Vogt)
 
-AnnotationAssertion(dce:creator <https://orcid.org/0000-0002-8280-0487> <https://orcid.org/0000-0002-8280-0487>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://orcid.org/0000-0002-8280-0487> "2024-12-05")
-AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-8280-0487> "Lars Vogt")
-ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000708> <https://orcid.org/0000-0002-8280-0487>)
-
-
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> dce:contributor "An entity responsible for making contributions to the resource.")
+AnnotationAssertion(rdfs:comment dce:contributor "The guidelines for using names of persons or organizations as creators apply to contributors.")
+AnnotationAssertion(rdfs:label dce:contributor "contributor")
 )
