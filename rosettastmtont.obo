@@ -1,20 +1,27 @@
 format-version: 1.2
+idspace: dce http://purl.org/dc/elements/1.1/ 
+idspace: dcterms http://purl.org/dc/terms/ 
+idspace: foaf http://xmlns.com/foaf/0.1/ 
+idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
+idspace: protege http://protege.stanford.edu/plugins/owl/protege# 
+idspace: skos http://www.w3.org/2004/02/skos/core# 
+idspace: swrla http://swrl.stanford.edu/ontologies/3.3/swrla.owl# 
 import: http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl
 import: http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl
 import: http://purl.obolibrary.org/obo/rosettastmtont/imports/omo_import.owl
 import: http://purl.obolibrary.org/obo/rosettastmtont/imports/pato_import.owl
 import: http://purl.obolibrary.org/obo/rosettastmtont/imports/ro_import.owl
 ontology: https://w3id.org/rosettastmtont/
-property_value: defaultLanguage "en" xsd:string
-property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-1595-3213
-property_value: http://purl.org/dc/terms/contributor https://orcid.org/0009-0007-5934-1087
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/description "An ontology for representing Rosetta Statements in a knowledge graph. Rosetta Statements are RDF graphs that model simple English natural language statements using terms from controlled vocabularies (including ontologies)." xsd:string
-property_value: http://purl.org/dc/terms/description "None" xsd:string
-property_value: http://purl.org/dc/terms/license http://creativecommons.org/publicdomain/zero/1.0/
-property_value: http://purl.org/dc/terms/title "Rosetta Statements Ontology" xsd:string
+property_value: dcterms:contributor https://orcid.org/0000-0002-1595-3213
+property_value: dcterms:contributor https://orcid.org/0009-0007-5934-1087
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:description "An ontology for representing Rosetta Statements in a knowledge graph. Rosetta Statements are RDF graphs that model simple English natural language statements using terms from controlled vocabularies (including ontologies)." xsd:string
+property_value: dcterms:description "None" xsd:string
+property_value: dcterms:license http://creativecommons.org/publicdomain/zero/1.0/
+property_value: dcterms:title "Rosetta Statements Ontology" xsd:string
 property_value: owl:versionInfo "2024-12-05" xsd:string
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))\nDeclaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/rosetta_statement_class>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_position>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_version>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/rosettastmtont.owl#anchor_Rosetta_Statement>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/rosettastmtont.owl#contingent_Rosetta_Statement>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/rosettastmtont.owl#every-instance>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/rosettastmtont.owl#most-instances>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/rosettastmtont.owl#object_position>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/rosettastmtont.owl#prototypical_Rosetta_Statement>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/rosettastmtont.owl#some_instance>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/rosettastmtont.owl#subject_position>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/rosettastmtont.owl#universal_Rosetta_Statement>))\nDeclaration(ObjectProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#resource>))\nDeclaration(ObjectProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#subject>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/has_latestVersion>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/has_templateID>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/modifiable>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_light_version_data_property>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_literal_property>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_nanopublication_data_property>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#deleted_at>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#has_version_number>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#literal>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#literal_object_position>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#negated>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_1>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_10>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_2>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_3>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_4>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_5>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_6>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_7>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_8>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_9>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#order>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_1>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_10>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_2>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_3>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_4>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_5>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_6>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_7>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_8>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_9>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#symmetric>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#transitive>))\n\n############################\n#   Data Properties\n############################\n\n# Data Property: <https://w3id.org/rosettastmtont/has_latestVersion> (<https://w3id.org/rosettastmtont/has_latestVersion>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/has_latestVersion> <https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_nanopublication_data_property>)\nDataPropertyRange(<https://w3id.org/rosettastmtont/has_latestVersion> xsd:string)\n\n# Data Property: <https://w3id.org/rosettastmtont/has_templateID> (<https://w3id.org/rosettastmtont/has_templateID>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/has_templateID> <https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_nanopublication_data_property>)\nDataPropertyRange(<https://w3id.org/rosettastmtont/has_templateID> xsd:string)\n\n# Data Property: <https://w3id.org/rosettastmtont/modifiable> (<https://w3id.org/rosettastmtont/modifiable>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/modifiable> <https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_literal_property>)\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/modifiable> <https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_nanopublication_data_property>)\nDataPropertyDomain(<https://w3id.org/rosettastmtont/modifiable> <https://w3id.org/rosettastmtont/rosetta_statement_class>)\nDataPropertyRange(<https://w3id.org/rosettastmtont/modifiable> xsd:boolean)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_light_version_data_property> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_light_version_data_property>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_light_version_data_property> <https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_literal_property>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_literal_property> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_literal_property>)\n\nDataPropertyDomain(<https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_literal_property> <https://w3id.org/rosettastmtont/rosetta_statement_class>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_nanopublication_data_property> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_nanopublication_data_property>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_nanopublication_data_property> <https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_literal_property>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#deleted_at> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#deleted_at>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#deleted_at> <https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_literal_property>)\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#deleted_at> <https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_nanopublication_data_property>)\nDataPropertyDomain(<https://w3id.org/rosettastmtont/rosettastmtont.owl#deleted_at> ObjectUnionOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_version> <https://w3id.org/rosettastmtont/rosettastmtont.owl#anchor_Rosetta_Statement>))\nDataPropertyRange(<https://w3id.org/rosettastmtont/rosettastmtont.owl#deleted_at> xsd:dateTimeStamp)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#has_version_number> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#has_version_number>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#has_version_number> <https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_literal_property>)\nDataPropertyDomain(<https://w3id.org/rosettastmtont/rosettastmtont.owl#has_version_number> <https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_version>)\nDataPropertyRange(<https://w3id.org/rosettastmtont/rosettastmtont.owl#has_version_number> xsd:integer)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#literal> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#literal>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#literal> <https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_literal_property>)\nDataPropertyDomain(<https://w3id.org/rosettastmtont/rosettastmtont.owl#literal> <https://w3id.org/rosettastmtont/rosettastmtont.owl#object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#literal_object_position> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#literal_object_position>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#literal_object_position> <https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_light_version_data_property>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#negated> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#negated>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#negated> <https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_nanopublication_data_property>)\nDataPropertyDomain(<https://w3id.org/rosettastmtont/rosettastmtont.owl#negated> ObjectUnionOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_version> <https://w3id.org/rosettastmtont/rosettastmtont.owl#anchor_Rosetta_Statement>))\nDataPropertyRange(<https://w3id.org/rosettastmtont/rosettastmtont.owl#negated> xsd:boolean)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position> <https://w3id.org/rosettastmtont/rosettastmtont.owl#literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_1> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_1>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_1> <https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_10> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_10>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_10> <https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_2> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_2>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_2> <https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_3> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_3>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_3> <https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_4> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_4>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_4> <https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_5> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_5>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_5> <https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_6> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_6>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_6> <https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_7> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_7>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_7> <https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_8> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_8>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_8> <https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_9> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_9>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position_9> <https://w3id.org/rosettastmtont/rosettastmtont.owl#optional_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#order> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#order>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#order> <https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_literal_property>)\nFunctionalDataProperty(<https://w3id.org/rosettastmtont/rosettastmtont.owl#order>)\nDataPropertyDomain(<https://w3id.org/rosettastmtont/rosettastmtont.owl#order> <https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_position>)\nDataPropertyRange(<https://w3id.org/rosettastmtont/rosettastmtont.owl#order> xsd:integer)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position> <https://w3id.org/rosettastmtont/rosettastmtont.owl#literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_1> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_1>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_1> <https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_10> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_10>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_10> <https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_2> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_2>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_2> <https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_3> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_3>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_3> <https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_4> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_4>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_4> <https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_5> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_5>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_5> <https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_6> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_6>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_6> <https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_7> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_7>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_7> <https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_8> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_8>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_8> <https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_9> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_9>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position_9> <https://w3id.org/rosettastmtont/rosettastmtont.owl#required_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#symmetric> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#symmetric>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#symmetric> <https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_literal_property>)\nDataPropertyDomain(<https://w3id.org/rosettastmtont/rosettastmtont.owl#symmetric> <https://w3id.org/rosettastmtont/rosettastmtont.owl#object_position>)\nDataPropertyRange(<https://w3id.org/rosettastmtont/rosettastmtont.owl#symmetric> xsd:boolean)\n\n# Data Property: <https://w3id.org/rosettastmtont/rosettastmtont.owl#transitive> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#transitive>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#transitive> <https://w3id.org/rosettastmtont/rosettastmtont.owl#Rosetta_Statement_literal_property>)\nDataPropertyDomain(<https://w3id.org/rosettastmtont/rosettastmtont.owl#transitive> <https://w3id.org/rosettastmtont/rosettastmtont.owl#object_position>)\nDataPropertyRange(<https://w3id.org/rosettastmtont/rosettastmtont.owl#transitive> xsd:boolean)\n\n\n\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/BFO_0000001> (<http://purl.obolibrary.org/obo/BFO_0000001>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/BFO_0000001> owl:Thing)\n\n# Class: <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> (<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)\n\nSubClassOf(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> owl:Thing)\n\n# Class: owl:Nothing (owl:Nothing)\n\nSubClassOf(owl:Nothing owl:Nothing)\n\n# Class: <https://w3id.org/rosettastmtont/rosettastmtont.owl#contingent_Rosetta_Statement> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#contingent_Rosetta_Statement>)\n\nEquivalentClasses(<https://w3id.org/rosettastmtont/rosettastmtont.owl#contingent_Rosetta_Statement> ObjectAllValuesFrom(<https://w3id.org/rosettastmtont/rosettastmtont.owl#subject> ObjectIntersectionOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#subject_position> ObjectAllValuesFrom(<https://w3id.org/rosettastmtont/rosettastmtont.owl#resource> <https://w3id.org/rosettastmtont/rosettastmtont.owl#some_instance>))))\n\n# Class: <https://w3id.org/rosettastmtont/rosettastmtont.owl#prototypical_Rosetta_Statement> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#prototypical_Rosetta_Statement>)\n\nEquivalentClasses(<https://w3id.org/rosettastmtont/rosettastmtont.owl#prototypical_Rosetta_Statement> ObjectAllValuesFrom(<https://w3id.org/rosettastmtont/rosettastmtont.owl#subject> ObjectIntersectionOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#subject_position> ObjectAllValuesFrom(<https://w3id.org/rosettastmtont/rosettastmtont.owl#resource> <https://w3id.org/rosettastmtont/rosettastmtont.owl#most-instances>))))\n\n# Class: <https://w3id.org/rosettastmtont/rosettastmtont.owl#universal_Rosetta_Statement> (<https://w3id.org/rosettastmtont/rosettastmtont.owl#universal_Rosetta_Statement>)\n\nEquivalentClasses(<https://w3id.org/rosettastmtont/rosettastmtont.owl#universal_Rosetta_Statement> ObjectAllValuesFrom(<https://w3id.org/rosettastmtont/rosettastmtont.owl#subject> ObjectIntersectionOf(<https://w3id.org/rosettastmtont/rosettastmtont.owl#subject_position> ObjectAllValuesFrom(<https://w3id.org/rosettastmtont/rosettastmtont.owl#resource> <https://w3id.org/rosettastmtont/rosettastmtont.owl#every-instance>))))\n\n\n)
+property_value: protege:defaultLanguage "en" xsd:string
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))\nDeclaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/Rosetta_Statement_position>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/Rosetta_Statement_version>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/anchor_Rosetta_Statement>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/contingent_Rosetta_Statement>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/every-instance>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/most-instances>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/object_position>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/prototypical_Rosetta_Statement>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/rosetta_statement_class>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/some_instance>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/subject_position>))\nDeclaration(Class(<https://w3id.org/rosettastmtont/universal_Rosetta_Statement>))\nDeclaration(ObjectProperty(<https://w3id.org/rosettastmtont/resource>))\nDeclaration(ObjectProperty(<https://w3id.org/rosettastmtont/subject>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/Rosetta_Statement_light_version_data_property>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/Rosetta_Statement_literal_property>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/Rosetta_Statement_nanopublication_data_property>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/deleted_at>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/has_latest_version>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/has_template_ID>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/has_version_number>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/literal>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/literal_object_position>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/modifiable>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/negated>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/optional_literal_object_position>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/optional_literal_object_position_1>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/optional_literal_object_position_10>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/optional_literal_object_position_2>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/optional_literal_object_position_3>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/optional_literal_object_position_4>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/optional_literal_object_position_5>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/optional_literal_object_position_6>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/optional_literal_object_position_7>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/optional_literal_object_position_8>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/optional_literal_object_position_9>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/order>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/required_literal_object_position>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/required_literal_object_position_1>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/required_literal_object_position_10>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/required_literal_object_position_2>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/required_literal_object_position_3>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/required_literal_object_position_4>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/required_literal_object_position_5>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/required_literal_object_position_6>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/required_literal_object_position_7>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/required_literal_object_position_8>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/required_literal_object_position_9>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/symmetric>))\nDeclaration(DataProperty(<https://w3id.org/rosettastmtont/transitive>))\n\n############################\n#   Data Properties\n############################\n\n# Data Property: <https://w3id.org/rosettastmtont/Rosetta_Statement_light_version_data_property> (<https://w3id.org/rosettastmtont/Rosetta_Statement_light_version_data_property>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/Rosetta_Statement_light_version_data_property> <https://w3id.org/rosettastmtont/Rosetta_Statement_literal_property>)\n\n# Data Property: <https://w3id.org/rosettastmtont/Rosetta_Statement_literal_property> (<https://w3id.org/rosettastmtont/Rosetta_Statement_literal_property>)\n\nDataPropertyDomain(<https://w3id.org/rosettastmtont/Rosetta_Statement_literal_property> <https://w3id.org/rosettastmtont/rosetta_statement_class>)\n\n# Data Property: <https://w3id.org/rosettastmtont/Rosetta_Statement_nanopublication_data_property> (<https://w3id.org/rosettastmtont/Rosetta_Statement_nanopublication_data_property>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/Rosetta_Statement_nanopublication_data_property> <https://w3id.org/rosettastmtont/Rosetta_Statement_literal_property>)\n\n# Data Property: <https://w3id.org/rosettastmtont/deleted_at> (<https://w3id.org/rosettastmtont/deleted_at>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/deleted_at> <https://w3id.org/rosettastmtont/Rosetta_Statement_literal_property>)\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/deleted_at> <https://w3id.org/rosettastmtont/Rosetta_Statement_nanopublication_data_property>)\nDataPropertyDomain(<https://w3id.org/rosettastmtont/deleted_at> ObjectUnionOf(<https://w3id.org/rosettastmtont/Rosetta_Statement_version> <https://w3id.org/rosettastmtont/anchor_Rosetta_Statement>))\nDataPropertyRange(<https://w3id.org/rosettastmtont/deleted_at> xsd:dateTimeStamp)\n\n# Data Property: <https://w3id.org/rosettastmtont/has_latest_version> (<https://w3id.org/rosettastmtont/has_latest_version>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/has_latest_version> <https://w3id.org/rosettastmtont/Rosetta_Statement_nanopublication_data_property>)\nDataPropertyRange(<https://w3id.org/rosettastmtont/has_latest_version> xsd:string)\n\n# Data Property: <https://w3id.org/rosettastmtont/has_template_ID> (<https://w3id.org/rosettastmtont/has_template_ID>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/has_template_ID> <https://w3id.org/rosettastmtont/Rosetta_Statement_nanopublication_data_property>)\nDataPropertyRange(<https://w3id.org/rosettastmtont/has_template_ID> xsd:string)\n\n# Data Property: <https://w3id.org/rosettastmtont/has_version_number> (<https://w3id.org/rosettastmtont/has_version_number>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/has_version_number> <https://w3id.org/rosettastmtont/Rosetta_Statement_literal_property>)\nDataPropertyDomain(<https://w3id.org/rosettastmtont/has_version_number> <https://w3id.org/rosettastmtont/Rosetta_Statement_version>)\nDataPropertyRange(<https://w3id.org/rosettastmtont/has_version_number> xsd:integer)\n\n# Data Property: <https://w3id.org/rosettastmtont/literal> (<https://w3id.org/rosettastmtont/literal>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/literal> <https://w3id.org/rosettastmtont/Rosetta_Statement_literal_property>)\nDataPropertyDomain(<https://w3id.org/rosettastmtont/literal> <https://w3id.org/rosettastmtont/object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/literal_object_position> (<https://w3id.org/rosettastmtont/literal_object_position>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/literal_object_position> <https://w3id.org/rosettastmtont/Rosetta_Statement_light_version_data_property>)\n\n# Data Property: <https://w3id.org/rosettastmtont/modifiable> (<https://w3id.org/rosettastmtont/modifiable>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/modifiable> <https://w3id.org/rosettastmtont/Rosetta_Statement_literal_property>)\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/modifiable> <https://w3id.org/rosettastmtont/Rosetta_Statement_nanopublication_data_property>)\nDataPropertyDomain(<https://w3id.org/rosettastmtont/modifiable> <https://w3id.org/rosettastmtont/rosetta_statement_class>)\nDataPropertyRange(<https://w3id.org/rosettastmtont/modifiable> xsd:boolean)\n\n# Data Property: <https://w3id.org/rosettastmtont/negated> (<https://w3id.org/rosettastmtont/negated>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/negated> <https://w3id.org/rosettastmtont/Rosetta_Statement_nanopublication_data_property>)\nDataPropertyDomain(<https://w3id.org/rosettastmtont/negated> ObjectUnionOf(<https://w3id.org/rosettastmtont/Rosetta_Statement_version> <https://w3id.org/rosettastmtont/anchor_Rosetta_Statement>))\nDataPropertyRange(<https://w3id.org/rosettastmtont/negated> xsd:boolean)\n\n# Data Property: <https://w3id.org/rosettastmtont/optional_literal_object_position> (<https://w3id.org/rosettastmtont/optional_literal_object_position>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/optional_literal_object_position> <https://w3id.org/rosettastmtont/literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/optional_literal_object_position_1> (<https://w3id.org/rosettastmtont/optional_literal_object_position_1>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/optional_literal_object_position_1> <https://w3id.org/rosettastmtont/optional_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/optional_literal_object_position_10> (<https://w3id.org/rosettastmtont/optional_literal_object_position_10>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/optional_literal_object_position_10> <https://w3id.org/rosettastmtont/optional_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/optional_literal_object_position_2> (<https://w3id.org/rosettastmtont/optional_literal_object_position_2>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/optional_literal_object_position_2> <https://w3id.org/rosettastmtont/optional_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/optional_literal_object_position_3> (<https://w3id.org/rosettastmtont/optional_literal_object_position_3>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/optional_literal_object_position_3> <https://w3id.org/rosettastmtont/optional_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/optional_literal_object_position_4> (<https://w3id.org/rosettastmtont/optional_literal_object_position_4>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/optional_literal_object_position_4> <https://w3id.org/rosettastmtont/optional_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/optional_literal_object_position_5> (<https://w3id.org/rosettastmtont/optional_literal_object_position_5>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/optional_literal_object_position_5> <https://w3id.org/rosettastmtont/optional_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/optional_literal_object_position_6> (<https://w3id.org/rosettastmtont/optional_literal_object_position_6>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/optional_literal_object_position_6> <https://w3id.org/rosettastmtont/optional_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/optional_literal_object_position_7> (<https://w3id.org/rosettastmtont/optional_literal_object_position_7>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/optional_literal_object_position_7> <https://w3id.org/rosettastmtont/optional_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/optional_literal_object_position_8> (<https://w3id.org/rosettastmtont/optional_literal_object_position_8>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/optional_literal_object_position_8> <https://w3id.org/rosettastmtont/optional_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/optional_literal_object_position_9> (<https://w3id.org/rosettastmtont/optional_literal_object_position_9>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/optional_literal_object_position_9> <https://w3id.org/rosettastmtont/optional_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/order> (<https://w3id.org/rosettastmtont/order>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/order> <https://w3id.org/rosettastmtont/Rosetta_Statement_literal_property>)\nFunctionalDataProperty(<https://w3id.org/rosettastmtont/order>)\nDataPropertyDomain(<https://w3id.org/rosettastmtont/order> <https://w3id.org/rosettastmtont/Rosetta_Statement_position>)\nDataPropertyRange(<https://w3id.org/rosettastmtont/order> xsd:integer)\n\n# Data Property: <https://w3id.org/rosettastmtont/required_literal_object_position> (<https://w3id.org/rosettastmtont/required_literal_object_position>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/required_literal_object_position> <https://w3id.org/rosettastmtont/literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/required_literal_object_position_1> (<https://w3id.org/rosettastmtont/required_literal_object_position_1>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/required_literal_object_position_1> <https://w3id.org/rosettastmtont/required_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/required_literal_object_position_10> (<https://w3id.org/rosettastmtont/required_literal_object_position_10>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/required_literal_object_position_10> <https://w3id.org/rosettastmtont/required_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/required_literal_object_position_2> (<https://w3id.org/rosettastmtont/required_literal_object_position_2>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/required_literal_object_position_2> <https://w3id.org/rosettastmtont/required_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/required_literal_object_position_3> (<https://w3id.org/rosettastmtont/required_literal_object_position_3>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/required_literal_object_position_3> <https://w3id.org/rosettastmtont/required_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/required_literal_object_position_4> (<https://w3id.org/rosettastmtont/required_literal_object_position_4>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/required_literal_object_position_4> <https://w3id.org/rosettastmtont/required_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/required_literal_object_position_5> (<https://w3id.org/rosettastmtont/required_literal_object_position_5>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/required_literal_object_position_5> <https://w3id.org/rosettastmtont/required_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/required_literal_object_position_6> (<https://w3id.org/rosettastmtont/required_literal_object_position_6>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/required_literal_object_position_6> <https://w3id.org/rosettastmtont/required_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/required_literal_object_position_7> (<https://w3id.org/rosettastmtont/required_literal_object_position_7>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/required_literal_object_position_7> <https://w3id.org/rosettastmtont/required_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/required_literal_object_position_8> (<https://w3id.org/rosettastmtont/required_literal_object_position_8>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/required_literal_object_position_8> <https://w3id.org/rosettastmtont/required_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/required_literal_object_position_9> (<https://w3id.org/rosettastmtont/required_literal_object_position_9>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/required_literal_object_position_9> <https://w3id.org/rosettastmtont/required_literal_object_position>)\n\n# Data Property: <https://w3id.org/rosettastmtont/symmetric> (<https://w3id.org/rosettastmtont/symmetric>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/symmetric> <https://w3id.org/rosettastmtont/Rosetta_Statement_literal_property>)\nDataPropertyDomain(<https://w3id.org/rosettastmtont/symmetric> <https://w3id.org/rosettastmtont/object_position>)\nDataPropertyRange(<https://w3id.org/rosettastmtont/symmetric> xsd:boolean)\n\n# Data Property: <https://w3id.org/rosettastmtont/transitive> (<https://w3id.org/rosettastmtont/transitive>)\n\nSubDataPropertyOf(<https://w3id.org/rosettastmtont/transitive> <https://w3id.org/rosettastmtont/Rosetta_Statement_literal_property>)\nDataPropertyDomain(<https://w3id.org/rosettastmtont/transitive> <https://w3id.org/rosettastmtont/object_position>)\nDataPropertyRange(<https://w3id.org/rosettastmtont/transitive> xsd:boolean)\n\n\n\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/BFO_0000001> (<http://purl.obolibrary.org/obo/BFO_0000001>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/BFO_0000001> owl:Thing)\n\n# Class: <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> (<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)\n\nSubClassOf(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> owl:Thing)\n\n# Class: owl:Nothing (owl:Nothing)\n\nSubClassOf(owl:Nothing owl:Nothing)\n\n# Class: <https://w3id.org/rosettastmtont/contingent_Rosetta_Statement> (<https://w3id.org/rosettastmtont/contingent_Rosetta_Statement>)\n\nEquivalentClasses(<https://w3id.org/rosettastmtont/contingent_Rosetta_Statement> ObjectAllValuesFrom(<https://w3id.org/rosettastmtont/subject> ObjectIntersectionOf(<https://w3id.org/rosettastmtont/subject_position> ObjectAllValuesFrom(<https://w3id.org/rosettastmtont/resource> <https://w3id.org/rosettastmtont/some_instance>))))\n\n# Class: <https://w3id.org/rosettastmtont/prototypical_Rosetta_Statement> (<https://w3id.org/rosettastmtont/prototypical_Rosetta_Statement>)\n\nEquivalentClasses(<https://w3id.org/rosettastmtont/prototypical_Rosetta_Statement> ObjectAllValuesFrom(<https://w3id.org/rosettastmtont/subject> ObjectIntersectionOf(<https://w3id.org/rosettastmtont/subject_position> ObjectAllValuesFrom(<https://w3id.org/rosettastmtont/resource> <https://w3id.org/rosettastmtont/most-instances>))))\n\n# Class: <https://w3id.org/rosettastmtont/universal_Rosetta_Statement> (<https://w3id.org/rosettastmtont/universal_Rosetta_Statement>)\n\nEquivalentClasses(<https://w3id.org/rosettastmtont/universal_Rosetta_Statement> ObjectAllValuesFrom(<https://w3id.org/rosettastmtont/subject> ObjectIntersectionOf(<https://w3id.org/rosettastmtont/subject_position> ObjectAllValuesFrom(<https://w3id.org/rosettastmtont/resource> <https://w3id.org/rosettastmtont/every-instance>))))\n\n\n)
 
 [Term]
 id: APOLLO_SV:00000008 ! software development
@@ -210,7 +217,7 @@ is_a: IAO:0000033 ! directive information entity
 
 [Term]
 id: IAO:0000008 ! obsolete_artifact
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 
 [Term]
 id: IAO:0000009 ! datum label
@@ -222,7 +229,7 @@ is_a: IAO:0000104 ! plan specification
 
 [Term]
 id: IAO:0000012 ! obsolete2_digital entity
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 
 [Term]
 id: IAO:0000013 ! journal article
@@ -239,15 +246,15 @@ is_a: IAO:0000028 ! symbol
 
 [Term]
 id: IAO:0000018 ! obsolete_material_entity
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 
 [Term]
 id: IAO:0000019 ! obsolete2_binary digital entity
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 
 [Term]
 id: IAO:0000024 ! obsolete_unit of measure
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 
 [Term]
 id: IAO:0000025 ! programming language
@@ -287,7 +294,7 @@ is_a: IAO:0000001 ! conditional specification
 
 [Term]
 id: IAO:0000035 ! obsolete_study interpretation
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 
 [Term]
 id: IAO:0000037 ! dot plot
@@ -299,7 +306,7 @@ is_a: IAO:0000309 ! diagram
 
 [Term]
 id: IAO:0000047 ! obsolete2_text based digital entity
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 
 [Term]
 id: IAO:0000055 ! rule
@@ -311,7 +318,7 @@ is_a: IAO:0000038 ! graph
 
 [Term]
 id: IAO:0000059 ! obsolete2_report figure
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 
 [Term]
 id: IAO:0000064 ! algorithm
@@ -335,11 +342,11 @@ is_a: IAO:0000310 ! document
 
 [Term]
 id: IAO:0000091 ! obsolete_report element
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 
 [Term]
 id: IAO:0000093 ! obsolete2_binary executable
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 
 [Term]
 id: IAO:0000096 ! source code module
@@ -347,7 +354,7 @@ is_a: IAO:0000033 ! directive information entity
 
 [Term]
 id: IAO:0000097 ! obsolete_report table
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 
 [Term]
 id: IAO:0000098 ! data format specification
@@ -371,7 +378,7 @@ is_a: IAO:0000033 ! directive information entity
 
 [Term]
 id: IAO:0000105 ! obsolete2_digital document
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 
 [Term]
 id: IAO:0000109 ! measurement datum
@@ -379,7 +386,7 @@ is_a: IAO:0000027 ! data item
 
 [Term]
 id: IAO:0000128 ! obsolete_identifier
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 
 [Term]
 id: IAO:0000129 ! version number
@@ -399,7 +406,7 @@ is_a: IAO:0000027 ! data item
 
 [Term]
 id: IAO:0000141 ! obsolete_digital quality
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 
 [Term]
 id: IAO:0000144 ! conclusion textual entity
@@ -423,7 +430,7 @@ is_a: IAO:0000038 ! graph
 
 [Term]
 id: IAO:0000182 ! obsolete_survival curve
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 
 [Term]
 id: IAO:0000183 ! dendrogram
@@ -647,7 +654,7 @@ is_a: OBI:0000011 ! planned process
 
 [Term]
 id: IAO:0000576 ! obsolete_establishing a CRID registry
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 
 [Term]
 id: IAO:0000577 ! centrally registered identifier symbol
@@ -1066,57 +1073,6 @@ id: PATO:0001241 ! physical object quality
 is_a: BFO:0000019 ! quality
 
 [Term]
-id: Rosetta_Statement_model
-name: Rosetta Statement semantic model
-def: "A data schema pattern that models a specific type (i.e., class) of formalized natural language statement. Rosetta Statements instantiate Rosetta Statement semantic models. \n\nDifferent types of Rosetta Statements can be distinguished on the basis of their underlying predicates (i.e., relations), resulting in a predicate-based classification of types of Rosetta Statements." []
-comment: Each argument in a given Rosetta Statement schema pattern can be aligned with a particular syntactic position, which is modelled in the schema as a slot, for which the corresponding semantic role is specified in the form of a constraint specification—either as XML Schema datatype specification for an object-literal, which can be supplemented with a specific pattern or range constraint, or as an ontology class specification for a subject or an object-resource, which restricts the type of resources that can be located in a particular slot to that class or any of its subclasses. When applying the Rosetta Statement modelling approach, one always gets statements, each represented by its own dedicated resource that instantiates a corresponding data schema pattern that belongs to the corresponding Rosetta Statement class.
-is_a: data_schema_pattern_model ! data schema pattern
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
-id: Rosetta_Statement_position
-name: Rosetta Statement position
-def: "An information content entity that is used to specify the position of a subject resource, an object resource or an object literal within a Rosetta Statement, using the Rosetta Statement semantic model full version." []
-is_a: IAO:0000030 ! information content entity
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-
-[Term]
-id: Rosetta_Statement_semantic_metamodel
-name: Rosetta Statement semantic metamodel
-def: "A Rosetta Statement semantic model that represents an abstract and generalized model of any type of formalized natural language statement. From the Rosetta Statement semantic metamodel, any other Rosetta Statement semantic model can be derived. In other words, all Rosetta Statement semantic models instantiate the same Rosetta Statement semantic metamodel." []
-comment: At the heart of the Rosetta Statement semantic metamodel is a particular modelling paradigm for statement types. To meet the requirements of cognitive interoperability, it follows the basic idea that this modelling paradigm should be as generic and simple as possible, reflecting as much as possible the structures we are already familiar with from a natural language like English. In addition, the paradigm must support the specification of new Rosetta Statement semantic models so that it becomes a straightforward task that does not require any background in semantics—it should allow the semantic parsing step to be automated. This can only be achieved, if the metamodel has a very generic structure. This structure must be applicable to any type of statement, regardless of the statement's n-aryness. To be lean, models derived from the metamodel should store only what is necessary to recover the meaning of the type of statement it models, which should be the same as storing only the information a user has to provide to create a new statement of the corresponding type. The emphasis must be on being able to reconstruct the original user input or data import for a given statement by storing only the semantically constitutive entities, i.e., those objects and relations that preserve the core semantics of the statement, and thus those entities that align with all syntactic positions (see 'syntax tree') required to translate the semantic content into a natural language statement. Another criterion that the metamodel must meet is that it must facilitate the seamless derivation of queries from it. Each one of these criteria is important, because, in the end, the metamodel and all Rosetta Statement semantic models derived from it must support semantically interoperable (meta)data statements with which not only machines but also humans can interact. Based on the distinction between arguments and adjuncts from the concept of predicate-argument structure, the metamodel distinguishes objects that are necessary (i.e., arguments) and thus required to complete the meaning of the statement’s predicate from objects that are optional (i.e., adjuncts). In addition to distinguishing arguments and adjuncts, each with their associated semantic roles and thematic labels, one can distinguish objects by their type into resources via their respective IRIs and literals, with ontology resources and datatypes as constraints that align with the associated semantic roles. Resources, in turn, can be either named-individuals, classes, or properties. The metamodel must abstract the structure of syntax trees from natural language statements to their syntactic positions and associated semantic roles. Since we do not need to be able to represent the full expressiveness of natural language statements when documenting (meta)data statements, the metamodel can restrict itself to modelling statements with a rather simple structure of subject, transitive verb or predicate, and a number of objects. In this first attempt to develop machine-actionable Rosetta Statements, the metamodel does not consider passive forms, no tenses, and it does not distinguish between different possible syntactic alternations in which a verb or predicate can express its arguments. The metamodel underlying The Rosetta Statement modelling paradigm is thus similar to a highly simplified syntactic frame, i.e., a formalized statement, specifying a subject-position and a number of required and optional object-positions, each with its associated semantic role in the form of a thematic label and a corresponding constraint specification. Its structure is thus an abstraction of the structure of a syntax tree.
-is_a: Rosetta_Statement_model ! Rosetta Statement semantic model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
-id: Rosetta_Statement_semantic_model_full_version
-name: Rosetta Statement semantic model full version
-def: "A Rosetta Statement semantic model that indirectly links its statement resource to its subject-resources, object-resources, and object-literals through instances of a subject-position class and object-position classes. One can refer to every subject and object of every Rosetta Statement individually by the IRI of its subject- and object-position resource. The number of object-position classes that a given Rosetta Statement pattern distinguishes depends on the n-aryness of the underlying statement type. \n\nConsequently, each particular Rosetta Statement of a given statement type has, in addition to an instance of the corresponding Rosetta Statement class, an instance of each object-position class to which the actual object-resources and object-literals are linked, and an instance of the general subject-position class to which the subject-resource is linked. This structure also supports having more than one subject-resource and object-resource or -literal in a given position with the same semantic role\n\n\nRosetta Statement semantic models full version instantiate 'Rosetta Statement metamodel full version'." []
-comment: The dependency of object-position classes on their corresponding statement type is documented within the respective Rosetta Statement class as a class axiom that points to the required and optional object-position classes. The full version supports statement versioning and tracking the editing history for each individual statement and each particular object-position. The order of the object and subject resources aligning with the same semantic role and same subject or object position is specified via an ‘order’ property, followed by a sequentially increasing integer. Whereas the subject-position class can be reused in any Rosetta Statement, independent of the statement type, the object-position classes are defined for each object argument and adjunct of each Rosetta Statement class. 
-is_a: Rosetta_Statement_model ! Rosetta Statement semantic model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
-id: Rosetta_Statement_semantic_model_light_version
-name: Rosetta Statement semantic model light version
-def: "A Rosetta Statement semantic model that directly links the statement resource to required object resources via the subproperties of 'required resource object position' and to optional object resources via the subproperties of 'optional resource object position'. Required and optional object literals are linked via subproperties of 'required literal object position' and 'optional literal object position' respectively.\nRosetta Statement semantic models light version instantiate 'Rosetta Statement metamodel light version'." []
-is_a: Rosetta_Statement_model ! Rosetta Statement semantic model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
-id: Rosetta_Statement_version
-name: Rosetta Statement version
-def: "A Rosetta Statement that is a version of an existing Rosetta Statement entry in a knowledge graph that uses the Rosetta Statement semantic model full version approach. This approach allows versioning of Rosetta Statements and history tracking of all edits of every Rosetta Statement. In this full version, every Rosetta Statement has an anchor Rosetta Statement resource, to which all versions of the statement are linked via the 'has version' property. Every Rosetta Statement version resource also instantiates the respective Rosetta Statement class." []
-is_a: https://w3id.org/rosettastmtont/rosetta_statement_class ! Rosetta Statement
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
 id: UO:0000001 ! length unit
 is_a: IAO:0000003 ! measurement unit label
 
@@ -1129,756 +1085,807 @@ id: UO:0000003 ! time unit
 is_a: IAO:0000003 ! measurement unit label
 
 [Term]
-id: all_instances
+id: all:instances
 name: all-instances
 def: "A resource token model that representsrepresents the set of all―past, present, and future―instances of a class. With all-instances resources we can make statements about the set of all instances of a class such as comparing their cardinality across classes, their distribution, etc." []
-is_a: resource_token_model ! resource token model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created 2024-12-05
+is_a: https://w3id.org/rosettastmtont/resource_token_model ! resource token model
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created 2024-12-05
 
 [Term]
-id: anchor_Rosetta_Statement
-name: anchor Rosetta Statement
-def: "A Rosetta Statement that is the anchor Rosetta Statement resource for an existing Rosetta Statement entry in a knowledge graph that uses the Rosetta Statement semantic model full version approach. This approach allows versioning of Rosetta Statements and history tracking of all edits of every Rosetta Statement. In this full version, every Rosetta Statement has an anchor Rosetta Statement resource, to which all versions of the statement are linked via the 'has version' property. Like any of its statement version resources, the anchor Rosetta Statement resources also instantiates the respective Rosetta Statement class." []
-is_a: https://w3id.org/rosettastmtont/rosetta_statement_class ! Rosetta Statement
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
-id: assertional_Rosetta_Statement
-name: assertional Rosetta Statement
-def: "A Rosetta Statement that models an assertional statement. The referent of an assertional Rosetta Statement is a particular known individual (i.e., named-individual) that takes the subject-position of the statement." []
-is_a: assertional_graph_token_model ! assertional statement graph token model
-is_a: https://w3id.org/rosettastmtont/rosetta_statement_class ! Rosetta Statement
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
-id: assertional_graph_token_model
-name: assertional statement graph token model
-def: "A statement graph token model that relates known instances (owl:namedIndividual) to each other. It has a named-individual resource of a specific class as its subject and thus an instance that is known to the knowledge graph. If the assertional statement graph token model possessed an object that is a resource and not a literal, that object would also refer to a named individual. An assertional statement graph token model is thus an ABox representation of a relation with at least one particular." []
-is_a: statement_graph_token_model ! statement graph token model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
-id: assertional_statement
+id: assertional:statement
 name: assertional statement
 def: "A natural language statement that represents a proposition about a particular and thus individual entity (the statement’s subject), and this proposition is meant to be either true or false. It specifies a fact and states what is the case―it refers to the universe of actualities, the real." []
 comment: A natural language statement that describes the attributes of and relationships between individual entities. The referent of an assertional statement is a particular known individual that takes the subject-position of the statement. Assertional statements are taken to be true for that particular individual entity. Empirical data (observations, measurements), descriptions, and reports (e.g., about the instruments used, instrument settings, parameters, workflows) take the form of assertional statements.
 is_a: https://w3id.org/rosettastmtont/natural_language_statement ! natural language statement
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
 property_value: IAO:0000112 "“By 27 February 2020, the outbreak of coronavirus disease 2019 (COVID-19) caused 82623 confirmed cases and 2858 deaths globally” is an example of an assertional statement.\n\n“Swan Anton is white”" xsd:string
 
 [Term]
-id: contingent_Rosetta_Statement
-name: contingent Rosetta Statement
-def: "A Rosetta Statement that models a contingent statement. The referent of a contingent Rosetta Statement is a some-instance resource of a particular class which takes the subject-position of the statement. Contingent Rpsetta Statements are taken to be true for at least one instance of that class—in the given example, for at least one swan" []
-is_a: contingent_statement_graph_token_model ! contingent statement graph token model
-is_a: https://w3id.org/rosettastmtont/rosetta_statement_class ! Rosetta Statement
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
-id: contingent_statement
+id: contingent:statement
 name: contingent statement
 def: "A natural language statement that represents a proposition that is true for some (i.e., at least one), but not necessarily for every instance of a specific class. A contingent statement specifies a possibility and states what can be the case―it refers to the universe of possibilities." []
 comment: One can derive a contingent statement from a single assertional statement―a fact is a proof for a possibility. Sometimes, it does not make sense to make assertional statements about individual entities. In these cases, it is often more reasonable to talk about possibilities. Biologists, for instance, do not talk about individual genes in the sense of instances of the same nucleotide sequence. Since they often cannot make universal statements that are necessarily true for every instance of the sequence, they often make contingent statements instead.
 is_a: https://w3id.org/rosettastmtont/natural_language_statement ! natural language statement
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
 property_value: IAO:0000112 "Swans can be white. Or: There is some swan that is white.\n\n“SARS-CoV-2 can cause acute respiratory distress syndromes (ARDS)” is an example of a contingent statement." xsd:string
 
 [Term]
-id: contingent_statement_graph_token_model
-name: contingent statement graph token model
-def: "A statement graph token model that refers to some unknown instance resource of a specific class as its subject. If the contingent statement graph token model possesses an object that is a resource, each such object also refers to some unknown instance of a specific class." []
-comment: In OWL and description logics, contingent statements cannot be modelled as Abox expressions without using blank nodes. However, if no formal semantics are required, they can be formally represented by classifying an instance resource that instantiates a specific class to also instantiate the class 'some-instance'.
-is_a: statement_graph_token_model ! statement graph token model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
-id: data_schema_pattern_model
-name: data schema pattern
-def: "A semantic graph pattern that models relations between individuals (i.e., particulars, instances). It is used to model relations that are true for a particular instance of a specific class of entity. Semantic graph token models instantiate data schema patterns." []
-comment: Data schema patterns describe the relations between entities within an ABox expression. They are instantiated in knowledge graphs to specify semantic graph token models with the intension to guarantee their schema interoperability (i.e., semantic interoperability).
-is_a: semantic_graph_pattern_model ! semantic graph pattern
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
-id: epistemic_uncertainty
+id: epistemic:uncertainty
 name: epistemic uncertainty
 def: "An informational quality that specifies the probability that the information is true." []
-is_a: informational_quality ! informational quality
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
-id: every-instance
-name: every-instance
-def: "A resource token model that represents all instances of a class. When used in a triple, an every-instance resource is meant as ‘for every instance i of class C holds …’." []
-is_a: resource_token_model ! resource token model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created 2024-12-05
+is_a: informational:quality ! informational quality
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
 
 [Term]
 id: formalized:statement
 name: formalized statement
 def: "A metamodel that is derived from a simple natural language statement by classifying and generalizing the subject and object syntactic positions, turning the concrete natural language statement into a formalized statement." []
-is_a: metamodel ! metamodel
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/metamodel ! metamodel
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
 property_value: IAO:0000112 "'PERSON travels from DEPARTURE_LOCATION to DESTINATION_LOCATION by TRANSPORTATION' is the formalized statement that was derived from the natural language statement 'Peter travels from Berlin to Paris by train' by classifying and generalizing the subject and object positions." xsd:string
 
 [Term]
-id: graph_token_model
+id: https://w3id.org/rosettastmtont/Rosetta_Statement_model
+name: Rosetta Statement semantic model
+def: "A data schema pattern that models a specific type (i.e., class) of formalized natural language statement. Rosetta Statements instantiate Rosetta Statement semantic models. \n\nDifferent types of Rosetta Statements can be distinguished on the basis of their underlying predicates (i.e., relations), resulting in a predicate-based classification of types of Rosetta Statements." []
+comment: Each argument in a given Rosetta Statement schema pattern can be aligned with a particular syntactic position, which is modelled in the schema as a slot, for which the corresponding semantic role is specified in the form of a constraint specification—either as XML Schema datatype specification for an object-literal, which can be supplemented with a specific pattern or range constraint, or as an ontology class specification for a subject or an object-resource, which restricts the type of resources that can be located in a particular slot to that class or any of its subclasses. When applying the Rosetta Statement modelling approach, one always gets statements, each represented by its own dedicated resource that instantiates a corresponding data schema pattern that belongs to the corresponding Rosetta Statement class.
+is_a: https://w3id.org/rosettastmtont/data_schema_pattern_model ! data schema pattern
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/Rosetta_Statement_position
+name: Rosetta Statement position
+def: "An information content entity that is used to specify the position of a subject resource, an object resource or an object literal within a Rosetta Statement, using the Rosetta Statement semantic model full version." []
+is_a: IAO:0000030 ! information content entity
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+
+[Term]
+id: https://w3id.org/rosettastmtont/Rosetta_Statement_semantic_metamodel
+name: Rosetta Statement semantic metamodel
+def: "A Rosetta Statement semantic model that represents an abstract and generalized model of any type of formalized natural language statement. From the Rosetta Statement semantic metamodel, any other Rosetta Statement semantic model can be derived. In other words, all Rosetta Statement semantic models instantiate the same Rosetta Statement semantic metamodel." []
+comment: At the heart of the Rosetta Statement semantic metamodel is a particular modelling paradigm for statement types. To meet the requirements of cognitive interoperability, it follows the basic idea that this modelling paradigm should be as generic and simple as possible, reflecting as much as possible the structures we are already familiar with from a natural language like English. In addition, the paradigm must support the specification of new Rosetta Statement semantic models so that it becomes a straightforward task that does not require any background in semantics—it should allow the semantic parsing step to be automated. This can only be achieved, if the metamodel has a very generic structure. This structure must be applicable to any type of statement, regardless of the statement's n-aryness. To be lean, models derived from the metamodel should store only what is necessary to recover the meaning of the type of statement it models, which should be the same as storing only the information a user has to provide to create a new statement of the corresponding type.\nThe emphasis must be on being able to reconstruct the original user input or data import for a given statement by storing only the semantically constitutive entities, i.e., those objects and relations that preserve the core semantics of the statement, and thus those entities that align with all syntactic positions (see 'syntax tree') required to translate the semantic content into a natural language statement.\nAnother criterion that the metamodel must meet is that it must facilitate the seamless derivation of queries from it. Each one of these criteria is important, because, in the end, the metamodel and all Rosetta Statement semantic models derived from it must support semantically interoperable (meta)data statements with which not only machines but also humans can interact. Based on the distinction between arguments and adjuncts from the concept of predicate-argument structure, the metamodel distinguishes objects that are necessary (i.e., arguments) and thus required to complete the meaning of the statement’s predicate from objects that are optional (i.e., adjuncts).\n\nIn addition to distinguishing arguments and adjuncts, each with their associated semantic roles and thematic labels, one can distinguish objects by their type into resources via their respective IRIs and literals, with ontology resources and datatypes as constraints that align with the associated semantic roles. Resources, in turn, can be either named-individuals, classes, or properties. The metamodel must abstract the structure of syntax trees from natural language statements to their syntactic positions and associated semantic roles. Since we do not need to be able to represent the full expressiveness of natural language statements when documenting (meta)data statements, the metamodel can restrict itself to modelling statements with a rather simple structure of subject, transitive verb or predicate, and a number of objects. In this first attempt to develop machine-actionable Rosetta Statements, the metamodel does not consider passive forms, no tenses, and it does not distinguish between different possible syntactic alternations in which a verb or predicate can express its arguments. The metamodel underlying The Rosetta Statement modelling paradigm is thus similar to a highly simplified syntactic frame, i.e., a formalized statement, specifying a subject-position and a number of required and optional object-positions, each with its associated semantic role in the form of a thematic label and a corresponding constraint specification. Its structure is thus an abstraction of the structure of a syntax tree.
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_model ! Rosetta Statement semantic model
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/Rosetta_Statement_semantic_model_full_version
+name: Rosetta Statement semantic model full version
+def: "A Rosetta Statement semantic model that indirectly links its statement resource to its subject-resources, object-resources, and object-literals through instances of a subject-position class and object-position classes. One can refer to every subject and object of every Rosetta Statement individually by the IRI of its subject- and object-position resource. The number of object-position classes that a given Rosetta Statement pattern distinguishes depends on the n-aryness of the underlying statement type. \n\nConsequently, each particular Rosetta Statement of a given statement type has, in addition to an instance of the corresponding Rosetta Statement class, an instance of each object-position class to which the actual object-resources and object-literals are linked, and an instance of the general subject-position class to which the subject-resource is linked. This structure also supports having more than one subject-resource and object-resource or -literal in a given position with the same semantic role\n\n\nRosetta Statement semantic models full version instantiate 'Rosetta Statement metamodel full version'." []
+comment: The dependency of object-position classes on their corresponding statement type is documented within the respective Rosetta Statement class as a class axiom that points to the required and optional object-position classes. The full version supports statement versioning and tracking the editing history for each individual statement and each particular object-position. The order of the object and subject resources aligning with the same semantic role and same subject or object position is specified via an ‘order’ property, followed by a sequentially increasing integer. Whereas the subject-position class can be reused in any Rosetta Statement, independent of the statement type, the object-position classes are defined for each object argument and adjunct of each Rosetta Statement class.
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_model ! Rosetta Statement semantic model
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/Rosetta_Statement_semantic_model_light_version
+name: Rosetta Statement semantic model light version
+def: "A Rosetta Statement semantic model that directly links the statement resource to required object resources via the subproperties of 'required resource object position' and to optional object resources via the subproperties of 'optional resource object position'. Required and optional object literals are linked via subproperties of 'required literal object position' and 'optional literal object position' respectively.\nRosetta Statement semantic models light version instantiate 'Rosetta Statement metamodel light version'." []
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_model ! Rosetta Statement semantic model
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/Rosetta_Statement_version
+name: Rosetta Statement version
+def: "A Rosetta Statement that is a version of an existing Rosetta Statement entry in a knowledge graph that uses the Rosetta Statement semantic model full version approach. This approach allows versioning of Rosetta Statements and history tracking of all edits of every Rosetta Statement. In this full version, every Rosetta Statement has an anchor Rosetta Statement resource, to which all versions of the statement are linked via the 'has version' property. Every Rosetta Statement version resource also instantiates the respective Rosetta Statement class." []
+is_a: https://w3id.org/rosettastmtont/rosetta_statement_class ! Rosetta Statement
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/anchor_Rosetta_Statement
+name: anchor Rosetta Statement
+def: "A Rosetta Statement that is the anchor Rosetta Statement resource for an existing Rosetta Statement entry in a knowledge graph that uses the Rosetta Statement semantic model full version approach. This approach allows versioning of Rosetta Statements and history tracking of all edits of every Rosetta Statement. In this full version, every Rosetta Statement has an anchor Rosetta Statement resource, to which all versions of the statement are linked via the 'has version' property. Like any of its statement version resources, the anchor Rosetta Statement resources also instantiates the respective Rosetta Statement class." []
+is_a: https://w3id.org/rosettastmtont/rosetta_statement_class ! Rosetta Statement
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/assertional_Rosetta_Statement
+name: assertional Rosetta Statement
+def: "A Rosetta Statement that models an assertional statement. The referent of an assertional Rosetta Statement is a particular known individual (i.e., named-individual) that takes the subject-position of the statement." []
+is_a: https://w3id.org/rosettastmtont/assertional_graph_token_model ! assertional statement graph token model
+is_a: https://w3id.org/rosettastmtont/rosetta_statement_class ! Rosetta Statement
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/assertional_graph_token_model
+name: assertional statement graph token model
+def: "A statement graph token model that relates known instances (owl:namedIndividual) to each other. It has a named-individual resource of a specific class as its subject and thus an instance that is known to the knowledge graph. If the assertional statement graph token model possessed an object that is a resource and not a literal, that object would also refer to a named individual. An assertional statement graph token model is thus an ABox representation of a relation with at least one particular." []
+is_a: https://w3id.org/rosettastmtont/statement_graph_token_model ! statement graph token model
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/contingent_Rosetta_Statement
+name: contingent Rosetta Statement
+def: "A Rosetta Statement that models a contingent statement. The referent of a contingent Rosetta Statement is a some-instance resource of a particular class which takes the subject-position of the statement. Contingent Rpsetta Statements are taken to be true for at least one instance of that class—in the given example, for at least one swan" []
+is_a: https://w3id.org/rosettastmtont/contingent_statement_graph_token_model ! contingent statement graph token model
+is_a: https://w3id.org/rosettastmtont/rosetta_statement_class ! Rosetta Statement
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/contingent_statement_graph_token_model
+name: contingent statement graph token model
+def: "A statement graph token model that refers to some unknown instance resource of a specific class as its subject. If the contingent statement graph token model possesses an object that is a resource, each such object also refers to some unknown instance of a specific class." []
+comment: In OWL and description logics, contingent statements cannot be modelled as Abox expressions without using blank nodes. However, if no formal semantics are required, they can be formally represented by classifying an instance resource that instantiates a specific class to also instantiate the class 'some-instance'.
+is_a: https://w3id.org/rosettastmtont/statement_graph_token_model ! statement graph token model
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/data_schema_pattern_model
+name: data schema pattern
+def: "A semantic graph pattern that models relations between individuals (i.e., particulars, instances). It is used to model relations that are true for a particular instance of a specific class of entity. Semantic graph token models instantiate data schema patterns." []
+comment: Data schema patterns describe the relations between entities within an ABox expression. They are instantiated in knowledge graphs to specify semantic graph token models with the intension to guarantee their schema interoperability (i.e., semantic interoperability).
+is_a: https://w3id.org/rosettastmtont/semantic_graph_pattern_model ! semantic graph pattern
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/every-instance
+name: every-instance
+def: "A resource token model that represents all instances of a class. When used in a triple, an every-instance resource is meant as ‘for every instance i of class C holds …’." []
+is_a: https://w3id.org/rosettastmtont/resource_token_model ! resource token model
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created 2024-12-05
+
+[Term]
+id: https://w3id.org/rosettastmtont/graph_token_model
 name: semantic graph token model
 def: "A token model that is organized as a graph composed of triples that follow the subject-predicate-object syntax, referencing class and property resources from ontologies, describing relations between instances. Semantic graph token models instantiate data schema patterns." []
 is_a: token:model ! token model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/lexical_statement_graph_token_model
+name: lexical statement graph token model
+def: "A semantic graph token model that models a lexical statement about a specific resource in an ontology or a knowledge graph and its attributes as representational artifacts." []
+comment: Lexical statement graph token models comprise information such as the label of a given resource, synonyms, human-readable definitions, and provenance of resources used in ontologies and knowledge graphs. The model typically uses annotation properties to annotate instance, class, object property, data property, and annotation property resources.
+is_a: https://w3id.org/rosettastmtont/statement_graph_token_model ! statement graph token model
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/metamodel
+name: metamodel
+def: "A metamodel is a model of a model that can be obtained by generalizing over a type model." []
+is_a: type:model ! type model
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/model
+name: model
+def: "An information content entity that is a representation of information on something, created by a sender for a receiver, with a specific purpose and usage context in mind. The model is an abstracted, reduced, and pragmatic representation of a specific system-of-interest (see comments)." []
+comment: The model's purpose is to act as a surrogate for the system-of-interest that it represents. Its responses should be consistent with those of the actual system, however, focusing only on the properties relevant to its intended use. To be effective, a model must possess the following three features:\n\n1) Mapping: The model is derived from and attempts to represent a system-of-interest.\n\n2) Reduction: The model includes only a relevant subset of the system’s properties―abstraction is essential for modelling.\n\n3) Pragmatic: The model must be usable as a substitute for the system-of-interest in relation to its specific purpose.
+is_a: IAO:0000030 ! information content entity
+property_value: dcterms:created 2024-12-05
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+property_value: IAO:0000119 "Kühne T. Matters of (Meta-) Modeling. Softw Syst Model. November 2006;5(4):369–85." xsd:string
+property_value: IAO:0000119 "Stachowiak H. Allgemeine Modelltheorie. Wien: Springer; 1973." xsd:string
+property_value: IAO:0000119 "Steinmüller W. Informationstechnologie und Gesellschaft: Einführung in die Angewandte Informatik. Darmstadt: Wissenschaftliche Buchgesellschaft; 1993." xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/most-instances
+name: most-instances
+def: "A resource token model that represents one or more anonymous instances of a class X that is a subclass of class Y, with X being defined in reference to a set of properties A, and the cardinality of the set of all-instances of Y is larger than the cardinality of the set of all-instances of X that are not instances of Y." []
+is_a: https://w3id.org/rosettastmtont/resource_token_model ! resource token model
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created 2024-12-05
 
 [Term]
 id: https://w3id.org/rosettastmtont/natural_language_statement
 name: natural language statement
 def: "A token model that is a sequence of terms structured by syntactical and grammatical conventions into syntactic positions of phrases that can be mapped to a syntax tree." []
 is_a: token:model ! token model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
 property_value: IAO:0000114 "uncurated" xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/negation
+name: negation
+def: "A semantic graph token model the content of which is negated." []
+comment: For instance, if a single piece of information from the statement 'Peter traveled by bus from Berlin to Paris on the 21st of November 1995.' is not true, the entire statement must must be negated. For example, if Peter did not take the bus but the train or when he traveled from Bonn to Berlin or not on the 21st of November 1995 but the 22nd. If one needs to document a negation, one can create a semantic graph token model of the information that is negated, create a resource that represents this model and classify that resource as 'negation'. UI can search for negations by identifying all instances of this 'negation' class. While this way of modelling negation has limited reasoning-capability, it is significantly easier to model than OWL expressions for negations.
+is_a: https://w3id.org/rosettastmtont/graph_token_model ! semantic graph token model
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/ontology_design_pattern_model
+name: ontology design pattern
+def: "A semantic graph pattern that models relations between universals. It is used to model relations that are universally true, i.e., that are necessarily true for every instance of a specific class of entity." []
+comment: Ontology design pattern describe the relations between entities within a TBox expression. They are instantiated in OWL ontologies to specify class axioms with the intension to increase the semantic interoperability.
+is_a: https://w3id.org/rosettastmtont/semantic_graph_pattern_model ! semantic graph pattern
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/prototypical_Rosetta_Statement
+name: prototypical Rosetta Statement
+def: "A contingent Rosetta Statement that models a prototypical statement. The referent of a prototypical Rosetta Statement is the most-instances resource of a particular class, indicating that the statement is true for most, but not necessarily all, instances of the class." []
+is_a: https://w3id.org/rosettastmtont/prototypical_statement_graph_token_model ! prototypical statement graph token model
+is_a: https://w3id.org/rosettastmtont/rosetta_statement_class ! Rosetta Statement
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/prototypical_statement_graph_token_model
+name: prototypical statement graph token model
+def: "A contingent statement graph token model that refers to a most-instances resource of a specific class as its subject. It expresses a prototypical relationship. It refers to properties of instances of the corresponding class, assuming that possessing these properties to be at least typically true in specific contexts, but not necessarily so―a human hand is still a human hand, even if it has no thumb.\n\nA prototypical statement graph token model can be understood as defining a class Y* in reference to a set A* of prototypical properties, with Y* being a subclass of the statement’s subject resource class X, and the cardinality of the corresponding set of all-instances of Y* is larger than the cardinality of the set of all-instances of X that does not include instances that possess the set of properties A*." []
+comment: Description logic and thus also OWL does not provide the means to state what is typically true. Therefore, to provide a semantics for such statements, other logical formalisms are needed that can express prototypical knowledge. Many empirical recognition criteria are represented with prototypical statements, or in general, all things that are subject to exceptions.
+is_a: https://w3id.org/rosettastmtont/contingent_statement_graph_token_model ! contingent statement graph token model
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: IAO:0000112 "A human’s hand has typically a thumb as its part. Other examples are statements about the relationships between diseases and their symptoms, drugs and their effects, which are often expressed in reference to some probability evaluation." xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/resource_token_model
+name: resource token model
+def: "A model that takes the form of a single resource that represents information about the system-of-interest it models." []
+is_a: https://w3id.org/rosettastmtont/model ! model
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created 2024-12-05
 
 [Term]
 id: https://w3id.org/rosettastmtont/rosetta_statement_class
 name: Rosetta Statement
 def: "A statement graph token model that models an English natural language statement that consists of one or more subjects, one main predicate/verb, and a number of objects. It serves the specific purpose and usage context of supporting communication of semantic content between machines and domain experts. Rosetta Statements instantiate Rosetta Statement semantic models." []
-comment: As each instance of a Rosetta Statement class represents the statement as a whole, including its verb or predicate, one can use this resource to make statements about that statement.The Rosetta Statement modelling approach needs to relate the subject-resource to the different types of object-resources and object-literals of a given type of statement. To avoid the problems that typically arise when modelling statements that have n-ary predicates, and to reflect as closely as possible the structure of simple natural language statements in English—statements that consist of only one verb or predicate—each Rosetta Statement is associated with a Rosetta Statement class that is defined based on the Statement's predicate. A Rosetta Statement then uses an instance of the respective class, to which the subject and object-resources as well as the object-literals are linked to. The main purpose of the Rosetta Statement approach to knowledge graph construction is to support the communication of semantic content in a knowledge graph with domain experts and to reduce the burden of semantic parsing and thus knowledge graph construction and with it to lower the barrier for the use of knowledge graphs by domain experts. The main purpose of using Rosetta Statements for modelling information within a FAIR knowledge graph is to support the communication of semantic content in a knowledge graph with domain experts and to reduce the burden of semantic parsing and thus knowledge graph construction and with it to lower the barrier for the use of knowledge graphs by domain experts. While terms carry meaning through their ontological definitions, statements carry meaning through their terms and the syntactic positions in which they are placed. Unfortunately, when looking at the predicate-argument-structure and comparing the structure of triples with that of natural language statements, we see that they are quite different and therefore do not properly align: the Predicate of a triple is always and necessarily binary, i.e., triples always have exactly one subject and one object argument. This is not the case for natural language statements. The statements “This apple has a weight of 212.45 grams” and “Anna travels by train from Berlin to Paris on the 21st of April 2023” provide examples of statements with n-ary predicates. Therefore, ontology properties (i.e., the Predicate resources used in triples) do not map in a one-to-one relation to natural language predicates, and we often need to model natural language statements using multiple triples. Modelling n-ary statements using the Subject―Predicate―Object triple structure is possible in principle, but requires the construction of a subgraph consisting of multiple triples. Rosetta Statements follow a semantic model that reflects the structure of English natural language statements and provides a generic pattern for modelling n-ary statements in RDF that functions as a metamodel.
-is_a: statement_graph_token_model ! statement graph token model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "20-11-2024" xsd:string
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
+comment: As each instance of a Rosetta Statement class represents the statement as a whole, including its verb or predicate, one can use this resource to make statements about that statement. The Rosetta Statement modelling approach needs to relate the subject-resource to the different types of object-resources and object-literals of a given type of statement. To avoid the problems that typically arise when modelling statements that have n-ary predicates, and to reflect as closely as possible the structure of simple natural language statements in English—statements that consist of only one verb or predicate—each Rosetta Statement is associated with a Rosetta Statement class that is defined based on the Statement's predicate. A Rosetta Statement then uses an instance of the respective class, to which the subject and object-resources as well as the object-literals are linked to. The main purpose of the Rosetta Statement approach to knowledge graph construction is to support the communication of semantic content in a knowledge graph with domain experts and to reduce the burden of semantic parsing and thus knowledge graph construction and with it to lower the barrier for the use of knowledge graphs by domain experts. The main purpose of using Rosetta Statements for modelling information within a FAIR knowledge graph is to support the communication of semantic content in a knowledge graph with domain experts and to reduce the burden of semantic parsing and thus knowledge graph construction and with it to lower the barrier for the use of knowledge graphs by domain experts. While terms carry meaning through their ontological definitions, statements carry meaning through their terms and the syntactic positions in which they are placed. Unfortunately, when looking at the predicate-argument-structure and comparing the structure of triples with that of natural language statements, we see that they are quite different and therefore do not properly align: the Predicate of a triple is always and necessarily binary, i.e., triples always have exactly one subject and one object argument. This is not the case for natural language statements. The statements “This apple has a weight of 212.45 grams” and “Anna travels by train from Berlin to Paris on the 21st of April 2023” provide examples of statements with n-ary predicates. \n\nTherefore, ontology properties (i.e., the Predicate resources used in triples) do not map in a one-to-one relation to natural language predicates, and we often need to model natural language statements using multiple triples. Modelling n-ary statements using the Subject―Predicate―Object triple structure is possible in principle, but requires the construction of a subgraph consisting of multiple triples. \n\nRosetta Statements follow a semantic model that reflects the structure of English natural language statements and provides a generic pattern for modelling n-ary statements in RDF that functions as a metamodel.
+is_a: https://w3id.org/rosettastmtont/statement_graph_token_model ! statement graph token model
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "20-11-2024" xsd:string
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+
+[Term]
+id: https://w3id.org/rosettastmtont/semantic_graph_pattern_model
+name: semantic graph pattern
+def: "A metamodel that is organized as a graph composed of triples that follow the subject-predicate-object syntax, referencing class and property resources from ontologies. Semantic graph patterns can be instantiated by semantic graph token models" []
+comment: Semantic graph patterns can be derived from semantic graph token models by classifying and generalizing their instance resources.
+is_a: https://w3id.org/rosettastmtont/metamodel ! metamodel
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/simple_natural_language_statement
+name: simple natural language statement
+def: "A natural language statement with a simple structure, consisting of one or more subjects, a main predicate or verb, and a number of objects." []
+is_a: https://w3id.org/rosettastmtont/natural_language_statement ! natural language statement
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/statement_graph_token_model
+name: statement graph token model
+def: "A semantic graph token model that models information that can be expressed in a single natural language statement. It represents a smallest semantic-content-carrying unit of information that is semantically meaningful to a human reader." []
+is_a: https://w3id.org/rosettastmtont/graph_token_model ! semantic graph token model
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
 
 [Term]
 id: https://w3id.org/rosettastmtont/tabular_data_schema
 name: tabular data schema
 def: "A metamodel that is organized in a tabular format (consisting of cells organized in rows and columns). Tabular data instantiate tabular data schemata." []
-is_a: metamodel ! metamodel
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/metamodel ! metamodel
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
 property_value: IAO:0000114 "uncurated" xsd:string
 
 [Term]
-id: informational_quality
+id: https://w3id.org/rosettastmtont/universal_Rosetta_Statement
+name: universal Rosetta Statement
+def: "A Rosetta Statement that models a universal statement. The referent of a universal Rosetta Statement is the every-instance resource of a particular class. A universal statement is necessarily true for every instance of that class." []
+is_a: https://w3id.org/rosettastmtont/rosetta_statement_class ! Rosetta Statement
+is_a: https://w3id.org/rosettastmtont/universal_statement_graph_token_model ! universal statement graph token model
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+
+[Term]
+id: https://w3id.org/rosettastmtont/universal_statement_graph_token_model
+name: universal statement graph token model
+def: "A statement graph token model that refers either directly to a class or to an every-instance or all-instances resource of a specific class as its subject. In other words, its subject is also the subject of either a class, an all-instances, or an every-instance identification unit." []
+comment: If the subject is a class, the predicate of the universal statement graph token model is either based on the property subClassOf (RDFS:subClassOf), equivalentClass (owl:equivalentClass), disjointWith (owl:disjointWith), or sameAs (owl:sameAs) and its object is also a class. For all other types of universal statement gaph token models applies that the subject is an every-instance or an all-instances resource and if they possess an object that is a resource, the object refers to some instances of a specific class, resulting in an all-to-some relation (or many such relations in case of an n-ary proposition).
+is_a: https://w3id.org/rosettastmtont/statement_graph_token_model ! statement graph token model
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+
+[Term]
+id: informational:quality
 name: informational quality
 def: "A quality that pertains to information.An information content entity that specifies a quality that pertains to an information content entity." []
 is_a: IAO:0000030 ! information content entity
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
 
 [Term]
-id: lexical_statement
+id: lexical:statement
 name: lexical statement
 def: "A natural language statement that is about a linguistic item, such as a term. When we talk about terms, we use lexical statements." []
 comment: Lexical statements comprise e.g. information about synonyms, definitions of terms, and statistics about their usage.
 is_a: https://w3id.org/rosettastmtont/natural_language_statement ! natural language statement
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
 
 [Term]
-id: lexical_statement_graph_token_model
-name: lexical statement graph token model
-def: "A semantic graph token model that models a lexical statement about a specific resource in an ontology or a knowledge graph and its attributes as representational artifacts." []
-comment: Lexical statement graph token models comprise information such as the label of a given resource, synonyms, human-readable definitions, and provenance of resources used in ontologies and knowledge graphs. The model typically uses annotation properties to annotate instance, class, object property, data property, and annotation property resources.
-is_a: statement_graph_token_model ! statement graph token model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
-id: metamodel
-name: metamodel
-def: "A metamodel is a model of a model that can be obtained by generalizing over a type model." []
-is_a: type_model ! type model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
-id: model
-name: model
-def: "An information content entity that is a representation of information on something, created by a sender for a receiver, with a specific purpose and usage context in mind. The model is an abstracted, reduced, and pragmatic representation of a specific system-of-interest (see comments)." []
-comment: The model's purpose is to act as a surrogate for the system-of-interest that it represents. Its responses should be consistent with those of the actual system, however, focusing only on the properties relevant to its intended use. To be effective, a model must possess the following three features:\n\n1) Mapping: The model is derived from and attempts to represent a system-of-interest.\n\n2) Reduction: The model includes only a relevant subset of the system’s properties―abstraction is essential for modelling.\n\n3) Pragmatic: The model must be usable as a substitute for the system-of-interest in relation to its specific purpose.
-is_a: IAO:0000030 ! information content entity
-property_value: http://purl.org/dc/terms/created 2024-12-05
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-property_value: IAO:0000119 "Kühne T. Matters of (Meta-) Modeling. Softw Syst Model. November 2006;5(4):369–85." xsd:string
-property_value: IAO:0000119 "Stachowiak H. Allgemeine Modelltheorie. Wien: Springer; 1973." xsd:string
-property_value: IAO:0000119 "Steinmüller W. Informationstechnologie und Gesellschaft: Einführung in die Angewandte Informatik. Darmstadt: Wissenschaftliche Buchgesellschaft; 1993." xsd:string
-
-[Term]
-id: most-instances
-name: most-instances
-def: "A resource token model that represents one or more anonymous instances of a class X that is a subclass of class Y, with X being defined in reference to a set of properties A, and the cardinality of the set of all-instances of Y is larger than the cardinality of the set of all-instances of X that are not instances of Y." []
-is_a: resource_token_model ! resource token model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created 2024-12-05
-
-[Term]
-id: negation
-name: negation
-def: "A semantic graph token model the content of which is negated." []
-comment: For instance, if a single piece of information from the statement 'Peter traveled by bus from Berlin to Paris on the 21st of November 1995.' is not true, the entire statement must must be negated. For example, if Peter did not take the bus but the train or when he traveled from Bonn to Berlin or not on the 21st of November 1995 but the 22nd. If one needs to document a negation, one can create a semantic graph token model of the information that is negated, create a resource that represents this model and classify that resource as 'negation'. UI can search for negations by identifying all instances of this 'negation' class. While this way of modelling negation has limited reasoning-capability, it is significantly easier to model than OWL expressions for negations.
-is_a: graph_token_model ! semantic graph token model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
-id: object_position
+id: object:position
 name: object position
 def: "A Rosetta Statement position that is used to specify the position of an object resource or an object literal within a Rosetta Statement, using the Rosetta Statement semantic model full version. The actual object resource or literal is linked to this resource via the property 'has resource' or 'has literal' respectively. The property 'order' specifies the order of object resources or literals when a Rosetta Statement possess more than one instance of a specific type of object position." []
-is_a: Rosetta_Statement_position ! Rosetta Statement position
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_position ! Rosetta Statement position
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
 
 [Term]
-id: ontology_design_pattern_model
-name: ontology design pattern
-def: "A semantic graph pattern that models relations between universals. It is used to model relations that are universally true, i.e., that are necessarily true for every instance of a specific class of entity." []
-comment: Ontology design pattern describe the relations between entities within a TBox expression. They are instantiated in OWL ontologies to specify class axioms with the intension to increase the semantic interoperability.
-is_a: semantic_graph_pattern_model ! semantic graph pattern
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
-id: prototypical_Rosetta_Statement
-name: prototypical Rosetta Statement
-def: "A contingent Rosetta Statement that models a prototypical statement. The referent of a prototypical Rosetta Statement is the most-instances resource of a particular class, indicating that the statement is true for most, but not necessarily all, instances of the class." []
-is_a: https://w3id.org/rosettastmtont/rosetta_statement_class ! Rosetta Statement
-is_a: prototypical_statement_graph_token_model ! prototypical statement graph token model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
-id: prototypical_statement
+id: prototypical:statement
 name: prototypical statement
 def: "A contingent statement that represents a proposition that describes a relationship that applies to every instance of a specific class as long as not the contrary is explicitly stated, and thus specifies what is typically but not necessarily the case. It specifies a possibility and states what is most likely the case. As such, prototypical statements are a specific type of contingent statement." []
 comment: Symptoms in medicine and recognition criteria in genetics, genomics, biomedicine, evolutionary biology, ecology, and anatomy are often subject to exceptions and therefore take the form of prototypical statements.
-is_a: contingent_statement ! contingent statement
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
+is_a: contingent:statement ! contingent statement
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
 property_value: IAO:0000112 "“In the presence of native predators, morphological defences typically consist of developing deeper, longer, and more pigmented tails.” is an example of a prototypical statement.\n\n“Most swans are white” or “Swans are typically”" xsd:string
 
 [Term]
-id: prototypical_statement_graph_token_model
-name: prototypical statement graph token model
-def: "A contingent statement graph token model that refers to a most-instances resource of a specific class as its subject. It expresses a prototypical relationship. It refers to properties of instances of the corresponding class, assuming that possessing these properties to be at least typically true in specific contexts, but not necessarily so―a human hand is still a human hand, even if it has no thumb.\n\nA prototypical statement graph token model can be understood as defining a class Y* in reference to a set A* of prototypical properties, with Y* being a subclass of the statement’s subject resource class X, and the cardinality of the corresponding set of all-instances of Y* is larger than the cardinality of the set of all-instances of X that does not include instances that possess the set of properties A*." []
-comment: Description logic and thus also OWL does not provide the means to state what is typically true. Therefore, to provide a semantics for such statements, other logical formalisms are needed that can express prototypical knowledge. Many empirical recognition criteria are represented with prototypical statements, or in general, all things that are subject to exceptions.
-is_a: contingent_statement_graph_token_model ! contingent statement graph token model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: IAO:0000112 "A human’s hand has typically a thumb as its part. Other examples are statements about the relationships between diseases and their symptoms, drugs and their effects, which are often expressed in reference to some probability evaluation." xsd:string
-
-[Term]
-id: resource_token_model
-name: resource token model
-def: "A model that takes the form of a single resource that represents information about the system-of-interest it models." []
-is_a: model ! model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created 2024-12-05
-
-[Term]
-id: semantic_graph_pattern_model
-name: semantic graph pattern
-def: "A metamodel that is organized as a graph composed of triples that follow the subject-predicate-object syntax, referencing class and property resources from ontologies. Semantic graph patterns can be instantiated by semantic graph token models" []
-comment: Semantic graph patterns can be derived from semantic graph token models by classifying and generalizing their instance resources.
-is_a: metamodel ! metamodel
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
-id: simple_natural_language_statement
-name: simple natural language statement
-def: "A natural language statement with a simple structure, consisting of one or more subjects, a main predicate or verb, and a number of objects." []
-is_a: https://w3id.org/rosettastmtont/natural_language_statement ! natural language statement
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
-id: some_instance
+id: some:instance
 name: some-instance
 def: "A resource token model that represents one or more anonymous instances of a class. When used in a triple, a some-instance resource is meant as ‘there exists an instance i of class C for which holds …’." []
 comment: When a some-instance resource is used in a triple, it represents a set of one or more instances of the corresponding class and the triple is meant to be read as applying to each instance of that set. Based on this characterization, we can specify portions of matter using some-instance resources. For instance, a portion of water can be specified by linking an ‘object aggregate’ (BFO:0000027) with a some-instance resource of the class water (CHEBI:15377) via the property hasPart (BFO:0000051).
-is_a: resource_token_model ! resource token model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created 2024-12-05
+is_a: https://w3id.org/rosettastmtont/resource_token_model ! resource token model
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created 2024-12-05
 
 [Term]
-id: statement_graph_token_model
-name: statement graph token model
-def: "A semantic graph token model that models information that can be expressed in a single natural language statement. It represents a smallest semantic-content-carrying unit of information that is semantically meaningful to a human reader." []
-is_a: graph_token_model ! semantic graph token model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
-id: subject_position
+id: subject:position
 name: subject position
 def: "A Rosetta Statement position that is used to specify the position of a subject resource within a Rosetta Statement, using the Rosetta Statement semantic model full version. The actual subject resource is linked to this resource via the property 'has resource'. The property 'order' specifies the order of subject resources when a Rosetta Statement possess more than one instance of subject position." []
-is_a: Rosetta_Statement_position ! Rosetta Statement position
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_position ! Rosetta Statement position
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
 
 [Term]
 id: syntax:tree
 name: syntax tree
 def: "A token model in the form of a tree, structured by syntactical and grammatical conventions, with the leaves of the tree representing syntactic positions with associated semantic roles. Every natural language statement can be mapped to a corresponding syntac tree." []
 is_a: token:model ! token model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
 property_value: IAO:0000114 "uncurated" xsd:string
 
 [Term]
-id: tabular_datum
+id: tabular:datum
 name: tabular datum
 def: "A token model that is organized as a row in a table, describing relations between instances. Tabular data instantiate tabular data schemata." []
 is_a: token:model ! token model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
 
 [Term]
 id: token:model
 name: token model
 def: "A model that captures specific properties of elements from the system-of-interest it represents, maintaining a one-to-one correspondence with the system. A token model presents the relationships between individual entities (i.e., instances) belonging to the modelled system." []
 comment: Different token models of the same system-of-interest, representing the same set of properties, are connected through a transitive token-model-of relationship. This relationship can be organized into sequences of designators, each sequentially representing its corresponding element across all token models, ultimately pointing back to the original element in the system-of-interest. The creation of a token model involves selecting which properties to include (projection) and converting these properties into elements of the model (translation). Token models instantiate their corresponding type models.
-is_a: model ! model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "20-11-2024" xsd:string
-property_value: http://purl.org/dc/terms/created 2024-12-05
-property_value: http://purl.org/dc/terms/creator "Lars M Vogt" xsd:string
+is_a: https://w3id.org/rosettastmtont/model ! model
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "20-11-2024" xsd:string
+property_value: dcterms:created 2024-12-05
+property_value: dcterms:creator "Lars M Vogt" xsd:string
 property_value: IAO:0000118 "instance model" xsd:string
 property_value: IAO:0000118 "represntation model" xsd:string
 property_value: IAO:0000118 "snapshot model" xsd:string
 
 [Term]
-id: type_model
+id: type:model
 name: type model
 def: "A model that is derived from a token model by classification of its properties (i.e., the entities, relations, and attributes of the system-of-interest it models)." []
 comment: Type models are instantiated by their corresponding token models.
-is_a: model ! model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
+is_a: https://w3id.org/rosettastmtont/model ! model
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
 
 [Term]
-id: universal_Rosetta_Statement
-name: universal Rosetta Statement
-def: "A Rosetta Statement that models a universal statement. The referent of a universal Rosetta Statement is the every-instance resource of a particular class. A universal statement is necessarily true for every instance of that class." []
-is_a: https://w3id.org/rosettastmtont/rosetta_statement_class ! Rosetta Statement
-is_a: universal_statement_graph_token_model ! universal statement graph token model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
-id: universal_statement
+id: universal:statement
 name: universal statement
 def: "A natural language statement that represents a relationship that applies to every instance of a specific class. A universal statement states what is necessarily or impossibly the case―it refers to the universe of intentions or finality." []
 comment: Universal statements represent commonly accepted domain knowledge and specify what is necessarily the case. Rules, scientific hypotheses, natural laws, and theories about causal mechanisms take the form of universal statements and can be used to make predictions. In ontologies, universal statements take the form of definitions of ontology classes and their class axioms
 is_a: https://w3id.org/rosettastmtont/natural_language_statement ! natural language statement
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
 property_value: IAO:0000112 "“All swans are white” (or “Every swan is white”) is an infamous example of a universal statement that was considered true by scholars in Europe until the 17th Century." xsd:string
 
 [Term]
-id: universal_statement_graph_token_model
-name: universal statement graph token model
-def: "A statement graph token model that refers either directly to a class or to an every-instance or all-instances resource of a specific class as its subject. In other words, its subject is also the subject of either a class, an all-instances, or an every-instance identification unit." []
-comment: If the subject is a class, the predicate of the universal statement graph token model is either based on the property subClassOf (RDFS:subClassOf), equivalentClass (owl:equivalentClass), disjointWith (owl:disjointWith), or sameAs (owl:sameAs) and its object is also a class. For all other types of universal statement gaph token models applies that the subject is an every-instance or an all-instances resource and if they possess an object that is a resource, the object refers to some instances of a specific class, resulting in an all-to-some relation (or many such relations in case of an n-ary proposition).
-is_a: statement_graph_token_model ! statement graph token model
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-
-[Term]
-id: visibility_specification
+id: visibility:specification
 name: visibility specification
 def: "A directive information entity that describes how a specific information content entity should be visible in an application." []
 is_a: IAO:0000033 ! directive information entity
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-8280-0487
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
+property_value: dce:creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
 
 [Typedef]
-id: Rosetta_Statement_light_version_resource_property
-name: Rosetta Statement light version object property
-comment: This is just a placeholder to organize all object properties used for documenting a Rosetta Statement in a knowledge grah using the Rosetta Statement semantic model light version approach. The property is not ment to be used.
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: Rosetta_Statement_property ! Rosetta Statement object property
-
-[Typedef]
-id: Rosetta_Statement_nanopublication_object_property
-name: Rosetta Statement nanopublication object property
-comment: This is just a placeholder to organize all object properties used for documenting a Rosetta Statement nanopublication in a knowledge grah. The property is not ment to be used.
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: Rosetta_Statement_property ! Rosetta Statement object property
-
-[Typedef]
-id: Rosetta_Statement_property
-name: Rosetta Statement object property
-comment: This is just a placeholder to organize all object properties used for documenting a Rosetta Statement in a knowledge grah. The property is not ment to be used.
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-
-[Typedef]
-id: context
-name: has context
-def: "A relation between a Rosetta Statement and some other resource in a knowledge graph that provides relevant contextual information for the statement. It is inverse to the property 'has statement'." []
-comment: An example for the use of 'has context' is when a Rosetta Statement has been taken from a scholarly publication that is represented in the knowledge graph with its own resource, the Rosetta Statement can be linked to the scholarly publication resource via 'has context' and the publication to the Rosetta Statement via 'has statement'.
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-domain: https://w3id.org/rosettastmtont/rosetta_statement_class ! Rosetta Statement
-is_a: Rosetta_Statement_nanopublication_object_property ! Rosetta Statement nanopublication object property
-is_a: Rosetta_Statement_property ! Rosetta Statement object property
-inverse_of: has_statement ! has statement
-
-[Typedef]
-id: deleted_by
+id: deleted:by
 name: deleted by
 def: "A property indicating the person who \"deleted\" a specific Rosetta Statement. \n\nIn the Rosetta Statement semantic model full version, a soft-delete is used and the achor Rosetta Statement resource is only labeled as \"deleted\" using this property and the data propery 'deleted at', indicating the date and time when the statement was \"deleted\". The backend of the knowledge graph application must process this information and may still provide the provenance metadata associated with the “deleted” statement, but not the statement itself.\n\nIf Rosetta Statement versions should be deleted, the same property can be used for the version resources." []
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
 property_value: IAO:0000114 "uncurated" xsd:string
-is_a: Rosetta_Statement_nanopublication_object_property ! Rosetta Statement nanopublication object property
-is_a: Rosetta_Statement_property ! Rosetta Statement object property
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_nanopublication_object_property ! Rosetta Statement nanopublication object property
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_property ! Rosetta Statement object property
 
 [Typedef]
-id: extraction_method
+id: extraction:method
 name: extraction method
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: Rosetta_Statement_nanopublication_object_property ! Rosetta Statement nanopublication object property
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_nanopublication_object_property ! Rosetta Statement nanopublication object property
 
 [Typedef]
 id: has:certainty
 name: has certainty
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-range: epistemic_uncertainty ! epistemic uncertainty
-is_a: Rosetta_Statement_nanopublication_object_property ! Rosetta Statement nanopublication object property
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+range: epistemic:uncertainty ! epistemic uncertainty
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_nanopublication_object_property ! Rosetta Statement nanopublication object property
 
 [Typedef]
 id: has:provenance
 name: has provenance
-property_value: http://purl.org/dc/terms/created "20-11-2024" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "20-11-2024" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
 property_value: IAO:0000114 "uncurated" xsd:string
 is_functional: true
 
 [Typedef]
 id: has:publicationInfo
 name: has publicationInfo
-property_value: http://purl.org/dc/terms/created "20-11-2024" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "20-11-2024" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
 property_value: IAO:0000114 "uncurated" xsd:string
 
 [Typedef]
-id: has_data_schema_pattern
-name: has data schema pattern
-def: "A relation between a Rosetta Statement and its corresponding Rosetta Statement semantic model (i.e., the model that it instantiates)." []
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-property_value: IAO:0000118 "template id" xsd:string
-domain: anchor_Rosetta_Statement ! anchor Rosetta Statement
-range: Rosetta_Statement_model ! Rosetta Statement semantic model
-is_a: Rosetta_Statement_nanopublication_object_property ! Rosetta Statement nanopublication object property
-is_a: Rosetta_Statement_property ! Rosetta Statement object property
-
-[Typedef]
-id: has_object_position
-name: has object position
-def: "A relation between a Rosetta Statement version resource that is also an instance of a Rosetta Statement class and an object position resource of a Rosetta Statement, using the Rosetta Statement semantic model full version. Object positions link to resources or literals that represent objects of the natural language statement that the Rosetta Statement models.\n\nThis property can be used instead of one of its subproperties if one does not want to distinguish between optional and required objects. Otherwise, the subproperties should be used." []
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-domain: Rosetta_Statement_version ! Rosetta Statement version
-range: object_position ! object position
-is_a: Rosetta_Statement_property ! Rosetta Statement object property
-
-[Typedef]
-id: has_statement
+id: has:statement
 name: has statement
 def: "A relation between some resource in a knowledge graph and a Rosetta Statement resource, with the former providing relevant contextual information for the latter. It is inverse to the property 'has context'." []
 comment: An example for the use of 'has statement' is when a Rosetta Statement has been taken from a scholarly publication that is represented in the knowledge graph with its own resource, the publication resource can be linked to the Rosetta Statement resource via 'has statement' and the Rosetta Statement to the publication resource via 'has context'.
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-range: Rosetta_Statement_model ! Rosetta Statement semantic model
-is_a: Rosetta_Statement_property ! Rosetta Statement object property
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+range: https://w3id.org/rosettastmtont/Rosetta_Statement_model ! Rosetta Statement semantic model
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_property ! Rosetta Statement object property
 
 [Typedef]
-id: has_subject
+id: has:subject
 name: has subject
 def: "A relation between a Rosetta Statement version resource that is also an instance of a Rosetta Statement class and a subject position resource of a Rosetta Statement, using the Rosetta Statement semantic model full version." []
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-domain: Rosetta_Statement_version ! Rosetta Statement version
-range: subject_position ! subject position
-is_a: Rosetta_Statement_property ! Rosetta Statement object property
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+domain: https://w3id.org/rosettastmtont/Rosetta_Statement_version ! Rosetta Statement version
+range: subject:position ! subject position
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_property ! Rosetta Statement object property
 
 [Typedef]
-id: has_version
+id: has:version
 name: has version
 def: "A relation between two Rosetta Statement resources in the form of 'Statement_A hasVersion Statement_B', with Statement_A being the anchor statement resource to which different statement versions (= Statement_B) are linked. The anchor statement resource represents the statement independent of its version. A knowledge graph application should always resolve anchor statements to the newest statement version available." []
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
 domain: https://w3id.org/rosettastmtont/rosetta_statement_class ! Rosetta Statement
 range: https://w3id.org/rosettastmtont/rosetta_statement_class ! Rosetta Statement
-is_a: Rosetta_Statement_property ! Rosetta Statement object property
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_property ! Rosetta Statement object property
 
 [Typedef]
-id: has_visibility
+id: has:visibility
 name: has visibility
 def: "A data property indicating the date and time the visibility of a specific Rosetta Statement has been set to \"unlisted\". Unlisted Rosetta Statements cannot be found via the search interface of the application." []
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-range: visibility_specification ! visibility specification
-is_a: Rosetta_Statement_nanopublication_object_property ! Rosetta Statement nanopublication object property
-is_a: Rosetta_Statement_property ! Rosetta Statement object property
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+range: visibility:specification ! visibility specification
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_nanopublication_object_property ! Rosetta Statement nanopublication object property
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_property ! Rosetta Statement object property
+
+[Typedef]
+id: https://w3id.org/rosettastmtont/Rosetta_Statement_light_version_resource_property
+name: Rosetta Statement light version object property
+comment: This is just a placeholder to organize all object properties used for documenting a Rosetta Statement in a knowledge grah using the Rosetta Statement semantic model light version approach. The property is not ment to be used.
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_property ! Rosetta Statement object property
+
+[Typedef]
+id: https://w3id.org/rosettastmtont/Rosetta_Statement_nanopublication_object_property
+name: Rosetta Statement nanopublication object property
+comment: This is just a placeholder to organize all object properties used for documenting a Rosetta Statement nanopublication in a knowledge grah. The property is not ment to be used.
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_property ! Rosetta Statement object property
+
+[Typedef]
+id: https://w3id.org/rosettastmtont/Rosetta_Statement_property
+name: Rosetta Statement object property
+comment: This is just a placeholder to organize all object properties used for documenting a Rosetta Statement in a knowledge grah. The property is not ment to be used.
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+
+[Typedef]
+id: https://w3id.org/rosettastmtont/context
+name: has context
+def: "A relation between a Rosetta Statement and some other resource in a knowledge graph that provides relevant contextual information for the statement. It is inverse to the property 'has statement'." []
+comment: An example for the use of 'has context' is when a Rosetta Statement has been taken from a scholarly publication that is represented in the knowledge graph with its own resource, the Rosetta Statement can be linked to the scholarly publication resource via 'has context' and the publication to the Rosetta Statement via 'has statement'.
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+domain: https://w3id.org/rosettastmtont/rosetta_statement_class ! Rosetta Statement
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_nanopublication_object_property ! Rosetta Statement nanopublication object property
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_property ! Rosetta Statement object property
+inverse_of: has:statement ! has statement
+
+[Typedef]
+id: https://w3id.org/rosettastmtont/has_data_schema_pattern
+name: has data schema pattern
+def: "A relation between a Rosetta Statement and its corresponding Rosetta Statement semantic model (i.e., the model that it instantiates)." []
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+property_value: IAO:0000118 "template id" xsd:string
+domain: https://w3id.org/rosettastmtont/anchor_Rosetta_Statement ! anchor Rosetta Statement
+range: https://w3id.org/rosettastmtont/Rosetta_Statement_model ! Rosetta Statement semantic model
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_nanopublication_object_property ! Rosetta Statement nanopublication object property
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_property ! Rosetta Statement object property
+
+[Typedef]
+id: https://w3id.org/rosettastmtont/has_object_position
+name: has object position
+def: "A relation between a Rosetta Statement version resource that is also an instance of a Rosetta Statement class and an object position resource of a Rosetta Statement, using the Rosetta Statement semantic model full version. Object positions link to resources or literals that represent objects of the natural language statement that the Rosetta Statement models.\n\nThis property can be used instead of one of its subproperties if one does not want to distinguish between optional and required objects. Otherwise, the subproperties should be used." []
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+domain: https://w3id.org/rosettastmtont/Rosetta_Statement_version ! Rosetta Statement version
+range: object:position ! object position
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_property ! Rosetta Statement object property
 
 [Typedef]
 id: https://w3id.org/rosettastmtont/has_token_model
 name: has token model
-property_value: http://purl.org/dc/terms/created "20-11-2024" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "20-11-2024" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
 property_value: IAO:0000114 "uncurated" xsd:string
 domain: https://w3id.org/rosettastmtont/rosetta_statement_class ! Rosetta Statement
 range: token:model ! token model
 
 [Typedef]
-id: https://w3id.org/rosettastmtont/transitive_token_model_of
-name: transitive token model of
-property_value: http://purl.org/dc/elements/1.1/description "Different token models of the same system-of-interest, representing the same set of properties, are connected through a transitive token-model-of relationship. This relationship can be organized into sequences of designators, each sequentially representing its corresponding element across all token models, ultimately pointing back to the original element in the system-of-interest." xsd:string
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-property_value: IAO:0000114 "uncurated" xsd:string
-domain: token:model ! token model
-range: token:model ! token model
-
-[Typedef]
-id: optional_object_position
+id: https://w3id.org/rosettastmtont/optional_object_position
 name: optional object position
 def: "A relation between a Rosetta Statement version resource that is also an instance of a Rosetta Statement class and an optional object position resource of a Rosetta Statement, using the Rosetta Statement semantic model full version. Optional object positions link to resources or literals that represent optional objects (i.e. adjuncts according to the predicate-argument-structure) of the natural language statement that the Rosetta Statement models." []
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-domain: Rosetta_Statement_version ! Rosetta Statement version
-range: object_position ! object position
-is_a: has_object_position ! has object position
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+domain: https://w3id.org/rosettastmtont/Rosetta_Statement_version ! Rosetta Statement version
+range: object:position ! object position
+is_a: https://w3id.org/rosettastmtont/has_object_position ! has object position
 
 [Typedef]
-id: optional_object_position_1
-name: optional object position 1
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: optional_resource_object_position ! optional resource object position
-
-[Typedef]
-id: optional_object_position_10
-name: optional object position 10
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: optional_resource_object_position ! optional resource object position
-
-[Typedef]
-id: optional_object_position_2
-name: optional object position 2
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: optional_resource_object_position ! optional resource object position
-
-[Typedef]
-id: optional_object_position_3
-name: optional object position 3
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: optional_resource_object_position ! optional resource object position
-
-[Typedef]
-id: optional_object_position_4
-name: optional object position 4
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: optional_resource_object_position ! optional resource object position
-
-[Typedef]
-id: optional_object_position_5
-name: optional object position 5
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: optional_resource_object_position ! optional resource object position
-
-[Typedef]
-id: optional_object_position_6
-name: optional object position 6
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: optional_resource_object_position ! optional resource object position
-
-[Typedef]
-id: optional_object_position_7
-name: optional object position 7
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: optional_resource_object_position ! optional resource object position
-
-[Typedef]
-id: optional_object_position_8
-name: optional object position 8
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: optional_resource_object_position ! optional resource object position
-
-[Typedef]
-id: optional_object_position_9
-name: optional object position 9
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: optional_resource_object_position ! optional resource object position
-
-[Typedef]
-id: optional_resource_object_position
+id: https://w3id.org/rosettastmtont/optional_resource_object_position
 name: optional resource object position
 def: "The relation between a Rosetta Statement resource (i.e., an instance of a Rosetta Statement class) and a resource that takes an object position that is optional in a Rosetta Statement. It thus connects the statement resource with another resource that represents an object adjunct of the statement." []
 comment: The different numbered subproperties are used to be able to distinguish the different optional resource object position within a given Rosetta Statement semantic model. Each optional object position in a given Rosetta Statement can be distinguished by its specific numbered subproperty and its associated semantic role. In a Rosetta Statement semantic model, the numbered subproperty defines a corresponding optional slot that has a specific constraint.
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: resource_object_position ! resource object position light version
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/resource_object_position ! resource object position light version
 
 [Typedef]
-id: required_object_position
+id: https://w3id.org/rosettastmtont/required_object_position
 name: required object position
 def: "A relation between a Rosetta Statement version resource that is also an instance of a Rosetta Statement class and a required object position resource of a Rosetta Statement, using the Rosetta Statement semantic model full version. Required object positions link to resources or literals that represent required objects (i.e. arguments according to the predicate-argument-structure) of the natural language statement that the Rosetta Statement models." []
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-domain: Rosetta_Statement_version ! Rosetta Statement version
-range: object_position ! object position
-is_a: has_object_position ! has object position
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+domain: https://w3id.org/rosettastmtont/Rosetta_Statement_version ! Rosetta Statement version
+range: object:position ! object position
+is_a: https://w3id.org/rosettastmtont/has_object_position ! has object position
 
 [Typedef]
-id: required_object_position_1
-name: required object position 1
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: required_resource_object_position ! required resource object position
-
-[Typedef]
-id: required_object_position_10
-name: required object position 10
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: required_resource_object_position ! required resource object position
-
-[Typedef]
-id: required_object_position_2
-name: required object position 2
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: required_resource_object_position ! required resource object position
-
-[Typedef]
-id: required_object_position_3
-name: required object position 3
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: required_resource_object_position ! required resource object position
-
-[Typedef]
-id: required_object_position_4
-name: required object position 4
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: required_resource_object_position ! required resource object position
-
-[Typedef]
-id: required_object_position_5
-name: required object position 5
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: required_resource_object_position ! required resource object position
-
-[Typedef]
-id: required_object_position_6
-name: required object position 6
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: required_resource_object_position ! required resource object position
-
-[Typedef]
-id: required_object_position_7
-name: required object position 7
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: required_resource_object_position ! required resource object position
-
-[Typedef]
-id: required_object_position_8
-name: required object position 8
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: required_resource_object_position ! required resource object position
-
-[Typedef]
-id: required_object_position_9
-name: required object position 9
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: required_resource_object_position ! required resource object position
-
-[Typedef]
-id: required_resource_object_position
+id: https://w3id.org/rosettastmtont/required_resource_object_position
 name: required resource object position
 def: "The relation between a Rosetta Statement resource (i.e., an instance of a Rosetta Statement class) and a resource that takes an object position that is required to form a semantically meaningful Rosetta Statement. It thus connects the statement resource with another resource that represents an object argument of the statement." []
 comment: The different numbered subproperties are used to be able to distinguish the different required resource object position within a given Rosetta Statement semantic model. Each required object position in a given Rosetta Statement can be distinguished by its specific numbered subproperty and its associated semantic role. In a Rosetta Statement semantic model, the numbered subproperty defines a corresponding required slot that has a specific constraint.
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: resource_object_position ! resource object position light version
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/resource_object_position ! resource object position light version
 
 [Typedef]
-id: resource
+id: https://w3id.org/rosettastmtont/resource
 name: has resource
 def: "A relation between a subject position or object position resource and some resource that represents a subject or object of the natural language statement that the Rosetta Statement models to which the subject/object position belongs." []
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: Rosetta_Statement_property ! Rosetta Statement object property
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_property ! Rosetta Statement object property
 
 [Typedef]
-id: resource_object_position
+id: https://w3id.org/rosettastmtont/resource_object_position
 name: resource object position light version
 def: "A relation between a Rosetta Statement resource (i.e., an instance of a Rosetta Statement class) and a resource that takes an object position in a Rosetta Statement, using the Rosetta Statement semantic model light version." []
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
 domain: https://w3id.org/rosettastmtont/rosetta_statement_class ! Rosetta Statement
-is_a: Rosetta_Statement_light_version_resource_property ! Rosetta Statement light version object property
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_light_version_resource_property ! Rosetta Statement light version object property
 
 [Typedef]
-id: subject
+id: https://w3id.org/rosettastmtont/subject
 name: subject
 def: "A relation between a Rosetta Statement resource (i.e., an instance of a Rosetta Statement class) and a resource that takes the subject position in a Rosetta Statement, using the Rosetta Statement semantic model light version." []
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
 domain: https://w3id.org/rosettastmtont/rosetta_statement_class ! Rosetta Statement
-is_a: Rosetta_Statement_light_version_resource_property ! Rosetta Statement light version object property
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_light_version_resource_property ! Rosetta Statement light version object property
 
 [Typedef]
-id: token_model_of
+id: https://w3id.org/rosettastmtont/token_model_of
 name: token model of
 def: "A transitive relation between a token model and its system-of-interest, i.e., the system it is modelling, or between a token model and another token model that represents the same set of properties of the system-of-interest." []
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
 domain: token:model ! token model
 is_transitive: true
 
 [Typedef]
-id: unlisted_by
+id: https://w3id.org/rosettastmtont/transitive_token_model_of
+name: transitive token model of
+property_value: dce:description "Different token models of the same system-of-interest, representing the same set of properties, are connected through a transitive token-model-of relationship. This relationship can be organized into sequences of designators, each sequentially representing its corresponding element across all token models, ultimately pointing back to the original element in the system-of-interest." xsd:string
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+property_value: IAO:0000114 "uncurated" xsd:string
+domain: token:model ! token model
+range: token:model ! token model
+
+[Typedef]
+id: optional_object_position:1
+name: optional object position 1
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/optional_resource_object_position ! optional resource object position
+
+[Typedef]
+id: optional_object_position:10
+name: optional object position 10
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/optional_resource_object_position ! optional resource object position
+
+[Typedef]
+id: optional_object_position:2
+name: optional object position 2
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/optional_resource_object_position ! optional resource object position
+
+[Typedef]
+id: optional_object_position:3
+name: optional object position 3
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/optional_resource_object_position ! optional resource object position
+
+[Typedef]
+id: optional_object_position:4
+name: optional object position 4
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/optional_resource_object_position ! optional resource object position
+
+[Typedef]
+id: optional_object_position:5
+name: optional object position 5
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/optional_resource_object_position ! optional resource object position
+
+[Typedef]
+id: optional_object_position:6
+name: optional object position 6
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/optional_resource_object_position ! optional resource object position
+
+[Typedef]
+id: optional_object_position:7
+name: optional object position 7
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/optional_resource_object_position ! optional resource object position
+
+[Typedef]
+id: optional_object_position:8
+name: optional object position 8
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/optional_resource_object_position ! optional resource object position
+
+[Typedef]
+id: optional_object_position:9
+name: optional object position 9
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/optional_resource_object_position ! optional resource object position
+
+[Typedef]
+id: required_object_position:1
+name: required object position 1
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/required_resource_object_position ! required resource object position
+
+[Typedef]
+id: required_object_position:10
+name: required object position 10
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/required_resource_object_position ! required resource object position
+
+[Typedef]
+id: required_object_position:2
+name: required object position 2
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/required_resource_object_position ! required resource object position
+
+[Typedef]
+id: required_object_position:3
+name: required object position 3
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/required_resource_object_position ! required resource object position
+
+[Typedef]
+id: required_object_position:4
+name: required object position 4
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/required_resource_object_position ! required resource object position
+
+[Typedef]
+id: required_object_position:5
+name: required object position 5
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/required_resource_object_position ! required resource object position
+
+[Typedef]
+id: required_object_position:6
+name: required object position 6
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/required_resource_object_position ! required resource object position
+
+[Typedef]
+id: required_object_position:7
+name: required object position 7
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/required_resource_object_position ! required resource object position
+
+[Typedef]
+id: required_object_position:8
+name: required object position 8
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/required_resource_object_position ! required resource object position
+
+[Typedef]
+id: required_object_position:9
+name: required object position 9
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/required_resource_object_position ! required resource object position
+
+[Typedef]
+id: unlisted:by
 name: unlisted by
 def: "\"An object property indicating the person who set the visibility of a specific Rosetta Statement to \"unlisted\". Unlisted Rosetta Statements cannot be found via the search interface of the application.\"" []
-property_value: http://purl.org/dc/terms/created "2024-12-05" xsd:string
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-8280-0487
-is_a: Rosetta_Statement_nanopublication_object_property ! Rosetta Statement nanopublication object property
-is_a: Rosetta_Statement_property ! Rosetta Statement object property
+property_value: dcterms:created "2024-12-05" xsd:string
+property_value: dcterms:creator https://orcid.org/0000-0002-8280-0487
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_nanopublication_object_property ! Rosetta Statement nanopublication object property
+is_a: https://w3id.org/rosettastmtont/Rosetta_Statement_property ! Rosetta Statement object property
 
