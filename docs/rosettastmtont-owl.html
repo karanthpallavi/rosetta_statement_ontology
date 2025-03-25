@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosetta Statement Ontology</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        pre { background: #fff; padding: 15px; border-radius: 5px; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word; }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>Rosetta Statement Ontology (OWL Format)</h1>
+    <p>If your browser does not support RDF/XML, you can <a href="rosettastmtont.owl" download>download the ontology here</a>.</p>
+    
+    <pre id="rdf-content">Loading ontology...</pre>
+
+    <script>
+        fetch("rosettastmtont.owl")
+            .then(response => response.text())
+            .then(text => document.getElementById("rdf-content").textContent = text)
+            .catch(error => document.getElementById("rdf-content").textContent = "Error loading OWL file.");
+    </script>
+</body>
+</html>
