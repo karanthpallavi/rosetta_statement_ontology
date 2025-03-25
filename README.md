@@ -2,9 +2,9 @@
 ![Build Status](https://github.com/karanthpallavi/noname/actions/workflows/qc.yml/badge.svg)
 # Rosetta Statement Ontology
 
-Description: None
+Description: Rosetta Statement Ontology provides a basis for knowledge graph construction and semantic modelling approach to increase the cognitive and semantic interoperability of content in open knowledge graphs that have a cross-domain scope.
 
-More information can be found at http://obofoundry.org/ontology/rosettastmtont
+More information can be found at (https://github.com/karanthpallavi/rosetta_statement_ontology)
 
 ## Versions
 
@@ -12,7 +12,7 @@ More information can be found at http://obofoundry.org/ontology/rosettastmtont
 
 The latest version of the ontology can always be found at:
 
-http://purl.obolibrary.org/obo/rosettastmtont.owl
+(https://github.com/karanthpallavi/rosetta_statement_ontology)
 
 (note this will not show up until the request has been approved by obofoundry.org)
 
